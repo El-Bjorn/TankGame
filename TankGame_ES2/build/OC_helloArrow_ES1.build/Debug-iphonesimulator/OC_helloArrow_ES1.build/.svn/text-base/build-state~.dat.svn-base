@@ -1,0 +1,246 @@
+TOC_helloArrow_ES1
+v7
+r0
+t329428528.540086
+cCheck dependencies
+cProcessInfoPlistFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/Info.plist OC_helloArrow_ES1-Info.plist
+cProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch.gch OC_helloArrow_ES1_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/main.o /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/OC_helloArrow_ES1AppDelegate.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/GLView.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004D54D24F000000000000094F
+t1297404495
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004D54D24F0000000000009369
+t1297404495
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004D54D24F0000000000003C4A
+t1297404495
+s15434
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004D54D28100000000000191D0
+t1297404545
+s102864
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D2DD00000000000000C4
+t1297404637
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D4200000000000162C50
+t1297404960
+s1453136
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.h
+c000000004DF2732D0000000000000175
+t1307734829
+s373
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m
+c000000004DF276A6000000000000057B
+t1307735718
+s1403
+i"GLView.h"
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.h
+c000000004DF14842000000000000012E
+t1307658306
+s302
+i<UIKit/UIKit.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m
+c000000004DF1486F00000000000006C4
+t1307658351
+s1732
+i"OC_helloArrow_ES1AppDelegate.h"
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/MainWindow.xib
+c000000004DF146CA0000000000003E9F
+t1307657930
+s16031
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1_Prefix.pch
+c000000004DF146CA00000000000000CB
+t1307657930
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app
+t2
+s0
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app.dSYM
+t2
+s0
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/Info.plist
+t1307735724
+s813
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/MainWindow.nib
+t2
+s0
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+t2
+s0
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/PkgInfo
+t1307735724
+s8
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/GLView.o
+t1307735728
+s42464
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/OC_helloArrow_ES1.LinkFileList
+c000000004DF276AC00000000000001D9
+t1307735724
+s473
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/OC_helloArrow_ES1AppDelegate.o
+t2
+s0
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/main.o
+t1307735728
+s6516
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/main.m
+c000000004DF147760000000000000191
+t1307658102
+s401
+i<UIKit/UIKit.h>
+
+N/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch.gch
+t1307735728
+s15814064
+
+NOC_helloArrow_ES1-Info.plist
+c000000004DF2729E0000000000000473
+t1307734686
+s1139
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies329428524#329428524#0(0"0(0#1#0"31525334837231728#0"0#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/GLView.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329428528.440164
+e329428528.539993
+r1
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/GLView.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m329428528#329428528#0(0"0(0#0#62"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m8232984105275713536#2203"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources/i386 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/GLView.o0#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/OC_helloArrow_ES1AppDelegate.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329428528.200423
+e329428528.440058
+r0
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/OC_helloArrow_ES1AppDelegate.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m: In function '-[OC_helloArrow_ES1AppDelegate application:didFinishLaunchingWithOptions:]':
+o/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m:21: error: accessing unknown 'window' getter method
+lSLF07#2@92"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m329428528#329428528#0(313"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m: In function '-[OC_helloArrow_ES1AppDelegate application:didFinishLaunchingWithOptions:]':/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m:21: error: accessing unknown 'window' getter method1(4@40"Accessing unknown 'window' getter method329428528#176#137#0(6@84"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m329351151#21#0#21#0#0"0(0#0#84"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m8616450592#2247"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources/i386 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow_ES1AppDelegate.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/OC_helloArrow_ES1AppDelegate.o1#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/main.o /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329428528.199058
+e329428528.480746
+r1
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/main.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m329428528#329428528#0(0"0(0#0#52"/Users/bjornchambless/devel/OC_helloArrow_ES1/main.m8616847840#2191"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources/i386 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/bjornchambless/devel/OC_helloArrow_ES1/MainWindow.xib
+r0
+
+CGenerateDSYMFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app.dSYM /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+r0
+
+CLd /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/OC_helloArrow_ES1 normal i386
+r0
+
+CProcessInfoPlistFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/Info.plist OC_helloArrow_ES1-Info.plist
+s329428524.665471
+e329428524.756390
+r1
+xProcessInfoPlistFile
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/Info.plist
+xOC_helloArrow_ES1-Info.plist
+lSLF07#2@36"Process OC_helloArrow_ES1-Info.plist329428524#329428524#0(0"0(0#0#74"/Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1-Info.plist33495998977409136#530"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility OC_helloArrow_ES1-Info.plist -genpkginfo /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app/Info.plist0#
+
+CProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch.gch OC_helloArrow_ES1_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s329428524.756585
+e329428528.198866
+r1
+xProcessPCH
+x/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch.gch
+xOC_helloArrow_ES1_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile OC_helloArrow_ES1_Prefix.pch329428524#329428528#0(0"0(0#0#74"/Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1_Prefix.pch8616852672#2066"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources/i386 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphonesimulator/OC_helloArrow_ES1.build/DerivedSources -c /Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1_Prefix.pch -o /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bfaydnimpevybyajmaeujgfwwxbw/OC_helloArrow_ES1_Prefix.pch.gch0#
+
+CTouch /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphonesimulator/OC_helloArrow_ES1.app
+r0
+

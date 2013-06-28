@@ -1,0 +1,372 @@
+TOC_helloArrow_ES1
+v7
+r0
+t329435879.389350
+cCheck dependencies
+cCpResource build/Debug-iphoneos/OC_helloArrow_ES1.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/Info.plist OC_helloArrow_ES1-Info.plist
+cProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch.gch OC_helloArrow_ES1_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/main.o /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow1_Delegate.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/GLView.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/RenderingEngine1.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1 normal armv7
+cGenerateDSYMFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app.dSYM /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+cProcessProductPackaging "/Users/bjornchambless/Library/MobileDevice/Provisioning Profiles/70855806-953D-42EB-8932-F478C94B9070.mobileprovision" /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision
+cTouch /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent
+cCodeSign /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004D7401890000000000000110
+t1299448201
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+c000000004D4F6A4700000000000001A7
+t1297050183
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+c000000004D4F6A4700000000000001E5
+t1297050183
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54D18C00000000003532A0
+t1297404300
+s3486368
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54D1F500000000003E22F0
+t1297404405
+s4072176
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54D1DD0000000000001466
+t1297404381
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004D54D429000000000000094F
+t1297404969
+s2383
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004D54D4290000000000000A61
+t1297404969
+s2657
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004D54D4290000000000009369
+t1297404969
+s37737
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004D54D4290000000000003C4A
+t1297404969
+s15434
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004D54D43E000000000002E690
+t1297404990
+s190096
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D49500000000000000C4
+t1297405077
+s196
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D608000000000026CB10
+t1297405448
+s2542352
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+c000000004D5A28AB00000000000014D5
+t1297754283
+s5333
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5A28AB0000000000000AA1
+t1297754283
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5A292A0000000000CA2AE0
+t1297754410
+s13249248
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/mach/mach_time.h
+c000000004D54CB290000000000000746
+t1297402665
+s1862
+
+N/Users/bjornchambless/Library/MobileDevice/Provisioning Profiles/70855806-953D-42EB-8932-F478C94B9070.mobileprovision
+c000000004DF2933D0000000000002511
+t1307743037
+s9489
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.h
+c000000004DF28B9F000000000000021F
+t1307741087
+s543
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<QuartzCore/QuartzCore.h>
+i"RenderingEngine1.h"
+i<OpenGLES/ES1/glext.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m
+c000000004DF294290000000000000826
+t1307743273
+s2086
+i<OpenGLES/EAGLDrawable.h>
+i"GLView.h"
+i<mach/mach_time.h>
+i<OpenGLES/ES1/gl.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.h
+c000000004DF278F4000000000000014F
+t1307736308
+s335
+i<UIKit/UIKit.h>
+i"GLView.h"
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m
+c000000004DF27A13000000000000074F
+t1307736595
+s1871
+i"OC_helloArrow1_Delegate.h"
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.h
+c000000004DF27F7A00000000000002AD
+t1307737978
+s685
+i<Foundation/Foundation.h>
+i<UIKit/UIDevice.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m
+c000000004DF28D9C0000000000000B0C
+t1307741596
+s2828
+i"RenderingEngine1.h"
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1_Prefix.pch
+c000000004DF146CA00000000000000CB
+t1307657930
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+t1307743079
+s306
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app.dSYM
+t1307743078
+s102
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/Info.plist
+t1307743075
+s1061
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+t1307743078
+s30672
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/PkgInfo
+t1307743075
+s8
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/ResourceRules.plist
+t1307743075
+s485
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision
+t1307743078
+s9489
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent
+t1307743078
+s440
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/GLView.o
+t1307743077
+s46220
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow1_Delegate.o
+t1307743076
+s50940
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow_ES1.LinkFileList
+c000000004DF29363000000000000025D
+t1307743075
+s605
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/RenderingEngine1.o
+t1307743077
+s13628
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/main.o
+t1307743076
+s6632
+
+N/Users/bjornchambless/devel/OC_helloArrow_ES1/main.m
+c000000004DF2787C000000000000018C
+t1307736188
+s396
+i<UIKit/UIKit.h>
+
+N/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch.gch
+t1307743076
+s10647452
+
+NOC_helloArrow_ES1-Info.plist
+c000000004DF2729E0000000000000473
+t1307734686
+s1139
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies329435875#329435875#0(0"0(0#1#0"31525334837231728#0"0#
+
+CCodeSign /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+s329435878.746785
+e329435879.389297
+r1
+xCodeSign
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+lSLF07#2@51"CodeSign build/Debug-iphoneos/OC_helloArrow_ES1.app329435878#329435879#0(0"0(0#0#88"/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app8605012000#729"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Bjorn Chambless (TFX4EFJ682)" --resource-rules=/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/ResourceRules.plist --entitlements /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app0#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/GLView.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s329435876.905848
+e329435877.016116
+r1
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/GLView.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m329435876#329435877#0(0"0(0#0#62"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m8603846656#2013"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources/armv7 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/GLView.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/GLView.o0#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow1_Delegate.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s329435876.761447
+e329435876.942813
+r1
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow1_Delegate.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m329435876#329435876#0(0"0(0#0#79"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m8604251584#2047"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources/armv7 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/OC_helloArrow1_Delegate.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow1_Delegate.o0#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/RenderingEngine1.o /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s329435876.942916
+e329435877.031443
+r1
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/RenderingEngine1.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m329435876#329435877#0(0"0(0#0#72"/Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m8606161152#2033"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources/armv7 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/Classes/RenderingEngine1.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/RenderingEngine1.o0#
+
+CCompileC build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/main.o /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s329435876.760107
+e329435876.905742
+r1
+xCompileC
+xbuild/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/main.o
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m329435876#329435876#0(0"0(0#0#52"/Users/bjornchambless/devel/OC_helloArrow_ES1/main.m8605005696#2001"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources/armv7 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/main.m -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/main.o0#
+
+CCpResource build/Debug-iphoneos/OC_helloArrow_ES1.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+s329435875.909098
+e329435875.978980
+r1
+xCpResource
+xbuild/Debug-iphoneos/OC_helloArrow_ES1.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist329435875#329435875#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist8028903794874265600#518"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app0#
+
+CGenerateDSYMFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app.dSYM /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+s329435878.641392
+e329435878.659063
+r1
+xGenerateDSYMFile
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app.dSYM
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+lSLF07#2@125"GenerateDSYMFile build/Debug-iphoneos/OC_helloArrow_ES1.app.dSYM build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1329435878#329435878#0(0"0(0#0#106"/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES18602119904#413"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1 -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app.dSYM0#
+
+CLd /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1 normal armv7
+s329435877.031536
+e329435878.641223
+r1
+xLd
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1
+xnormal
+xarmv7
+lSLF07#2@111"Link /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES1329435877#329435878#0(0"0(0#0#0"8607818816#949"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -L/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -filelist /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/Objects-normal/armv7/OC_helloArrow_ES1.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/OC_helloArrow_ES10#
+
+CProcessInfoPlistFile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/Info.plist OC_helloArrow_ES1-Info.plist
+s329435875.912706
+e329435875.961300
+r1
+xProcessInfoPlistFile
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/Info.plist
+xOC_helloArrow_ES1-Info.plist
+lSLF07#2@36"Process OC_helloArrow_ES1-Info.plist329435875#329435875#0(0"0(0#0#74"/Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1-Info.plist8606101856#630"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility OC_helloArrow_ES1-Info.plist -genpkginfo /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/ResourceRules.plist -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/Info.plist0#
+
+CProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch.gch OC_helloArrow_ES1_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s329435875.979127
+e329435876.759967
+r1
+xProcessPCH
+x/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch.gch
+xOC_helloArrow_ES1_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile OC_helloArrow_ES1_Prefix.pch329435875#329435876#0(0"0(0#0#74"/Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1_Prefix.pch8605184992#1882"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-generated-files.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-own-target-headers.hmap -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-all-target-headers.hmap -iquote /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1-project-headers.hmap -F/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/include -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources/armv7 -I/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/DerivedSources -c /Users/bjornchambless/devel/OC_helloArrow_ES1/OC_helloArrow_ES1_Prefix.pch -o /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OC_helloArrow_ES1_Prefix-bomkbamqnwlfqzfooyahidjelmph/OC_helloArrow_ES1_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/bjornchambless/Library/MobileDevice/Provisioning Profiles/70855806-953D-42EB-8932-F478C94B9070.mobileprovision" /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision
+s329435878.659164
+e329435878.687828
+r1
+xProcessProductPackaging
+x/Users/bjornchambless/Library/MobileDevice/Provisioning Profiles/70855806-953D-42EB-8932-F478C94B9070.mobileprovision
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision
+lSLF07#2@211"ProcessProductPackaging "/Users/bjornchambless/Library/MobileDevice/Provisioning Profiles/70855806-953D-42EB-8932-F478C94B9070.mobileprovision" build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision329435878#329435878#0(0"0(0#0#113"/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision8606195488#456"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/bjornchambless/Library/MobileDevice/Provisioning Profiles/70855806-953D-42EB-8932-F478C94B9070.mobileprovision" -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent
+s329435878.710901
+e329435878.746663
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent
+lSLF07#2@205"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent329435878#329435878#0(0"0(0#0#138"/Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent8605364896#476"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist -entitlements -format xml -o /Users/bjornchambless/devel/OC_helloArrow_ES1/build/OC_helloArrow_ES1.build/Debug-iphoneos/OC_helloArrow_ES1.build/OC_helloArrow_ES1.xcent0#
+
+CTouch /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+s329435878.687935
+e329435878.710795
+r1
+xTouch
+x/Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app
+lSLF07#2@94"Touch /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app329435878#329435878#0(0"0(0#0#0"8605856480#288"    cd /Users/bjornchambless/devel/OC_helloArrow_ES1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/bjornchambless/devel/OC_helloArrow_ES1/build/Debug-iphoneos/OC_helloArrow_ES1.app0#
+

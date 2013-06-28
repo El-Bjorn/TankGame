@@ -1,0 +1,14 @@
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m: In function '-[RenderingEngine2 initWithSize:]':
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:41: error: expected ';' before '}' token
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m: In function '-[RenderingEngine2 render]':
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: error: expected expression before 'end'
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: error: expected declaration or statement at end of input
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m: At top level:
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: '@end' missing in implementation context
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: incomplete implementation of class 'RenderingEngine2'
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: method definition for '-applyRotationOfDegrees:' not found
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: method definition for '-applyOrtho_MaxX:MaxY:' not found
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: method definition for '-buildProgram' not found
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: method definition for '-rotationDirection' not found
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: method definition for '-onRotationWithOrientation:' not found
+/Users/bjornchambless/corner_devel/OC_helloArrow_ES1/Classes/RenderingEngine2.m:47: warning: method definition for '-updateAnimationWithTimestep:' not found

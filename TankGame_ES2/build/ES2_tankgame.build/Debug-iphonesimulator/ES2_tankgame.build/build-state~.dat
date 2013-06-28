@@ -1,0 +1,649 @@
+TES2_tankgame
+v7
+r0
+t334100572.766674
+cCheck dependencies
+cProcessInfoPlistFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist ES2_tankgame-Info.plist
+cProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch ES2_tankgame_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o /Users/bjornchambless/devel/TankGame_ES2/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004D54D24F000000000000094F
+t1297404495
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004D54D24F0000000000000A61
+t1297404495
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004D54D24F0000000000009369
+t1297404495
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004D54D24F0000000000003C4A
+t1297404495
+s15434
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
+c000000004D54D24F00000000000092AA
+t1297404495
+s37546
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
+c000000004D54D24F00000000000026AA
+t1297404495
+s9898
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004D54D28100000000000191D0
+t1297404545
+s102864
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D2DD00000000000000C4
+t1297404637
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D4200000000000162C50
+t1297404960
+s1453136
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+c000000004D5615B400000000000014D5
+t1297487284
+s5333
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/mach_time.h
+c000000004D54D0EB0000000000000746
+t1297404139
+s1862
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.h
+c000000004E385A6E00000000000001A7
+t1312316014
+s423
+i<UIKit/UIKit.h>
+i"GLView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m
+c000000004E385A6E00000000000006CE
+t1312316014
+s1742
+i"ControllerView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.h
+c000000004E385A6E00000000000001AD
+t1312316014
+s429
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<QuartzCore/QuartzCore.h>
+i"RenderingEngine2.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m
+c000000004E387AB60000000000000A11
+t1312324278
+s2577
+i<OpenGLES/EAGLDrawable.h>
+i"GLView.h"
+i<OpenGLES/ES1/gl.h>
+i"ControllerView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.h
+c000000004E3859A7000000000000014F
+t1312315815
+s335
+i<UIKit/UIKit.h>
+i"GLView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m
+c000000004E3859A7000000000000074F
+t1312315815
+s1871
+i"OC_helloArrow1_Delegate.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.h
+c000000004E39C0420000000000000651
+t1312407618
+s1617
+i<Foundation/Foundation.h>
+i<UIKit/UIDevice.h>
+i<OpenGLES/ES2/gl.h>
+i<OpenGLES/ES2/glext.h>
+i<math.h>
+i<OpenGLES/ES1/glext.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m
+c000000004E39C0D20000000000002392
+t1312407762
+s9106
+i"RenderingEngine2.h"
+i"controller_models.h"
+i"tank_model.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/controller_models.h
+c000000004E3859A7000000000000035A
+t1312315815
+s858
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/tank_model.h
+c000000004E3859A7000000000000044A
+t1312315815
+s1098
+
+N/Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame_Prefix.pch
+c000000004E3859A700000000000000CB
+t1312315815
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app
+t2
+s0
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM
+t2
+s0
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+t2
+s0
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist
+t1312407770
+s787
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/PkgInfo
+t1312407770
+s8
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o
+t1312407772
+s43000
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ES2_tankgame.LinkFileList
+c000000004E39C0DA00000000000002C9
+t1312407770
+s713
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o
+t1312407772
+s47344
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o
+t1312407772
+s51368
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o
+t2
+s0
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o
+t1312407772
+s6504
+
+N/Users/bjornchambless/devel/TankGame_ES2/main.m
+c000000004E3859A7000000000000018C
+t1312315815
+s396
+i<UIKit/UIKit.h>
+
+N/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch
+t1312407772
+s15814064
+
+NES2_tankgame-Info.plist
+c000000004E3859A70000000000000473
+t1312315815
+s1139
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies334100570#334100570#0(0"0(0#1#0"27866456492998768#0"0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100572.653467
+e334100572.766588
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m334100572#334100572#0(0"0(0#0#65"/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m8613885248#2064"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100572.527970
+e334100572.653359
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m334100572#334100572#0(0"0(0#0#57"/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m8611188800#2048"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100572.430245
+e334100572.606291
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m334100572#334100572#0(0"0(0#0#74"/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m8602615808#2082"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100572.606390
+e334100572.714005
+r0
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m: In function '-[RenderingEngine2 applyTranslationX:Y:]':
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: 'Gluint' undeclared (first use in this function)
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: (Each undeclared identifier is reported only once
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: for each function it appears in.)
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: expected ';' before 'modelviewUniform'
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:319: error: 'modelviewUniform' undeclared (first use in this function)
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m: In function '-[RenderingEngine2 applyUniformXYScaling:]':
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:329: error: 'Gluint' undeclared (first use in this function)
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:329: error: expected ';' before 'modelviewUniform'
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:330: error: 'modelviewUniform' undeclared (first use in this function)
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m: At top level:
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:333: warning: incomplete implementation of class 'RenderingEngine2'
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:333: warning: method definition for '-buildShaderWithSource:andType:' not found
+o/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:333: warning: method definition for '-buildProgram' not found
+o{standard input}:1476:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000010$pb"
+o{standard input}:1476:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1471:non-relocatable subtraction expression, "LC10" minus "L00000000010$pb"
+o{standard input}:1471:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:1468:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1468:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1465:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1465:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1462:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1462:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1459:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1459:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1456:non-relocatable subtraction expression, "LC10" minus "L00000000010$pb"
+o{standard input}:1456:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:1453:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1453:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1450:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1450:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1447:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1447:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1444:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1444:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1438:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1438:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1435:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"
+o{standard input}:1435:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1427:non-relocatable subtraction expression, "LC13" minus "L00000000010$pb"
+o{standard input}:1427:symbol: "LC13" can't be undefined in a subtraction expression
+o{standard input}:1409:non-relocatable subtraction expression, "LC21" minus "L00000000010$pb"
+o{standard input}:1409:symbol: "LC21" can't be undefined in a subtraction expression
+o{standard input}:1406:non-relocatable subtraction expression, "LC20" minus "L00000000010$pb"
+o{standard input}:1406:symbol: "LC20" can't be undefined in a subtraction expression
+o{standard input}:1361:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000009$pb"
+o{standard input}:1361:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1356:non-relocatable subtraction expression, "LC10" minus "L00000000009$pb"
+o{standard input}:1356:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:1353:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1353:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1350:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1350:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1347:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1347:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1344:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1344:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1341:non-relocatable subtraction expression, "LC16" minus "L00000000009$pb"
+o{standard input}:1341:symbol: "LC16" can't be undefined in a subtraction expression
+o{standard input}:1338:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1338:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1335:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1335:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1332:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1332:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1329:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1329:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1324:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1324:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1321:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1321:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1318:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1318:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1315:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"
+o{standard input}:1315:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1308:non-relocatable subtraction expression, "LC10" minus "L00000000009$pb"
+o{standard input}:1308:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:1303:non-relocatable subtraction expression, "LC10" minus "L00000000009$pb"
+o{standard input}:1303:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:1272:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000008$pb"
+o{standard input}:1272:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1246:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:1246:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1218:non-relocatable subtraction expression, "LC13" minus "L00000000006$pb"
+o{standard input}:1218:symbol: "LC13" can't be undefined in a subtraction expression
+o{standard input}:1211:non-relocatable subtraction expression, "LC18" minus "L00000000006$pb"
+o{standard input}:1211:symbol: "LC18" can't be undefined in a subtraction expression
+o{standard input}:1208:non-relocatable subtraction expression, "LC17" minus "L00000000006$pb"
+o{standard input}:1208:symbol: "LC17" can't be undefined in a subtraction expression
+o{standard input}:1184:non-relocatable subtraction expression, "LC16" minus "L00000000005$pb"
+o{standard input}:1184:symbol: "LC16" can't be undefined in a subtraction expression
+o{standard input}:1178:non-relocatable subtraction expression, "LC10" minus "L00000000005$pb"
+o{standard input}:1178:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:1171:non-relocatable subtraction expression, "LC7" minus "L00000000005$pb"
+o{standard input}:1171:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1165:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000005$pb"
+o{standard input}:1165:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1159:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000005$pb"
+o{standard input}:1159:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1152:non-relocatable subtraction expression, "LC7" minus "L00000000005$pb"
+o{standard input}:1152:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:1145:non-relocatable subtraction expression, "LC15" minus "L00000000005$pb"
+o{standard input}:1145:symbol: "LC15" can't be undefined in a subtraction expression
+o{standard input}:1141:non-relocatable subtraction expression, "LC11" minus "L00000000005$pb"
+o{standard input}:1141:symbol: "LC11" can't be undefined in a subtraction expression
+o{standard input}:1135:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000005$pb"
+o{standard input}:1135:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1129:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000005$pb"
+o{standard input}:1129:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1095:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000004$pb"
+o{standard input}:1095:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+o{standard input}:1089:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000004$pb"
+o{standard input}:1089:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1067:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" minus "L00000000004$pb"
+o{standard input}:1067:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1054:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000004$pb"
+o{standard input}:1054:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+o{standard input}:1048:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000004$pb"
+o{standard input}:1048:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1026:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" minus "L00000000004$pb"
+o{standard input}:1026:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:995:non-relocatable subtraction expression, "LC14" minus "L00000000003$pb"
+o{standard input}:995:symbol: "LC14" can't be undefined in a subtraction expression
+o{standard input}:990:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:990:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:982:non-relocatable subtraction expression, "LC7" minus "L00000000003$pb"
+o{standard input}:982:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:977:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:977:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:971:non-relocatable subtraction expression, "LC7" minus "L00000000003$pb"
+o{standard input}:971:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:966:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:966:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:959:non-relocatable subtraction expression, "LC14" minus "L00000000003$pb"
+o{standard input}:959:symbol: "LC14" can't be undefined in a subtraction expression
+o{standard input}:954:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:954:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:943:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:943:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:937:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:937:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:928:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:928:symbol: "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:924:non-relocatable subtraction expression, "LC14" minus "L00000000003$pb"
+o{standard input}:924:symbol: "LC14" can't be undefined in a subtraction expression
+o{standard input}:916:non-relocatable subtraction expression, "LC7" minus "L00000000003$pb"
+o{standard input}:916:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:909:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000003$pb"
+o{standard input}:909:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+o{standard input}:899:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:899:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:893:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:893:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:883:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:883:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:875:non-relocatable subtraction expression, "LC12" minus "L00000000003$pb"
+o{standard input}:875:symbol: "LC12" can't be undefined in a subtraction expression
+o{standard input}:869:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:869:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:860:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:860:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:854:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:854:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:844:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:844:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:839:non-relocatable subtraction expression, "LC13" minus "L00000000003$pb"
+o{standard input}:839:symbol: "LC13" can't be undefined in a subtraction expression
+o{standard input}:832:non-relocatable subtraction expression, "LC12" minus "L00000000003$pb"
+o{standard input}:832:symbol: "LC12" can't be undefined in a subtraction expression
+o{standard input}:826:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:826:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:819:non-relocatable subtraction expression, "LC8" minus "L00000000003$pb"
+o{standard input}:819:symbol: "LC8" can't be undefined in a subtraction expression
+o{standard input}:816:non-relocatable subtraction expression, "LC11" minus "L00000000003$pb"
+o{standard input}:816:symbol: "LC11" can't be undefined in a subtraction expression
+o{standard input}:811:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:811:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:802:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:802:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:796:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:796:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:790:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:790:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:723:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
+o{standard input}:723:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:714:non-relocatable subtraction expression, "LC7" minus "L00000000002$pb"
+o{standard input}:714:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:711:non-relocatable subtraction expression, "LC7" minus "L00000000002$pb"
+o{standard input}:711:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:708:non-relocatable subtraction expression, "LC7" minus "L00000000002$pb"
+o{standard input}:708:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:705:non-relocatable subtraction expression, "LC10" minus "L00000000002$pb"
+o{standard input}:705:symbol: "LC10" can't be undefined in a subtraction expression
+o{standard input}:638:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:638:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:632:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:632:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:627:non-relocatable subtraction expression, "LC7" minus "L00000000001$pb"
+o{standard input}:627:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:622:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:622:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:617:non-relocatable subtraction expression, "LC9" minus "L00000000001$pb"
+o{standard input}:617:symbol: "LC9" can't be undefined in a subtraction expression
+o{standard input}:612:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:612:symbol: "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:607:non-relocatable subtraction expression, "LC8" minus "L00000000001$pb"
+o{standard input}:607:symbol: "LC8" can't be undefined in a subtraction expression
+o{standard input}:602:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:602:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:597:non-relocatable subtraction expression, "LC7" minus "L00000000001$pb"
+o{standard input}:597:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:592:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:592:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:587:non-relocatable subtraction expression, "LC7" minus "L00000000001$pb"
+o{standard input}:587:symbol: "LC7" can't be undefined in a subtraction expression
+o{standard input}:582:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:582:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:566:non-relocatable subtraction expression, "LC6" minus "L00000000001$pb"
+o{standard input}:566:symbol: "LC6" can't be undefined in a subtraction expression
+o{standard input}:563:non-relocatable subtraction expression, "LC4" minus "L00000000001$pb"
+o{standard input}:563:symbol: "LC4" can't be undefined in a subtraction expression
+o{standard input}:560:non-relocatable subtraction expression, "LC3" minus "L00000000001$pb"
+o{standard input}:560:symbol: "LC3" can't be undefined in a subtraction expression
+o{standard input}:557:non-relocatable subtraction expression, "LC2" minus "L00000000001$pb"
+o{standard input}:557:symbol: "LC2" can't be undefined in a subtraction expression
+o{standard input}:551:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:551:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:535:non-relocatable subtraction expression, "LC5" minus "L00000000001$pb"
+o{standard input}:535:symbol: "LC5" can't be undefined in a subtraction expression
+o{standard input}:532:non-relocatable subtraction expression, "LC4" minus "L00000000001$pb"
+o{standard input}:532:symbol: "LC4" can't be undefined in a subtraction expression
+o{standard input}:529:non-relocatable subtraction expression, "LC3" minus "L00000000001$pb"
+o{standard input}:529:symbol: "LC3" can't be undefined in a subtraction expression
+o{standard input}:526:non-relocatable subtraction expression, "LC2" minus "L00000000001$pb"
+o{standard input}:526:symbol: "LC2" can't be undefined in a subtraction expression
+o{standard input}:520:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:520:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:512:non-relocatable subtraction expression, "LC1" minus "L00000000001$pb"
+o{standard input}:512:symbol: "LC1" can't be undefined in a subtraction expression
+o{standard input}:509:non-relocatable subtraction expression, "LC0" minus "L00000000001$pb"
+o{standard input}:509:symbol: "LC0" can't be undefined in a subtraction expression
+o{standard input}:507:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+o{standard input}:507:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:498:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:498:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:490:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+o{standard input}:490:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:484:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:484:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:462:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:462:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:452:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:452:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:443:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:443:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:433:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:433:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:424:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" minus "L00000000001$pb"
+o{standard input}:424:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:413:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+o{standard input}:413:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:409:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000001$pb"
+o{standard input}:409:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_SUP_REFS_$_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+o{standard input}:unknown:Undefined local symbol LC0
+o{standard input}:unknown:Undefined local symbol LC1
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC2
+o{standard input}:unknown:Undefined local symbol LC3
+o{standard input}:unknown:Undefined local symbol LC4
+o{standard input}:unknown:Undefined local symbol LC5
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC6
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC7
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC8
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC9
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC10
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol LC11
+o{standard input}:unknown:Undefined local symbol LC12
+o{standard input}:unknown:Undefined local symbol LC13
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
+o{standard input}:unknown:Undefined local symbol LC14
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
+o{standard input}:unknown:Undefined local symbol LC15
+o{standard input}:unknown:Undefined local symbol LC16
+o{standard input}:unknown:Undefined local symbol LC17
+o{standard input}:unknown:Undefined local symbol LC18
+o{standard input}:unknown:Undefined local symbol LC20
+o{standard input}:unknown:Undefined local symbol LC21
+lSLF07#2@75"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100572#334100572#0(32192"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m: In function '-[RenderingEngine2 applyTranslationX:Y:]':/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: 'Gluint' undeclared (first use in this function)/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: (Each undeclared identifier is reported only once/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: for each function it appears in.)/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:318: error: expected ';' before 'modelviewUniform'/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:319: error: 'modelviewUniform' undeclared (first use in this function)/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m: In function '-[RenderingEngine2 applyUniformXYScaling:]':/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:329: error: 'Gluint' undeclared (first use in this function)/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:329: error: expected ';' before 'modelviewUniform'/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:330: error: 'modelviewUniform' undeclared (first use in this function)/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m: At top level:/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:333: warning: incomplete implementation of class 'RenderingEngine2'/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:333: warning: method definition for '-buildShaderWithSource:andType:' not found/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m:333: warning: method definition for '-buildProgram' not found{standard input}:1476:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000010$pb"{standard input}:1476:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1471:non-relocatable subtraction expression, "LC10" minus "L00000000010$pb"{standard input}:1471:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:1468:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1468:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1465:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1465:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1462:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1462:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1459:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1459:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1456:non-relocatable subtraction expression, "LC10" minus "L00000000010$pb"{standard input}:1456:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:1453:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1453:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1450:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1450:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1447:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1447:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1444:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1444:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1438:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1438:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1435:non-relocatable subtraction expression, "LC7" minus "L00000000010$pb"{standard input}:1435:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1427:non-relocatable subtraction expression, "LC13" minus "L00000000010$pb"{standard input}:1427:symbol: "LC13" can't be undefined in a subtraction expression{standard input}:1409:non-relocatable subtraction expression, "LC21" minus "L00000000010$pb"{standard input}:1409:symbol: "LC21" can't be undefined in a subtraction expression{standard input}:1406:non-relocatable subtraction expression, "LC20" minus "L00000000010$pb"{standard input}:1406:symbol: "LC20" can't be undefined in a subtraction expression{standard input}:1361:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000009$pb"{standard input}:1361:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1356:non-relocatable subtraction expression, "LC10" minus "L00000000009$pb"{standard input}:1356:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:1353:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1353:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1350:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1350:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1347:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1347:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1344:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1344:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1341:non-relocatable subtraction expression, "LC16" minus "L00000000009$pb"{standard input}:1341:symbol: "LC16" can't be undefined in a subtraction expression{standard input}:1338:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1338:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1335:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1335:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1332:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1332:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1329:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1329:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1324:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1324:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1321:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1321:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1318:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1318:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1315:non-relocatable subtraction expression, "LC7" minus "L00000000009$pb"{standard input}:1315:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1308:non-relocatable subtraction expression, "LC10" minus "L00000000009$pb"{standard input}:1308:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:1303:non-relocatable subtraction expression, "LC10" minus "L00000000009$pb"{standard input}:1303:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:1272:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000008$pb"{standard input}:1272:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1246:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000007$pb"{standard input}:1246:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1218:non-relocatable subtraction expression, "LC13" minus "L00000000006$pb"{standard input}:1218:symbol: "LC13" can't be undefined in a subtraction expression{standard input}:1211:non-relocatable subtraction expression, "LC18" minus "L00000000006$pb"{standard input}:1211:symbol: "LC18" can't be undefined in a subtraction expression{standard input}:1208:non-relocatable subtraction expression, "LC17" minus "L00000000006$pb"{standard input}:1208:symbol: "LC17" can't be undefined in a subtraction expression{standard input}:1184:non-relocatable subtraction expression, "LC16" minus "L00000000005$pb"{standard input}:1184:symbol: "LC16" can't be undefined in a subtraction expression{standard input}:1178:non-relocatable subtraction expression, "LC10" minus "L00000000005$pb"{standard input}:1178:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:1171:non-relocatable subtraction expression, "LC7" minus "L00000000005$pb"{standard input}:1171:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1165:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000005$pb"{standard input}:1165:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1159:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000005$pb"{standard input}:1159:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1152:non-relocatable subtraction expression, "LC7" minus "L00000000005$pb"{standard input}:1152:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:1145:non-relocatable subtraction expression, "LC15" minus "L00000000005$pb"{standard input}:1145:symbol: "LC15" can't be undefined in a subtraction expression{standard input}:1141:non-relocatable subtraction expression, "LC11" minus "L00000000005$pb"{standard input}:1141:symbol: "LC11" can't be undefined in a subtraction expression{standard input}:1135:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000005$pb"{standard input}:1135:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1129:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000005$pb"{standard input}:1129:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1095:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000004$pb"{standard input}:1095:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:1089:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000004$pb"{standard input}:1089:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1067:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" minus "L00000000004$pb"{standard input}:1067:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1054:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000004$pb"{standard input}:1054:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:1048:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000004$pb"{standard input}:1048:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1026:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" minus "L00000000004$pb"{standard input}:1026:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:995:non-relocatable subtraction expression, "LC14" minus "L00000000003$pb"{standard input}:995:symbol: "LC14" can't be undefined in a subtraction expression{standard input}:990:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:990:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:982:non-relocatable subtraction expression, "LC7" minus "L00000000003$pb"{standard input}:982:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:977:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:977:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:971:non-relocatable subtraction expression, "LC7" minus "L00000000003$pb"{standard input}:971:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:966:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:966:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:959:non-relocatable subtraction expression, "LC14" minus "L00000000003$pb"{standard input}:959:symbol: "LC14" can't be undefined in a subtraction expression{standard input}:954:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:954:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:943:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:943:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:937:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:937:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:928:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" minus "L00000000003$pb"{standard input}:928:symbol: "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:924:non-relocatable subtraction expression, "LC14" minus "L00000000003$pb"{standard input}:924:symbol: "LC14" can't be undefined in a subtraction expression{standard input}:916:non-relocatable subtraction expression, "LC7" minus "L00000000003$pb"{standard input}:916:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:909:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000003$pb"{standard input}:909:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:899:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" minus "L00000000003$pb"{standard input}:899:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:893:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" minus "L00000000003$pb"{standard input}:893:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:883:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"{standard input}:883:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:875:non-relocatable subtraction expression, "LC12" minus "L00000000003$pb"{standard input}:875:symbol: "LC12" can't be undefined in a subtraction expression{standard input}:869:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:869:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:860:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" minus "L00000000003$pb"{standard input}:860:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:854:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" minus "L00000000003$pb"{standard input}:854:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:844:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"{standard input}:844:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:839:non-relocatable subtraction expression, "LC13" minus "L00000000003$pb"{standard input}:839:symbol: "LC13" can't be undefined in a subtraction expression{standard input}:832:non-relocatable subtraction expression, "LC12" minus "L00000000003$pb"{standard input}:832:symbol: "LC12" can't be undefined in a subtraction expression{standard input}:826:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000003$pb"{standard input}:826:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:819:non-relocatable subtraction expression, "LC8" minus "L00000000003$pb"{standard input}:819:symbol: "LC8" can't be undefined in a subtraction expression{standard input}:816:non-relocatable subtraction expression, "LC11" minus "L00000000003$pb"{standard input}:816:symbol: "LC11" can't be undefined in a subtraction expression{standard input}:811:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"{standard input}:811:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:802:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" minus "L00000000003$pb"{standard input}:802:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:796:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" minus "L00000000003$pb"{standard input}:796:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:790:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000003$pb"{standard input}:790:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:723:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"{standard input}:723:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:714:non-relocatable subtraction expression, "LC7" minus "L00000000002$pb"{standard input}:714:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:711:non-relocatable subtraction expression, "LC7" minus "L00000000002$pb"{standard input}:711:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:708:non-relocatable subtraction expression, "LC7" minus "L00000000002$pb"{standard input}:708:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:705:non-relocatable subtraction expression, "LC10" minus "L00000000002$pb"{standard input}:705:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:638:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" minus "L00000000001$pb"{standard input}:638:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:632:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" minus "L00000000001$pb"{standard input}:632:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:627:non-relocatable subtraction expression, "LC7" minus "L00000000001$pb"{standard input}:627:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:622:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" minus "L00000000001$pb"{standard input}:622:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:617:non-relocatable subtraction expression, "LC9" minus "L00000000001$pb"{standard input}:617:symbol: "LC9" can't be undefined in a subtraction expression{standard input}:612:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" minus "L00000000001$pb"{standard input}:612:symbol: "L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:607:non-relocatable subtraction expression, "LC8" minus "L00000000001$pb"{standard input}:607:symbol: "LC8" can't be undefined in a subtraction expression{standard input}:602:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" minus "L00000000001$pb"{standard input}:602:symbol: "L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:597:non-relocatable subtraction expression, "LC7" minus "L00000000001$pb"{standard input}:597:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:592:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" minus "L00000000001$pb"{standard input}:592:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:587:non-relocatable subtraction expression, "LC7" minus "L00000000001$pb"{standard input}:587:symbol: "LC7" can't be undefined in a subtraction expression{standard input}:582:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" minus "L00000000001$pb"{standard input}:582:symbol: "L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:566:non-relocatable subtraction expression, "LC6" minus "L00000000001$pb"{standard input}:566:symbol: "LC6" can't be undefined in a subtraction expression{standard input}:563:non-relocatable subtraction expression, "LC4" minus "L00000000001$pb"{standard input}:563:symbol: "LC4" can't be undefined in a subtraction expression{standard input}:560:non-relocatable subtraction expression, "LC3" minus "L00000000001$pb"{standard input}:560:symbol: "LC3" can't be undefined in a subtraction expression{standard input}:557:non-relocatable subtraction expression, "LC2" minus "L00000000001$pb"{standard input}:557:symbol: "LC2" can't be undefined in a subtraction expression{standard input}:551:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" minus "L00000000001$pb"{standard input}:551:symbol: "L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:535:non-relocatable subtraction expression, "LC5" minus "L00000000001$pb"{standard input}:535:symbol: "LC5" can't be undefined in a subtraction expression{standard input}:532:non-relocatable subtraction expression, "LC4" minus "L00000000001$pb"{standard input}:532:symbol: "LC4" can't be undefined in a subtraction expression{standard input}:529:non-relocatable subtraction expression, "LC3" minus "L00000000001$pb"{standard input}:529:symbol: "LC3" can't be undefined in a subtraction expression{standard input}:526:non-relocatable subtraction expression, "LC2" minus "L00000000001$pb"{standard input}:526:symbol: "LC2" can't be undefined in a subtraction expression{standard input}:520:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" minus "L00000000001$pb"{standard input}:520:symbol: "L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:512:non-relocatable subtraction expression, "LC1" minus "L00000000001$pb"{standard input}:512:symbol: "LC1" can't be undefined in a subtraction expression{standard input}:509:non-relocatable subtraction expression, "LC0" minus "L00000000001$pb"{standard input}:509:symbol: "LC0" can't be undefined in a subtraction expression{standard input}:507:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"{standard input}:507:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:498:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000001$pb"{standard input}:498:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:490:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:490:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:484:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" minus "L00000000001$pb"{standard input}:484:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:462:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" minus "L00000000001$pb"{standard input}:462:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:452:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" minus "L00000000001$pb"{standard input}:452:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:443:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" minus "L00000000001$pb"{standard input}:443:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:433:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" minus "L00000000001$pb"{standard input}:433:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:424:non-relocatable subtraction expression, "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" minus "L00000000001$pb"{standard input}:424:symbol: "L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:413:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:413:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:409:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000001$pb"{standard input}:409:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_SUP_REFS_$_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_renderbuffer$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_framebuffer$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_simpleProgram$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol LC0{standard input}:unknown:Undefined local symbol LC1{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.leftSlider$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC2{standard input}:unknown:Undefined local symbol LC3{standard input}:unknown:Undefined local symbol LC4{standard input}:unknown:Undefined local symbol LC5{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.rightSlider$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC6{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaX$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC7{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.cumulativeDeltaY$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.translationSpeed$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC8{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.revolutionsPerSecond$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC9{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_desiredAngle$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.m_currentAngle$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC10{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.leftSliderPos$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_RenderingEngine2.rightSliderPos$non_lazy_ptr{standard input}:unknown:Undefined local symbol LC11{standard input}:unknown:Undefined local symbol LC12{standard input}:unknown:Undefined local symbol LC13{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol LC14{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol LC15{standard input}:unknown:Undefined local symbol LC16{standard input}:unknown:Undefined local symbol LC17{standard input}:unknown:Undefined local symbol LC18{standard input}:unknown:Undefined local symbol LC20{standard input}:unknown:Undefined local symbol LC2110(4@48"'Gluint' undeclared (first use in this function)334100572#125#129#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#318#0#318#0#43"'*' undeclared (first use in this function)0(4@38"Expected ';' before 'modelviewUniform'334100572#498#119#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#318#0#318#0#19"expected * before *0(4@58"'modelviewUniform' undeclared (first use in this function)334100572#617#139#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#319#0#319#0#43"'*' undeclared (first use in this function)0(4@48"'Gluint' undeclared (first use in this function)334100572#883#129#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#329#0#329#0#43"'*' undeclared (first use in this function)0(4@38"Expected ';' before 'modelviewUniform'334100572#1012#119#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#329#0#329#0#19"expected * before *0(4@58"'modelviewUniform' undeclared (first use in this function)334100572#1131#139#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#330#0#330#0#43"'*' undeclared (first use in this function)0(23@13"At top level:334100572#1270#83#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#0#0#0#0#0"0(22@53"Incomplete implementation of class 'RenderingEngine2'334100572#1353#136#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#333#0#333#0#38"incomplete implementation of class '*'0(22@65"Method definition for '-buildShaderWithSource:andType:' not found334100572#1489#148#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#333#0#333#0#35"method definition for '*' not found0(22@47"Method definition for '-buildProgram' not found334100572#1637#130#0(6@67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334100562#333#0#333#0#35"method definition for '*' not found0(0#0#67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m8614239968#2068"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o1#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o /Users/bjornchambless/devel/TankGame_ES2/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100572.428961
+e334100572.527872
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o
+x/Users/bjornchambless/devel/TankGame_ES2/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/bjornchambless/devel/TankGame_ES2/main.m334100572#334100572#0(0"0(0#0#47"/Users/bjornchambless/devel/TankGame_ES2/main.m8611132544#2036"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/main.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o0#
+
+CGenerateDSYMFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+r0
+
+CLd /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame normal i386
+r0
+
+CProcessInfoPlistFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist ES2_tankgame-Info.plist
+s334100570.287137
+e334100570.326606
+r1
+xProcessInfoPlistFile
+x/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist
+xES2_tankgame-Info.plist
+lSLF07#2@31"Process ES2_tankgame-Info.plist334100570#334100570#0(0"0(0#0#64"/Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame-Info.plist31525648366108776#500"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ES2_tankgame-Info.plist -genpkginfo /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist0#
+
+CProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch ES2_tankgame_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100570.326763
+e334100572.428620
+r1
+xProcessPCH
+x/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch
+xES2_tankgame_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile ES2_tankgame_Prefix.pch334100570#334100572#0(0"0(0#0#64"/Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame_Prefix.pch8612184896#1921"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -c /Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame_Prefix.pch -o /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch0#
+
+CTouch /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app
+r0
+

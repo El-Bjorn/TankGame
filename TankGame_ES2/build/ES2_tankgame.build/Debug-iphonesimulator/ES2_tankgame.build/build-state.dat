@@ -1,0 +1,363 @@
+TES2_tankgame
+v7
+r0
+t334193743.922789
+cCheck dependencies
+cProcessInfoPlistFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist ES2_tankgame-Info.plist
+cProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch ES2_tankgame_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o /Users/bjornchambless/devel/TankGame_ES2/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame normal i386
+cGenerateDSYMFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+cTouch /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004D54D24F000000000000094F
+t1297404495
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004D54D24F0000000000000A61
+t1297404495
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004D54D24F0000000000009369
+t1297404495
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004D54D24F0000000000003C4A
+t1297404495
+s15434
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
+c000000004D54D24F00000000000092AA
+t1297404495
+s37546
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
+c000000004D54D24F00000000000026AA
+t1297404495
+s9898
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004D54D28100000000000191D0
+t1297404545
+s102864
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D2DD00000000000000C4
+t1297404637
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D4200000000000162C50
+t1297404960
+s1453136
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+c000000004D5615B400000000000014D5
+t1297487284
+s5333
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/mach_time.h
+c000000004D54D0EB0000000000000746
+t1297404139
+s1862
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.h
+c000000004E385A6E00000000000001A7
+t1312316014
+s423
+i<UIKit/UIKit.h>
+i"GLView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m
+c000000004E385A6E00000000000006CE
+t1312316014
+s1742
+i"ControllerView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.h
+c000000004E385A6E00000000000001AD
+t1312316014
+s429
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<QuartzCore/QuartzCore.h>
+i"RenderingEngine2.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m
+c000000004E3B2BEB0000000000000995
+t1312500715
+s2453
+i<OpenGLES/EAGLDrawable.h>
+i"GLView.h"
+i<mach/mach_time.h>
+i"ControllerView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.h
+c000000004E3859A7000000000000014F
+t1312315815
+s335
+i<UIKit/UIKit.h>
+i"GLView.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m
+c000000004E3859A7000000000000074F
+t1312315815
+s1871
+i"OC_helloArrow1_Delegate.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.h
+c000000004E3B2CCC00000000000004E1
+t1312500940
+s1249
+i<Foundation/Foundation.h>
+i<OpenGLES/ES2/gl.h>
+i<OpenGLES/ES2/glext.h>
+i<math.h>
+i<UIKit/UIKit.h>
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m
+c000000004E3B2CB20000000000002713
+t1312500914
+s10003
+i"RenderingEngine2.h"
+i"controller_models.h"
+i"tank_model.h"
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/controller_models.h
+c000000004E3859A7000000000000035A
+t1312315815
+s858
+
+N/Users/bjornchambless/devel/TankGame_ES2/Classes/tank_model.h
+c000000004E3859A7000000000000044A
+t1312315815
+s1098
+
+N/Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame_Prefix.pch
+c000000004E3859A700000000000000CB
+t1312315815
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app
+t1312500943
+s170
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM
+t1312500943
+s102
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+t1312500943
+s37876
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist
+t1312407770
+s787
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/PkgInfo
+t1312407770
+s8
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o
+t1312500943
+s43000
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ES2_tankgame.LinkFileList
+c000000004E39C0DA00000000000002C9
+t1312407770
+s713
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o
+t1312500943
+s47284
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o
+t1312500943
+s51368
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o
+t1312500943
+s32644
+
+N/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o
+t1312407772
+s6504
+
+N/Users/bjornchambless/devel/TankGame_ES2/main.m
+c000000004E3859A7000000000000018C
+t1312315815
+s396
+i<UIKit/UIKit.h>
+
+N/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch
+t1312407772
+s15814064
+
+NES2_tankgame-Info.plist
+c000000004E3859A70000000000000473
+t1312315815
+s1139
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies334193743#334193743#0(0"0(0#1#0"8614642624#0"0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334193743.743911
+e334193743.872401
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m334193743#334193743#0(0"0(0#0#65"/Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m8614160000#2064"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/ControllerView.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ControllerView.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334193743.602863
+e334193743.743809
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m334193743#334193743#0(0"0(0#0#57"/Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m8614774592#2048"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/GLView.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/GLView.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334193743.601860
+e334193743.715570
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m334193743#334193743#0(0"0(0#0#74"/Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m8614813248#2082"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/OC_helloArrow1_Delegate.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/OC_helloArrow1_Delegate.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334193743.715671
+e334193743.864609
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o
+x/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m334193743#334193743#0(0"0(0#0#67"/Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m8614386304#2068"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/Classes/RenderingEngine2.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/RenderingEngine2.o0#
+
+CCompileC build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o /Users/bjornchambless/devel/TankGame_ES2/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100572.428961
+e334100572.527872
+r1
+xCompileC
+xbuild/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o
+x/Users/bjornchambless/devel/TankGame_ES2/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/bjornchambless/devel/TankGame_ES2/main.m334100572#334100572#0(0"0(0#0#47"/Users/bjornchambless/devel/TankGame_ES2/main.m8611132544#2036"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -include /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch -c /Users/bjornchambless/devel/TankGame_ES2/main.m -o /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/main.o0#
+
+CGenerateDSYMFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+s334193743.901708
+e334193743.920090
+r1
+xGenerateDSYMFile
+x/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM
+x/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+lSLF07#2@124"GenerateDSYMFile build/Debug-iphonesimulator/ES2_tankgame.app.dSYM build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame334193743#334193743#0(0"0(0#0#98"/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame8614796512#404"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame -o /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app.dSYM0#
+
+CLd /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame normal i386
+s334193743.872493
+e334193743.901611
+r1
+xLd
+x/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame
+xnormal
+xi386
+lSLF07#2@103"Link /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame334193743#334193743#0(0"0(0#0#0"8616222208#977"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -filelist /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/Objects-normal/i386/ES2_tankgame.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -o /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/ES2_tankgame0#
+
+CProcessInfoPlistFile /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist ES2_tankgame-Info.plist
+s334100570.287137
+e334100570.326606
+r1
+xProcessInfoPlistFile
+x/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist
+xES2_tankgame-Info.plist
+lSLF07#2@31"Process ES2_tankgame-Info.plist334100570#334100570#0(0"0(0#0#64"/Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame-Info.plist31525648366108776#500"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ES2_tankgame-Info.plist -genpkginfo /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app/Info.plist0#
+
+CProcessPCH /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch ES2_tankgame_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s334100570.326763
+e334100572.428620
+r1
+xProcessPCH
+x/var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch
+xES2_tankgame_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile ES2_tankgame_Prefix.pch334100570#334100572#0(0"0(0#0#64"/Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame_Prefix.pch8612184896#1921"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-generated-files.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-own-target-headers.hmap -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-all-target-headers.hmap -iquote /Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/ES2_tankgame-project-headers.hmap -F/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator -I/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/include -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources/i386 -I/Users/bjornchambless/devel/TankGame_ES2/build/ES2_tankgame.build/Debug-iphonesimulator/ES2_tankgame.build/DerivedSources -c /Users/bjornchambless/devel/TankGame_ES2/ES2_tankgame_Prefix.pch -o /var/folders/Ym/Ymdmkj4LEH8sXjLy2zqOZk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ES2_tankgame_Prefix-dhzmjgsoqowpvzdfhgprdudirykm/ES2_tankgame_Prefix.pch.gch0#
+
+CTouch /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app
+s334193743.920178
+e334193743.922752
+r1
+xTouch
+x/Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app
+lSLF07#2@91"Touch /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app334193743#334193743#0(0"0(0#0#0"8614742784#287"    cd /Users/bjornchambless/devel/TankGame_ES2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/bjornchambless/devel/TankGame_ES2/build/Debug-iphonesimulator/ES2_tankgame.app0#
+
