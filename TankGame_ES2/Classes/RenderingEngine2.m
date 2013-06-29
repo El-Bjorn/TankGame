@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "chipmunk.h"
 #import "RenderingEngine2.h"
 
 /* ----------------- shaders -----------------*/
@@ -154,8 +155,8 @@ const Vertex AsteroidsVertices[]={
 	glEnableVertexAttribArray(positionSlot);
 	glEnableVertexAttribArray(colorSlot);
 	
-	GLvoid *pCoords = &sliderVerts[0].Position[0];
-	GLvoid *pColors = &sliderVerts[0].Color[0];
+	GLvoid *pCoords = (GLvoid*)&sliderVerts[0].Position[0];
+	GLvoid *pColors = (GLvoid*)&sliderVerts[0].Color[0];
 	
 	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
 	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
@@ -201,8 +202,8 @@ const Vertex AsteroidsVertices[]={
 	GLsizei stride = sizeof(Vertex);
 	 
 	
-	GLvoid *pCoords = &controllerVerts[0].Position[0];
-	GLvoid *pColors = &controllerVerts[0].Color[0];
+	GLvoid *pCoords = (void*)&controllerVerts[0].Position[0];
+	GLvoid *pColors = (void*)&controllerVerts[0].Color[0];
 	 
 	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
 	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
@@ -250,16 +251,16 @@ const Vertex AsteroidsVertices[]={
 	GLsizei stride = sizeof(Vertex);
 	
 	//turrent
-	GLvoid *pCoords = &turretVerts[0].Position[0];
-	GLvoid *pColors = &turretVerts[0].Color[0];
+	GLvoid *pCoords = (void*)&turretVerts[0].Position[0];
+	GLvoid *pColors = (void*)&turretVerts[0].Color[0];
 	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
 	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
 	GLsizei turrentVertCount = sizeof(turretVerts)/sizeof(Vertex);
 	glDrawArrays(GL_LINE_LOOP, 0, turrentVertCount);
 	
 	//tank body
-	pCoords = &tankVerts[0].Position[0];
-	pColors = &tankVerts[0].Color[0];
+	pCoords = (void*)&tankVerts[0].Position[0];
+	pColors = (void*)&tankVerts[0].Color[0];
 	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
 	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
 	GLsizei tankVertCount = sizeof(tankVerts)/sizeof(Vertex);
