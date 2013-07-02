@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* OC_helloArrow1_Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OC_helloArrow1_Delegate.m */; };
+		1D3623260D0F684500981E51 /* TankGame_Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TankGame_Delegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -50,13 +50,14 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* OC_helloArrow1_Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_helloArrow1_Delegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* OC_helloArrow1_Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_helloArrow1_Delegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* TankGame_Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankGame_Delegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TankGame_Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankGame_Delegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* ES2_tankgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ES2_tankgame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ES2_tankgame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES2_tankgame_Prefix.pch; sourceTree = "<group>"; };
+		400EA5461783618000A5426F /* tank_shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tank_shell.h; sourceTree = "<group>"; };
 		821577C913A2A99800974847 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		821577CD13A2A9B200974847 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		821577D113A2AA0800974847 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
@@ -144,14 +145,15 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* OC_helloArrow1_Delegate.h */,
-				1D3623250D0F684500981E51 /* OC_helloArrow1_Delegate.m */,
+				1D3623240D0F684500981E51 /* TankGame_Delegate.h */,
+				1D3623250D0F684500981E51 /* TankGame_Delegate.m */,
 				821577D113A2AA0800974847 /* GLView.h */,
 				821577D213A2AA0800974847 /* GLView.m */,
 				821577E213A2B28900974847 /* RenderingEngine2.h */,
 				821577E313A2B28900974847 /* RenderingEngine2.m */,
 				82B2D3EE13DCB88700EB5B7F /* controller_models.h */,
 				82B2D3F213DCB92B00EB5B7F /* tank_model.h */,
+				400EA5461783618000A5426F /* tank_shell.h */,
 				8219E3FB13E329F200630C83 /* ControllerView.h */,
 				8219E3FC13E329F200630C83 /* ControllerView.m */,
 			);
@@ -375,7 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* OC_helloArrow1_Delegate.m in Sources */,
+				1D3623260D0F684500981E51 /* TankGame_Delegate.m in Sources */,
 				821577D313A2AA0800974847 /* GLView.m in Sources */,
 				821577E413A2B28900974847 /* RenderingEngine2.m in Sources */,
 				8219E3FD13E329F200630C83 /* ControllerView.m in Sources */,

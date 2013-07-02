@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GLView.h"
 
-@interface OC_helloArrow1_Delegate : NSObject <UIApplicationDelegate> {
+@interface TankGame_Delegate : NSObject <UIApplicationDelegate> {
     UIWindow *m_window;
 	GLView *m_view;
 }

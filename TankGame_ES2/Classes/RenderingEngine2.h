@@ -11,6 +11,7 @@
 #import <OpenGLES/ES2/glext.h>
 #import <math.h>
 #import <UIKit/UIKit.h>
+#include "chipmunk.h"
 
 
 @interface RenderingEngine2 : NSObject {
@@ -31,12 +32,27 @@
 	
 	CGRect rightSlider;
 	float rightSliderPos; // normalized (-1,1)
+    
+    // the shell
+    CGPoint shellPos;
 	
 	// translation
 	float cumulativeDeltaX;
 	float cumulativeDeltaY;
 	
 	float translationSpeed;
+    
+    // chipmunk stuff
+    cpVect gravity;
+    cpSpace *space;
+    cpFloat radius;
+    cpFloat mass;
+    cpFloat moment;
+    cpBody *ballBody;
+    cpShape *ballShape;
+    cpShape *ground;
+    cpFloat timeStep;
+    cpFloat time;
 }
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;
@@ -47,6 +63,7 @@
 -(void) renderSliders;
 -(void) renderController;
 -(void) renderTank;
+-(void) renderShell;
 
 -(void) updateAnimationWithTimestep:(float)timestep;
 

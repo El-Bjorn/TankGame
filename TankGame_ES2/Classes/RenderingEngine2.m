@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "chipmunk.h"
+//#import "chipmunk.h"
 #import "RenderingEngine2.h"
 
 /* ----------------- shaders -----------------*/
@@ -45,6 +45,7 @@ const Vertex AsteroidsVertices[]={
 
 #include "controller_models.h"
 #include "tank_model.h"
+#include "tank_shell.h"
 
 @implementation RenderingEngine2
 
@@ -76,11 +77,34 @@ const Vertex AsteroidsVertices[]={
 		cumulativeDeltaX = 0.0;
 		cumulativeDeltaY = 0.0;
 		translationSpeed = 0.5;
+        
+        // init shell position
+        shellPos = CGPointZero;
 		
 		// init rotation state
 		revolutionsPerSecond = 0.1;
 		m_desiredAngle = 0;
 		m_currentAngle = m_desiredAngle;
+        
+        // startup chipmunk
+        space = cpSpaceNew();
+        gravity = cpv(0,-90); // low gravity
+        cpSpaceSetGravity(space, gravity);
+        ground = cpSegmentShapeNew(space->staticBody, cpv(-20,-18), cpv(20,-17.5), 0);
+        cpShapeSetFriction(ground, 1);
+        cpShapeSetElasticity(ground, 0.7);
+        cpSpaceAddShape(space, ground);
+        radius = 5;
+        mass = 1;
+        moment = cpMomentForCircle(mass, 0, radius, cpvzero);
+        ballBody = cpSpaceAddBody(space, cpBodyNew(mass, moment));
+        cpBodySetPos(ballBody, cpv(0,0));
+        ballShape = cpSpaceAddShape(space, cpCircleShapeNew(ballBody, radius, cpvzero));
+        cpShapeSetFriction(ballShape, 0.7);
+        cpShapeSetElasticity(ballShape, 0.7);
+        timeStep = 1.0/600.0; // very small timeset
+        time=0;
+        
 	}
 	return self;
 }
@@ -131,6 +155,7 @@ const Vertex AsteroidsVertices[]={
 	[self renderTank];
 	[self renderController];
 	[self renderSliders];
+    [self renderShell];
 }
 
 -(void) renderSliders {
@@ -218,8 +243,46 @@ const Vertex AsteroidsVertices[]={
 	glDisableVertexAttribArray(positionSlot);
 	glDisableVertexAttribArray(colorSlot);	
 }
-	
-	
+
+-(void) renderShell {
+    cpVect pos = cpBodyGetPos(ballBody);
+    float dx = pos.x;
+    float dy = pos.y;
+    
+    cpVect vel = cpBodyGetVel(ballBody);
+    fprintf(stderr, "At time %5.2f, shell(ball) is at (%5.2f, %5.2f) with velocity: (%5.2f, %5.2f\n",time,pos.x,pos.y,vel.x,vel.y);
+    
+    float shellTrans[16]={ // translation and scaling only for now
+        0.01,    0,      0,     0,
+        0,       0.01,    0,     0,
+        0,       0,     0.01,    0,
+        0.15*dx,  0.15*dy,   0,   1
+    };
+    GLuint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
+    glUniformMatrix4fv(modelviewUniform, 1, 0, &shellTrans[0]);
+    
+    GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
+    GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
+    
+    glEnableVertexAttribArray(positionSlot);
+    glEnableVertexAttribArray(colorSlot);
+    
+    GLsizei stride = sizeof(Vertex);
+    
+    // the shell
+    GLvoid *pCoords = (void*)&tankShell[0].Position[0];
+    GLvoid *pColors = (void*)&tankShell[0].Color[0];
+    glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
+    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
+    GLsizei shellVertCount = sizeof(tankShell)/sizeof(Vertex);
+    glDrawArrays(GL_LINE_LOOP, 0, shellVertCount);
+    
+    glDisableVertexAttribArray(positionSlot);
+    glDisableVertexAttribArray(colorSlot);
+    
+
+}
+
 	
 -(void) renderTank {
 	float radians = m_currentAngle * M_PI/180.0;
@@ -230,6 +293,7 @@ const Vertex AsteroidsVertices[]={
 	//float dx = 3.5;
 	float dy = cumulativeDeltaY;
 	//float dy = 0.2;
+    fprintf(stderr,"tank at: %5.2f, %5.2f\n",0.15*dx,0.15*dy);
 	
 	float tankTrans[16]={ // Rotation*Translation*Scaling
 		0.15*c,  0.15*s, 0,   0,
@@ -274,6 +338,10 @@ const Vertex AsteroidsVertices[]={
 -(void) updateAnimationWithTimestep:(float)timestep {
 	float deltaX;
 	float deltaY;
+    
+    // update chipmunk time
+    time += timeStep;
+    cpSpaceStep(space, timeStep);
 	
 	// translation section
 	translationSpeed = leftSliderPos+rightSliderPos;
@@ -350,5 +418,12 @@ const Vertex AsteroidsVertices[]={
 	glUniformMatrix4fv(projectionUniform, 1, 0, &ortho[0]);
 }
 
+-(void) dealloc {
+    [super dealloc];
+    cpShapeFree(ballShape);
+    cpBodyFree(ballBody);
+    cpShapeFree(ground);
+    cpSpaceFree(space);
+}
 
 @end

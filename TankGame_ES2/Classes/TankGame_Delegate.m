@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "OC_helloArrow1_Delegate.h"
+#import "TankGame_Delegate.h"
 
 
-@implementation OC_helloArrow1_Delegate
+@implementation TankGame_Delegate
 
 
 #pragma mark -
