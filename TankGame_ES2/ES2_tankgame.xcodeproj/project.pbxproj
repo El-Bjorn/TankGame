@@ -426,6 +426,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bjorn Chambless (TFX4EFJ682)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -440,6 +442,8 @@
 					"\"$(SRCROOT)/Classes/src\"",
 				);
 				PRODUCT_NAME = ES2_tankgame;
+				PROVISIONING_PROFILE = "7D3EB353-39F0-4D8A-9F09-CF5DB61D82BC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				USER_HEADER_SEARCH_PATHS = include;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = include/chipmunk;
 			};
@@ -449,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bjorn Chambless (TFX4EFJ682)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ES2_tankgame_Prefix.pch;
@@ -460,6 +465,7 @@
 					"\"$(SRCROOT)/Classes/src\"",
 				);
 				PRODUCT_NAME = ES2_tankgame;
+				PROVISIONING_PROFILE = "7D3EB353-39F0-4D8A-9F09-CF5DB61D82BC";
 				USER_HEADER_SEARCH_PATHS = include;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = include/chipmunk;
 				VALIDATE_PRODUCT = YES;
@@ -470,10 +476,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bjorn Chambless (TFX4EFJ682)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "7D3EB353-39F0-4D8A-9F09-CF5DB61D82BC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -483,11 +492,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bjorn Chambless (TFX4EFJ682)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "7D3EB353-39F0-4D8A-9F09-CF5DB61D82BC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

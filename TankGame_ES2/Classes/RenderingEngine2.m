@@ -85,21 +85,40 @@ const Vertex AsteroidsVertices[]={
         
         // startup chipmunk
         space = cpSpaceNew();
-        gravity = cpv(0,-90); // low gravity
+        gravity = cpv(0,0); // low gravity
         cpSpaceSetGravity(space, gravity);
-        ground = cpSegmentShapeNew(space->staticBody, cpv(-20,-18), cpv(20,-17.5), 0);
-        cpShapeSetFriction(ground, 1);
-        cpShapeSetElasticity(ground, 0.7);
-        cpSpaceAddShape(space, ground);
-        radius = 5;
+        //ground = cpSegmentShapeNew(space->staticBody, cpv(-20,-18), cpv(20,-17.5), 0);
+        // setup boundaries
+        bottomBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-21), cpv(13,-21), 1);
+        leftBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-20), cpv(-14,15), 1);
+        topBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,11), cpv(13.5,11), 1);
+        rightBounds = cpSegmentShapeNew(space->staticBody, cpv(13.5,15), cpv(13.5,-20), 1);
+        cpShapeSetFriction(bottomBounds, 0);
+        cpShapeSetFriction(leftBounds, 0);
+        cpShapeSetFriction(topBounds, 0);
+        cpShapeSetFriction(rightBounds, 0);
+        cpShapeSetElasticity(bottomBounds, 1);
+        cpShapeSetElasticity(leftBounds, 1);
+        cpShapeSetElasticity(topBounds, 1);
+        cpShapeSetElasticity(rightBounds, 1);
+        cpSpaceAddShape(space, bottomBounds);
+        cpSpaceAddShape(space, leftBounds);
+        cpSpaceAddShape(space, topBounds);
+        cpSpaceAddShape(space, rightBounds);
+        
+        //cpShapeSetFriction(ground, 1);
+        //cpShapeSetElasticity(ground, 0.7);
+        //cpSpaceAddShape(space, ground);
+        radius = 0.1;
         mass = 1;
         moment = cpMomentForCircle(mass, 0, radius, cpvzero);
         ballBody = cpSpaceAddBody(space, cpBodyNew(mass, moment));
         cpBodySetPos(ballBody, cpv(0,0));
+        cpBodySetVel(ballBody, cpv(-15,-15));
         ballShape = cpSpaceAddShape(space, cpCircleShapeNew(ballBody, radius, cpvzero));
         cpShapeSetFriction(ballShape, 0.7);
-        cpShapeSetElasticity(ballShape, 0.7);
-        timeStep = 1.0/600.0; // very small timeset
+        cpShapeSetElasticity(ballShape, 1);
+        timeStep = 1.0/60.0; // very small timeset
         time=0;
         
 	}
@@ -419,7 +438,7 @@ const Vertex AsteroidsVertices[]={
     [super dealloc];
     cpShapeFree(ballShape);
     cpBodyFree(ballBody);
-    cpShapeFree(ground);
+    //cpShapeFree(ground);
     cpSpaceFree(space);
 }
 
