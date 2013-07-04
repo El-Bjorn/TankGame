@@ -3,7 +3,7 @@
 
 
 // standard tank shell
-const Vertex tankShell[]={
+static const Vertex tankShell[]={
 	{{-1,2},{1,1,1,1}},
 	{{1,2},{1,1,1,1}},
 	{{2,1},{1,1,1,1}},

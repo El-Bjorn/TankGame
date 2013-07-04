@@ -28,10 +28,7 @@ const char SimpleFragmentShader[] =
 "}                                                    \n";
 
 /* ------------------ models ----------------*/
-typedef struct {
-	float Position[2];
-	float Color[4];
-} Vertex;
+
 
 /* Vertex models *
  *              */

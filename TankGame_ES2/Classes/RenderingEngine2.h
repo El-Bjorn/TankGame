@@ -14,6 +14,13 @@
 #include "chipmunk.h"
 
 
+typedef struct {
+    float Position[2];
+    float Color[4];
+} Vertex;
+
+
+
 @interface RenderingEngine2 : NSObject {
 	GLuint m_framebuffer;
 	GLuint m_renderbuffer;
