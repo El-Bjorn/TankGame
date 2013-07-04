@@ -50,7 +50,8 @@
     cpFloat moment;
     cpBody *ballBody;
     cpShape *ballShape;
-    cpShape *ground;
+    //cpShape *ground;
+    cpShape *topBounds,*bottomBounds,*leftBounds,*rightBounds;
     cpFloat timeStep;
     cpFloat time;
 }
