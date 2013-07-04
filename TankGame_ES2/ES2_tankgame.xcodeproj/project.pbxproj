@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		40416CC21784DBC000276AF5 /* ShellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40416CC11784DBC000276AF5 /* ShellObject.m */; };
+		408DD53217863A35006D41F1 /* TankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 408DD53117863A35006D41F1 /* TankObject.m */; };
 		821577CA13A2A99800974847 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577C913A2A99800974847 /* OpenGLES.framework */; };
 		821577CE13A2A9B200974847 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577CD13A2A9B200974847 /* QuartzCore.framework */; };
 		821577D313A2AA0800974847 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 821577D213A2AA0800974847 /* GLView.m */; };
@@ -62,6 +63,8 @@
 		40416CC01784DBC000276AF5 /* ShellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellObject.h; sourceTree = "<group>"; };
 		40416CC11784DBC000276AF5 /* ShellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellObject.m; sourceTree = "<group>"; };
 		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
+		408DD53017863A27006D41F1 /* TankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankObject.h; sourceTree = "<group>"; };
+		408DD53117863A35006D41F1 /* TankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankObject.m; sourceTree = "<group>"; };
 		821577C913A2A99800974847 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		821577CD13A2A9B200974847 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		821577D113A2AA0800974847 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				408DD52F178639EC006D41F1 /* ArenaObjects */,
 				408DD52B17862658006D41F1 /* models */,
 				1D3623240D0F684500981E51 /* TankGame_Delegate.h */,
 				1D3623250D0F684500981E51 /* TankGame_Delegate.m */,
@@ -156,8 +160,6 @@
 				821577D213A2AA0800974847 /* GLView.m */,
 				821577E213A2B28900974847 /* RenderingEngine2.h */,
 				821577E313A2B28900974847 /* RenderingEngine2.m */,
-				40416CC01784DBC000276AF5 /* ShellObject.h */,
-				40416CC11784DBC000276AF5 /* ShellObject.m */,
 				8219E3FB13E329F200630C83 /* ControllerView.h */,
 				8219E3FC13E329F200630C83 /* ControllerView.m */,
 			);
@@ -223,6 +225,17 @@
 				82B2D3F213DCB92B00EB5B7F /* tank_model.h */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		408DD52F178639EC006D41F1 /* ArenaObjects */ = {
+			isa = PBXGroup;
+			children = (
+				408DD53117863A35006D41F1 /* TankObject.m */,
+				408DD53017863A27006D41F1 /* TankObject.h */,
+				40416CC01784DBC000276AF5 /* ShellObject.h */,
+				40416CC11784DBC000276AF5 /* ShellObject.m */,
+			);
+			name = ArenaObjects;
 			sourceTree = "<group>";
 		};
 		828A8546177F4FF50054577B /* Chipmunk2D */ = {
@@ -426,6 +439,7 @@
 				828A8649177F678C0054577B /* cpSweep1D.c in Sources */,
 				828A864A177F678C0054577B /* cpVect.c in Sources */,
 				40416CC21784DBC000276AF5 /* ShellObject.m in Sources */,
+				408DD53217863A35006D41F1 /* TankObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

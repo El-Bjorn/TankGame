@@ -355,7 +355,7 @@ const Vertex AsteroidsVertices[]={
 	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
 	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
 	GLsizei tankVertCount = sizeof(tankVerts)/sizeof(Vertex);
-	glDrawArrays(GL_LINE_LOOP, 0, tankVertCount);
+	glDrawArrays(GL_LINE_STRIP, 0, tankVertCount);
 	
 	glDisableVertexAttribArray(positionSlot);
 	glDisableVertexAttribArray(colorSlot);

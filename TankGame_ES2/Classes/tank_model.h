@@ -9,7 +9,7 @@
 #import "modelTypes.h"
 
 // tank turret
-const Vertex turretVerts[]={
+static const Vertex turretVerts[]={
 	{{-0.2,-0.4},{1,1,1,1}},
 	{{0.2,-0.4},{1,1,1,1}},
 	{{0.4,-0.2},{1,1,1,1}},
@@ -29,7 +29,7 @@ const Vertex turretVerts[]={
 };
 
 // tank body
-const Vertex tankVerts[]={
+static const Vertex tankVerts[]={
 	{{-0.1,0.6},{1,1,1,1}}, // start to left of gun
 	{{-0.5,0.5},{1,1,1,1}},
 	{{-0.5,0.6},{1,1,1,1}},
