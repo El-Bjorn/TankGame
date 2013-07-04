@@ -7,7 +7,9 @@
 //
 
 //#import "chipmunk.h"
+#import "ShellObject.h"
 #import "RenderingEngine2.h"
+#import "modelTypes.h"
 
 /* ----------------- shaders -----------------*/
 const char SimpleVertexShader[] =
@@ -42,7 +44,7 @@ const Vertex AsteroidsVertices[]={
 
 #include "controller_models.h"
 #include "tank_model.h"
-#include "tank_shell.h"
+//#include "tank_shell.h"
 
 @implementation RenderingEngine2
 
@@ -106,10 +108,15 @@ const Vertex AsteroidsVertices[]={
         cpSpaceAddShape(space, topBounds);
         cpSpaceAddShape(space, rightBounds);
         
+        shell1 = [[ShellObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(1,1) andShader:m_simpleProgram];
+        shell2 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(-5,-1) andShader:m_simpleProgram];
+        shell3 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(10,3)
+            andShader:m_simpleProgram];
+        
         //cpShapeSetFriction(ground, 1);
         //cpShapeSetElasticity(ground, 0.7);
         //cpSpaceAddShape(space, ground);
-        radius = 0.1;
+        /*radius = 0.1;
         mass = 1;
         moment = cpMomentForCircle(mass, 0, radius, cpvzero);
         ballBody = cpSpaceAddBody(space, cpBodyNew(mass, moment));
@@ -117,7 +124,8 @@ const Vertex AsteroidsVertices[]={
         cpBodySetVel(ballBody, cpv(-15,-15));
         ballShape = cpSpaceAddShape(space, cpCircleShapeNew(ballBody, radius, cpvzero));
         cpShapeSetFriction(ballShape, 0.7);
-        cpShapeSetElasticity(ballShape, 1);
+        cpShapeSetElasticity(ballShape, 1); */
+        
         timeStep = 1.0/60.0; // very small timeset
         time=0;
         
@@ -171,7 +179,10 @@ const Vertex AsteroidsVertices[]={
 	[self renderTank];
 	[self renderController];
 	[self renderSliders];
-    [self renderShell];
+    [shell1 render];
+    [shell2 render];
+    [shell3 render];
+    //[self renderShell];
 }
 
 -(void) renderSliders {
@@ -260,7 +271,7 @@ const Vertex AsteroidsVertices[]={
 	glDisableVertexAttribArray(colorSlot);	
 }
 
--(void) renderShell {
+/*-(void) renderShell {
     cpVect pos = cpBodyGetPos(ballBody);
     float dx = pos.x;
     float dy = pos.y;
@@ -297,7 +308,7 @@ const Vertex AsteroidsVertices[]={
     glDisableVertexAttribArray(colorSlot);
     
 
-}
+} */
 
 	
 -(void) renderTank {

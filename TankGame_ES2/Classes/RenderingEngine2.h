@@ -13,12 +13,7 @@
 #import <UIKit/UIKit.h>
 #include "chipmunk.h"
 
-
-typedef struct {
-    float Position[2];
-    float Color[4];
-} Vertex;
-
+#import "ShellObject.h"
 
 
 @interface RenderingEngine2 : NSObject {
@@ -61,6 +56,10 @@ typedef struct {
     cpShape *topBounds,*bottomBounds,*leftBounds,*rightBounds;
     cpFloat timeStep;
     cpFloat time;
+    
+    ShellObject *shell1;
+    ShellObject *shell2;
+    ShellObject *shell3;
 }
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;
@@ -71,7 +70,7 @@ typedef struct {
 -(void) renderSliders;
 -(void) renderController;
 -(void) renderTank;
--(void) renderShell;
+//-(void) renderShell;
 
 -(void) updateAnimationWithTimestep:(float)timestep;
 

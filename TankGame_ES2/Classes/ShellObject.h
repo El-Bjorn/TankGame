@@ -11,9 +11,15 @@
  *     We're going to keep track of all the state (physics, graphic, game data) here
  ******************************************/
 
+//#import <Foundation/Foundation.h>
+//#import "RenderingEngine2.h"
 #import <Foundation/Foundation.h>
-#import "RenderingEngine2.h"
-#import "tank_shell.h"
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
+#import <math.h>
+#import <UIKit/UIKit.h>
+#include "chipmunk.h"
+//#import "tank_shell.h"
 
 @interface ShellObject : NSObject
 
@@ -29,7 +35,7 @@
 @property GLsizei shellStride;
 
 
--(void) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos
+-(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos
                                         andVelocity:(cpVect)vel
                                         andShader:(GLuint)shade;
 -(void) render;

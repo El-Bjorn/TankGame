@@ -1,9 +1,9 @@
 /* tank_shell.h*/
 
-
+#import "modelTypes.h"
 
 // standard tank shell
-static const Vertex tankShell[]={
+Vertex tankShell[]={
 	{{-1,2},{1,1,1,1}},
 	{{1,2},{1,1,1,1}},
 	{{2,1},{1,1,1,1}},

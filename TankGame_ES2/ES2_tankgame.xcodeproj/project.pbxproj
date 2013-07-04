@@ -61,6 +61,7 @@
 		400EA5461783618000A5426F /* tank_shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tank_shell.h; sourceTree = "<group>"; };
 		40416CC01784DBC000276AF5 /* ShellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellObject.h; sourceTree = "<group>"; };
 		40416CC11784DBC000276AF5 /* ShellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellObject.m; sourceTree = "<group>"; };
+		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
 		821577C913A2A99800974847 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		821577CD13A2A9B200974847 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		821577D113A2AA0800974847 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				408DD52B17862658006D41F1 /* models */,
 				1D3623240D0F684500981E51 /* TankGame_Delegate.h */,
 				1D3623250D0F684500981E51 /* TankGame_Delegate.m */,
 				821577D113A2AA0800974847 /* GLView.h */,
@@ -156,9 +158,6 @@
 				821577E313A2B28900974847 /* RenderingEngine2.m */,
 				40416CC01784DBC000276AF5 /* ShellObject.h */,
 				40416CC11784DBC000276AF5 /* ShellObject.m */,
-				82B2D3EE13DCB88700EB5B7F /* controller_models.h */,
-				82B2D3F213DCB92B00EB5B7F /* tank_model.h */,
-				400EA5461783618000A5426F /* tank_shell.h */,
 				8219E3FB13E329F200630C83 /* ControllerView.h */,
 				8219E3FC13E329F200630C83 /* ControllerView.m */,
 			);
@@ -213,6 +212,17 @@
 				821577CD13A2A9B200974847 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		408DD52B17862658006D41F1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				408DD52C17862697006D41F1 /* modelTypes.h */,
+				82B2D3EE13DCB88700EB5B7F /* controller_models.h */,
+				400EA5461783618000A5426F /* tank_shell.h */,
+				82B2D3F213DCB92B00EB5B7F /* tank_model.h */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 		828A8546177F4FF50054577B /* Chipmunk2D */ = {

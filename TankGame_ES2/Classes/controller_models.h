@@ -6,6 +6,7 @@
  *  Copyright 2011 Built Light. All rights reserved.
  *
  */
+#import "modelTypes.h"
 
 // controller strip (old, rectangular)
 const Vertex controllerVerts_old[] = {

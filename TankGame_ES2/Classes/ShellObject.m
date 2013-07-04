@@ -7,10 +7,11 @@
 //
 
 #import "ShellObject.h"
+#import "tank_shell.h"
 
 @implementation ShellObject
 
--(void) initInSpace:(cpSpace *)obj_space withPosition:(cpVect)pos andVelocity:(cpVect)vel andShader:(GLuint)shade
+-(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos andVelocity:(cpVect)vel andShader:(GLuint)shade
 {
     self = [super init];
     if (self) {
@@ -33,6 +34,7 @@
         self.shellStride = sizeof(Vertex);
         self.shellVertCount = sizeof(tankShell)/sizeof(Vertex);
     }
+    return self;
     
 }
 
