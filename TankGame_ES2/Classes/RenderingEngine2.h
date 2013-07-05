@@ -55,11 +55,12 @@
     //cpShape *ground;
     cpShape *topBounds,*bottomBounds,*leftBounds,*rightBounds;
     cpFloat timeStep;
-    cpFloat time;
+    cpFloat elapsedTime;
     
     ShellObject *shell1;
     ShellObject *shell2;
     ShellObject *shell3;
+    NSMutableArray *shellList;
 }
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;

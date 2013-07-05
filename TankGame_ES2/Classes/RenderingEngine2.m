@@ -92,9 +92,9 @@ const Vertex AsteroidsVertices[]={
         //ground = cpSegmentShapeNew(space->staticBody, cpv(-20,-18), cpv(20,-17.5), 0);
         // setup boundaries
         bottomBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-21), cpv(13,-21), 1);
-        leftBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-20), cpv(-14,15), 1);
-        topBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,11), cpv(13.5,11), 1);
-        rightBounds = cpSegmentShapeNew(space->staticBody, cpv(13.5,15), cpv(13.5,-20), 1);
+        leftBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-20), cpv(-14,20), 1);
+        topBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,20), cpv(13.5,20), 1);
+        rightBounds = cpSegmentShapeNew(space->staticBody, cpv(13.5,20), cpv(13.5,-20), 1);
         cpShapeSetFriction(bottomBounds, 0);
         cpShapeSetFriction(leftBounds, 0);
         cpShapeSetFriction(topBounds, 0);
@@ -108,10 +108,28 @@ const Vertex AsteroidsVertices[]={
         cpSpaceAddShape(space, topBounds);
         cpSpaceAddShape(space, rightBounds);
         
-        shell1 = [[ShellObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(1,1) andShader:m_simpleProgram];
-        shell2 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(-5,-1) andShader:m_simpleProgram];
-        shell3 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(10,3)
-            andShader:m_simpleProgram];
+        //shell1 = [[ShellObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(1,1) andShader:m_simpleProgram];
+        //shell2 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(-5,-1) andShader:m_simpleProgram];
+        //shell3 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(10,3)
+            //andShader:m_simpleProgram];
+        
+        srand(time(NULL));
+        int numShells = 120; //rand()%100;
+        int i;
+        shellList = [[NSMutableArray alloc] initWithCapacity:100];
+        for (i=0; i<numShells; i++) {
+            cpVect randPos;
+            cpVect randVel;
+            randPos.x = rand()%20-10;
+            randPos.y = rand()%20-10;
+            randVel.x = rand()%100-50;
+            randVel.y = rand()%100-50;
+            
+            shell1 = [[ShellObject alloc] initInSpace:space withPosition:randPos andVelocity:randVel andShader:m_simpleProgram];
+            [shellList addObject:shell1];
+        }
+        
+        
         
         //cpShapeSetFriction(ground, 1);
         //cpShapeSetElasticity(ground, 0.7);
@@ -127,7 +145,7 @@ const Vertex AsteroidsVertices[]={
         cpShapeSetElasticity(ballShape, 1); */
         
         timeStep = 1.0/60.0; // very small timeset
-        time=0;
+        elapsedTime=0;
         
 	}
 	return self;
@@ -179,10 +197,13 @@ const Vertex AsteroidsVertices[]={
 	[self renderTank];
 	[self renderController];
 	[self renderSliders];
-    [shell1 render];
-    [shell2 render];
-    [shell3 render];
+    //[shell1 render];
+    //[shell2 render];
+    //[shell3 render];
     //[self renderShell];
+    for (ShellObject *s in shellList) {
+        [s render];
+    }
 }
 
 -(void) renderSliders {
@@ -367,7 +388,7 @@ const Vertex AsteroidsVertices[]={
 	float deltaY;
     
     // update chipmunk time
-    time += timeStep;
+    elapsedTime += timeStep;
     cpSpaceStep(space, timeStep);
 	
 	// translation section

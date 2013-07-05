@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         // physics engine
-        cpFloat radius = 1;
+        cpFloat radius = 0.2;
         cpFloat mass = 1;
         cpFloat moment = cpMomentForCircle(mass, 0, radius, cpvzero);
         self.space = obj_space;
@@ -25,7 +25,7 @@
         cpBodySetVel(self.body, vel);
         self.shape = cpSpaceAddShape(obj_space, cpCircleShapeNew(self.body, radius, cpvzero));
         cpShapeSetFriction(self.shape, 0.7);
-        cpShapeSetElasticity(self.shape, 0.7);
+        cpShapeSetElasticity(self.shape, 0.99);
         
         // GL rendering
         self.shaderProgHandle = shade;
