@@ -39,6 +39,7 @@
 -(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos
                                         andVelocity:(cpVect)vel
                                         andShader:(GLuint)shade;
--(void) render;
+
+-(void) renderWithForce:(cpFloat)force andTorque:(cpFloat)torque;
 
 @end

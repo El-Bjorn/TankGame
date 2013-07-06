@@ -7,7 +7,8 @@
 //
 
 //#import "chipmunk.h"
-#import "ShellObject.h"
+//#import "ShellObject.h"
+//#import "TankObject.h"
 #import "RenderingEngine2.h"
 #import "modelTypes.h"
 
@@ -114,7 +115,7 @@ const Vertex AsteroidsVertices[]={
             //andShader:m_simpleProgram];
         
         srand(time(NULL));
-        int numShells = 120; //rand()%100;
+        int numShells = 20; //rand()%100;
         int i;
         shellList = [[NSMutableArray alloc] initWithCapacity:100];
         for (i=0; i<numShells; i++) {
@@ -128,7 +129,7 @@ const Vertex AsteroidsVertices[]={
             shell1 = [[ShellObject alloc] initInSpace:space withPosition:randPos andVelocity:randVel andShader:m_simpleProgram];
             [shellList addObject:shell1];
         }
-        
+        tank1 = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
         
         
         //cpShapeSetFriction(ground, 1);
@@ -201,6 +202,7 @@ const Vertex AsteroidsVertices[]={
     //[shell2 render];
     //[shell3 render];
     //[self renderShell];
+    [tank1 renderWithForce:contForce andTorque:contTorque];
     for (ShellObject *s in shellList) {
         [s render];
     }
@@ -399,7 +401,16 @@ const Vertex AsteroidsVertices[]={
 		deltaY = cosf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
 		cumulativeDeltaY += deltaY;
 	}
-	
+    // tank control forces
+    if (fabs(translationSpeed)>0.5) {
+        contForce = translationSpeed;
+		//deltaX = -sinf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
+		cumulativeDeltaX += deltaX;
+		//deltaY = cosf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
+		cumulativeDeltaY += deltaY;
+    }
+    contTorque = [self rotationDirection];
+    
 	float direction = [self rotationDirection];
 	if (direction==0) {
 		return;

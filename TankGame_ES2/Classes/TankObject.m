@@ -19,7 +19,7 @@
         //cpFloat radius = 1;
         cpFloat width = 2;
         cpFloat height = 2;
-        cpFloat mass = 5;
+        cpFloat mass = 50;
         //cpFloat moment = cpMomentForCircle(mass, 0, radius, cpvzero);
         cpFloat moment = cpMomentForBox(mass, width, height);
         self.space = obj_space;
@@ -30,6 +30,9 @@
         //self.shape = cpSpaceAddShape(obj_space, cpCircleShapeNew(self.body, radius, cpvzero));
         cpShapeSetFriction(self.shape, 0.7);
         cpShapeSetElasticity(self.shape, 0.7);
+        // add motion limits
+        cpBodySetVelLimit(self.body, 2.0);
+        cpBodySetAngVelLimit(self.body, 2.0);
         
         // GL rendering
         self.shaderProgHandle = shade;
@@ -48,12 +51,24 @@
     
 }
 
--(void) render {
+-(void) renderWithForce:(cpFloat)force andTorque:(cpFloat)torque
+{
     cpVect pos = cpBodyGetPos(self.body);
+    float rad = cpBodyGetAngle(self.body);
+    
+    cpVect controlForce;
+    controlForce.x = -sinf(rad)*force*10;
+    controlForce.y = cosf(rad)*force*10;
+    cpBodyApplyForce(self.body, controlForce, cpvzero);
+    cpBodySetTorque(self.body, torque*100);
+    
+    
+    float c = cosf(rad);
+    float s = sinf(rad);
     float tankTrans[16]={ // translation and scaling only for now
-        0.01,    0,      0,     0,
-        0,       0.01,    0,     0,
-        0,       0,     0.01,    0,
+        0.15*c,    0.15*s,      0,     0,
+        -0.15*s,       0.15*c,    0,     0,
+        0,       0,     0.1,    0,
         0.15*pos.x,  0.15*pos.y,   0,   1
     };
     GLuint modelviewUniform = glGetUniformLocation(self.shaderProgHandle, "Modelview");
@@ -64,9 +79,15 @@
     glEnableVertexAttribArray(positionSlot);
     glEnableVertexAttribArray(colorSlot);
     
-    //glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, self.tankStride, self.coords);
-    //glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, self.tankStride, self.colors);
-    glDrawArrays(GL_LINE_LOOP, 0, self.tankVertCount);
+    // draw tank body
+    glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, self.tankStride, self.tankCoords);
+    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, self.tankStride, self.tankColors);
+    glDrawArrays(GL_LINE_STRIP, 0, self.tankVertCount);
+    // draw turret
+    glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, self.turretStride, self.turretCoords);
+    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, self.turretStride, self.turretColors);
+    glDrawArrays(GL_LINE_LOOP, 0, self.turretVertCount);
+    
     glDisableVertexAttribArray(positionSlot);
     glDisableVertexAttribArray(colorSlot);
 }

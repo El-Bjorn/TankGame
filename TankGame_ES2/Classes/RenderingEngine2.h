@@ -14,6 +14,7 @@
 #include "chipmunk.h"
 
 #import "ShellObject.h"
+#import "TankObject.h"
 
 
 @interface RenderingEngine2 : NSObject {
@@ -44,6 +45,10 @@
 	
 	float translationSpeed;
     
+    // tank control forces
+    cpFloat contForce;
+    cpFloat contTorque;
+    
     // chipmunk stuff
     cpVect gravity;
     cpSpace *space;
@@ -61,6 +66,7 @@
     ShellObject *shell2;
     ShellObject *shell3;
     NSMutableArray *shellList;
+    TankObject *tank1;
 }
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;
