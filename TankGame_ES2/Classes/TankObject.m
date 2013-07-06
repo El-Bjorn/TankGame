@@ -19,7 +19,7 @@
         //cpFloat radius = 1;
         cpFloat width = 2;
         cpFloat height = 2;
-        cpFloat mass = 50;
+        cpFloat mass = 150;
         //cpFloat moment = cpMomentForCircle(mass, 0, radius, cpvzero);
         cpFloat moment = cpMomentForBox(mass, width, height);
         self.space = obj_space;
@@ -57,10 +57,10 @@
     float rad = cpBodyGetAngle(self.body);
     
     cpVect controlForce;
-    controlForce.x = -sinf(rad)*force*10;
-    controlForce.y = cosf(rad)*force*10;
+    controlForce.x = -sinf(rad)*force*150;
+    controlForce.y = cosf(rad)*force*150;
     cpBodyApplyForce(self.body, controlForce, cpvzero);
-    cpBodySetTorque(self.body, torque*100);
+    cpBodySetTorque(self.body, torque*500);
     
     
     float c = cosf(rad);
