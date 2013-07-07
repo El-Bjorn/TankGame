@@ -195,7 +195,7 @@ const Vertex AsteroidsVertices[]={
 	glClearColor(0.0, 0.0, 0.0, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
-	[self renderTank];
+	//[self renderTank];
 	[self renderController];
 	[self renderSliders];
     //[shell1 render];

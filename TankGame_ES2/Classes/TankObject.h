@@ -15,6 +15,8 @@
 #import <UIKit/UIKit.h>
 #include "chipmunk.h"
 
+
+
 @interface TankObject : NSObject
 
 @property cpSpace *space;
@@ -41,5 +43,7 @@
                                         andShader:(GLuint)shade;
 
 -(void) renderWithForce:(cpFloat)force andTorque:(cpFloat)torque;
+
+-(void) damping;
 
 @end

@@ -15,11 +15,12 @@
 {
     self = [super init];
     if (self) {
+        //cpBodySet
         // physics engine
         //cpFloat radius = 1;
         cpFloat width = 2;
         cpFloat height = 2;
-        cpFloat mass = 50;
+        cpFloat mass = 1;
         //cpFloat moment = cpMomentForCircle(mass, 0, radius, cpvzero);
         cpFloat moment = cpMomentForBox(mass, width, height);
         self.space = obj_space;
@@ -29,7 +30,7 @@
         self.shape = cpSpaceAddShape(obj_space, cpBoxShapeNew(self.body, width, height));
         //self.shape = cpSpaceAddShape(obj_space, cpCircleShapeNew(self.body, radius, cpvzero));
         cpShapeSetFriction(self.shape, 0.7);
-        cpShapeSetElasticity(self.shape, 0.7);
+        cpShapeSetElasticity(self.shape, 0.9);
         // add motion limits
         cpBodySetVelLimit(self.body, 2.0);
         cpBodySetAngVelLimit(self.body, 2.0);
@@ -56,11 +57,13 @@
     cpVect pos = cpBodyGetPos(self.body);
     float rad = cpBodyGetAngle(self.body);
     
-    cpVect controlForce;
-    controlForce.x = -sinf(rad)*force*10;
-    controlForce.y = cosf(rad)*force*10;
-    cpBodyApplyForce(self.body, controlForce, cpvzero);
-    cpBodySetTorque(self.body, torque*100);
+    cpVect controlVel;
+    controlVel.x = -sinf(rad)*force;
+    controlVel.y = cosf(rad)*force;
+    //cpBodyApplyForce(self.body, controlForce, cpvzero);
+    cpBodySetVel(self.body, controlVel);
+    //cpBodySetTorque(self.body, torque*500);
+    cpBodySetAngVel(self.body, torque);
     
     
     float c = cosf(rad);
@@ -90,6 +93,28 @@
     
     glDisableVertexAttribArray(positionSlot);
     glDisableVertexAttribArray(colorSlot);
+    
+    // do damping
+    //[self damping];
+}
+
+-(void) damping {
+    // max damping is applied perpendicular to tank direction;
+    //float damping_factor = 0.5;
+    cpVect current_motion = cpBodyGetVel(self.body);
+    cpFloat current_rotation = cpBodyGetAngle(self.body);
+    float x_damping = fabs(sinf(current_rotation));
+    float y_damping = fabs(cosf(current_rotation));
+    fprintf(stderr,"x-damping: %.2f   y-damping: %.2f\n",x_damping,y_damping);
+    current_motion.x = current_motion.x * x_damping * 0.5;
+    current_motion.y = current_motion.y * y_damping * 0.5;
+    cpBodySetVel(self.body, current_motion);
+    
+    // dampen rotation
+    cpFloat angle_vel = cpBodyGetAngVel(self.body);
+    angle_vel *= 0.9;
+    cpBodySetAngVel(self.body, angle_vel);
+    
 }
 
 @end
