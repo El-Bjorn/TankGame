@@ -29,11 +29,13 @@
         cpBodySetVel(self.body, vel);
         self.shape = cpSpaceAddShape(obj_space, cpBoxShapeNew(self.body, width, height));
         //self.shape = cpSpaceAddShape(obj_space, cpCircleShapeNew(self.body, radius, cpvzero));
-        cpShapeSetFriction(self.shape, 0.7);
-        cpShapeSetElasticity(self.shape, 0.9);
+        cpShapeSetFriction(self.shape, 0.8);
+        cpShapeSetElasticity(self.shape, 1.0);
         // add motion limits
         cpBodySetVelLimit(self.body, 2.0);
         cpBodySetAngVelLimit(self.body, 2.0);
+        
+        cpShapeSetCollisionType(self.shape, TANK_COL_TYPE);
         
         // GL rendering
         self.shaderProgHandle = shade;
@@ -95,6 +97,10 @@
     
     // do damping
     //[self damping];
+}
+
+-(void) tankHit{
+    NSLog(@"We're hit!");
 }
 
 -(void) damping {

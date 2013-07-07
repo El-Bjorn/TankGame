@@ -47,6 +47,11 @@ const Vertex AsteroidsVertices[]={
 #include "tank_model.h"
 //#include "tank_shell.h"
 
+void shellToTank_collisionHandler() {
+    static int num_hits=0;
+    fprintf(stderr,"tank hit! ouch!  hit number: %d\n",num_hits++);
+}
+
 @implementation RenderingEngine2
 
 -(id) initWithSize:(CGSize)size {
@@ -115,7 +120,7 @@ const Vertex AsteroidsVertices[]={
             //andShader:m_simpleProgram];
         
         srand(time(NULL));
-        int numShells = 20; //rand()%100;
+        int numShells = 10; //rand()%100;
         int i;
         shellList = [[NSMutableArray alloc] initWithCapacity:100];
         for (i=0; i<numShells; i++) {
@@ -147,6 +152,9 @@ const Vertex AsteroidsVertices[]={
         
         timeStep = 1.0/60.0; // very small timeset
         elapsedTime=0;
+        
+        // collision handler
+        cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellToTank_collisionHandler, NULL, NULL, NULL, NULL);
         
 	}
 	return self;

@@ -27,6 +27,8 @@
         cpShapeSetFriction(self.shape, 0.7);
         cpShapeSetElasticity(self.shape, 0.99);
         
+        cpShapeSetCollisionType(self.shape, SHELL_COL_TYPE);
+        
         // GL rendering
         self.shaderProgHandle = shade;
         self.coords = (void*)&tankShell[0].Position[0];

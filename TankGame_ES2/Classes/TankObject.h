@@ -46,4 +46,6 @@
 
 -(void) damping;
 
+-(void) tankHit;
+
 @end
