@@ -65,7 +65,6 @@
     //cpBodySetTorque(self.body, torque*500);
     cpBodySetAngVel(self.body, torque);
     
-    
     float c = cosf(rad);
     float s = sinf(rad);
     float tankTrans[16]={ // translation and scaling only for now
