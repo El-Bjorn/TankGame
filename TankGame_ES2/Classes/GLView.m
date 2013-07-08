@@ -86,9 +86,9 @@
 
 - (void)dealloc {
 	[EAGLContext setCurrentContext:nil];
-	[m_context release];
-	[m_renderingEngine release];
-    [super dealloc];
+	//[m_context release];
+	//[m_renderingEngine release];
+    //[super dealloc];
 }
 
 

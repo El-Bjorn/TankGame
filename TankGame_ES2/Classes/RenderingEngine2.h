@@ -76,6 +76,8 @@
 -(void) render;
 -(void) renderSliders;
 -(void) renderController;
+-(void) renderFireButton;
+
 -(void) renderTank;
 //-(void) renderShell;
 

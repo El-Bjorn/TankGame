@@ -30,18 +30,6 @@ const char SimpleFragmentShader[] =
 "    gl_FragColor = DestinationColor;                 \n"
 "}                                                    \n";
 
-/* ------------------ models ----------------*/
-
-
-/* Vertex models *
- *              */
-// example: asteroids ship
-const Vertex AsteroidsVertices[]={
-	{{-0.5,-0.866},{1,1,0.5,1}},
-	{{0,-0.5},{1,1,0.5,1}},
-	{{0.5,-0.866},{1,1,0.5,1}},
-	{{0,1},{1,1,0.5,1}}
-};
 
 #include "controller_models.h"
 #include "tank_model.h"
@@ -120,10 +108,10 @@ void shellToTank_collisionHandler() {
             //andShader:m_simpleProgram];
         
         srand(time(NULL));
-        int numShells = 10; //rand()%100;
-        int i;
+        //int numShells = 10; //rand()%100;
+        //int i;
         shellList = [[NSMutableArray alloc] initWithCapacity:100];
-        for (i=0; i<numShells; i++) {
+        /*for (i=0; i<numShells; i++) {
             cpVect randPos;
             cpVect randVel;
             randPos.x = rand()%20-10;
@@ -133,7 +121,7 @@ void shellToTank_collisionHandler() {
             
             shell1 = [[ShellObject alloc] initInSpace:space withPosition:randPos andVelocity:randVel andShader:m_simpleProgram];
             [shellList addObject:shell1];
-        }
+        } */
         tank1 = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
         
         
@@ -206,13 +194,13 @@ void shellToTank_collisionHandler() {
 	//[self renderTank];
 	[self renderController];
 	[self renderSliders];
-    //[shell1 render];
-    //[shell2 render];
-    //[shell3 render];
-    //[self renderShell];
     [tank1 renderWithForce:contForce andTorque:contTorque];
     for (ShellObject *s in shellList) {
         [s render];
+    }
+    // start shooting?
+    if (rand()%100 == 50) {
+        [self tankFiresShell:tank1];
     }
 }
 
@@ -258,6 +246,15 @@ void shellToTank_collisionHandler() {
 	glDisableVertexAttribArray(colorSlot);	
 	
 }
+
+-(void) renderFireButton {
+    float buttonTrans[16]={
+        0.2, 0, 0, 0,
+        0,  0.2, 0, 0,
+        0,   0, 0.2, 0,
+        -1.7,-2.5,0,1
+    };
+}
 	
 
 -(void) renderController { 
@@ -302,96 +299,20 @@ void shellToTank_collisionHandler() {
 	glDisableVertexAttribArray(colorSlot);	
 }
 
-/*-(void) renderShell {
-    cpVect pos = cpBodyGetPos(ballBody);
-    float dx = pos.x;
-    float dy = pos.y;
+-(void) tankFiresShell:(TankObject*)tank {
+    cpVect tankPos = cpBodyGetPos(tank.body);
+    cpFloat gunDirection = cpBodyGetAngle(tank.body) + M_PI_2;
+    cpVect shellVel = cpv(cosf(gunDirection)*SHELL_VELOCITY, sinf(gunDirection)*SHELL_VELOCITY);
     
-    cpVect vel = cpBodyGetVel(ballBody);
-    fprintf(stderr, "At time %5.2f, shell(ball) is at (%5.2f, %5.2f) with velocity: (%5.2f, %5.2f\n",time,pos.x,pos.y,vel.x,vel.y);
     
-    float shellTrans[16]={ // translation and scaling only for now
-        0.01,    0,      0,     0,
-        0,       0.01,    0,     0,
-        0,       0,     0.01,    0,
-        0.15*dx,  0.15*dy,   0,   1
-    };
-    GLuint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
-    glUniformMatrix4fv(modelviewUniform, 1, 0, &shellTrans[0]);
+    ShellObject *shell = [[ShellObject alloc] initInSpace:tank.space withPosition:tankPos andVelocity:shellVel andShader:m_simpleProgram];
+    [shellList addObject:shell];
     
-    GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
-    GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
+    //
     
-    glEnableVertexAttribArray(positionSlot);
-    glEnableVertexAttribArray(colorSlot);
-    
-    GLsizei stride = sizeof(Vertex);
-    
-    // the shell
-    GLvoid *pCoords = (void*)&tankShell[0].Position[0];
-    GLvoid *pColors = (void*)&tankShell[0].Color[0];
-    glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
-    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
-    GLsizei shellVertCount = sizeof(tankShell)/sizeof(Vertex);
-    glDrawArrays(GL_LINE_LOOP, 0, shellVertCount);
-    
-    glDisableVertexAttribArray(positionSlot);
-    glDisableVertexAttribArray(colorSlot);
-    
-
-} */
-
-	
--(void) renderTank {
-	float radians = m_currentAngle * M_PI/180.0;
-	//float radians = 45 * M_PI/180.0;
-	float c = cosf(radians);
-	float s = sinf(radians);
-	float dx = cumulativeDeltaX;
-	//float dx = 3.5;
-	float dy = cumulativeDeltaY;
-	//float dy = 0.2;
-    fprintf(stderr,"tank at: %5.2f, %5.2f\n",0.15*dx,0.15*dy);
-	
-	float tankTrans[16]={ // Rotation*Translation*Scaling
-		0.15*c,  0.15*s, 0,   0,
-		-0.15*s, 0.15*c, 0,   0,
-		0,       0,      0.15,0,
-		0.15*dx, 0.15*dy,0,   1
-	};
-	
-	
-	GLuint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
-	glUniformMatrix4fv(modelviewUniform, 1, 0, &tankTrans[0]);
-	
-	GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
-	GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
-	
-	glEnableVertexAttribArray(positionSlot);
-	glEnableVertexAttribArray(colorSlot);
-	
-	GLsizei stride = sizeof(Vertex);
-	
-	//turrent
-	GLvoid *pCoords = (void*)&turretVerts[0].Position[0];
-	GLvoid *pColors = (void*)&turretVerts[0].Color[0];
-	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
-	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
-	GLsizei turrentVertCount = sizeof(turretVerts)/sizeof(Vertex);
-	glDrawArrays(GL_LINE_LOOP, 0, turrentVertCount);
-	
-	//tank body
-	pCoords = (void*)&tankVerts[0].Position[0];
-	pColors = (void*)&tankVerts[0].Color[0];
-	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
-	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
-	GLsizei tankVertCount = sizeof(tankVerts)/sizeof(Vertex);
-	glDrawArrays(GL_LINE_STRIP, 0, tankVertCount);
-	
-	glDisableVertexAttribArray(positionSlot);
-	glDisableVertexAttribArray(colorSlot);
-	
 }
+
+
 
 -(void) updateAnimationWithTimestep:(float)timestep {
 	float deltaX;
@@ -486,7 +407,11 @@ void shellToTank_collisionHandler() {
 }
 
 -(void) dealloc {
-    [super dealloc];
+    //[super dealloc];
+    for (ShellObject*s in shellList) {
+        cpShapeFree(s.shape);
+        cpBodyFree(s.body);
+    }
     cpShapeFree(ballShape);
     cpBodyFree(ballBody);
     //cpShapeFree(ground);

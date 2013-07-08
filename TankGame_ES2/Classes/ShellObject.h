@@ -21,6 +21,8 @@
 #include "chipmunk.h"
 //#import "tank_shell.h"
 
+#define SHELL_VELOCITY 35
+
 @interface ShellObject : NSObject
 
 @property cpSpace *space;

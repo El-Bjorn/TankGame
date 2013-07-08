@@ -63,9 +63,9 @@
 
 
 - (void)dealloc {
-	[m_view release];
-    [m_window release];
-    [super dealloc];
+	//[m_view release];
+    //[m_window release];
+    //[super dealloc];
 }
 
 

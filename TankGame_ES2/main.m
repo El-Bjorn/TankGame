@@ -10,8 +10,8 @@
 
 int main(int argc, char *argv[]) {
     
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    //NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     int retVal = UIApplicationMain(argc, argv, nil, @"TankGame_Delegate");
-    [pool release];
+    //[pool release];
     return retVal;
 }
