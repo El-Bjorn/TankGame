@@ -12,6 +12,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		403C9DB2178CBB1500B6DB48 /* ArenaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C9DB1178CBB1500B6DB48 /* ArenaObject.m */; };
 		40416CC21784DBC000276AF5 /* ShellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40416CC11784DBC000276AF5 /* ShellObject.m */; };
 		408DD53217863A35006D41F1 /* TankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 408DD53117863A35006D41F1 /* TankObject.m */; };
 		821577CA13A2A99800974847 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577C913A2A99800974847 /* OpenGLES.framework */; };
@@ -59,7 +60,9 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ES2_tankgame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES2_tankgame_Prefix.pch; sourceTree = "<group>"; };
-		400EA5461783618000A5426F /* tank_shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tank_shell.h; sourceTree = "<group>"; };
+		400EA5461783618000A5426F /* shell_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shell_model.h; sourceTree = "<group>"; };
+		403C9DB0178CBB1500B6DB48 /* ArenaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArenaObject.h; sourceTree = "<group>"; };
+		403C9DB1178CBB1500B6DB48 /* ArenaObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArenaObject.m; sourceTree = "<group>"; };
 		40416CC01784DBC000276AF5 /* ShellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellObject.h; sourceTree = "<group>"; };
 		40416CC11784DBC000276AF5 /* ShellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellObject.m; sourceTree = "<group>"; };
 		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
@@ -221,7 +224,7 @@
 			children = (
 				408DD52C17862697006D41F1 /* modelTypes.h */,
 				82B2D3EE13DCB88700EB5B7F /* controller_models.h */,
-				400EA5461783618000A5426F /* tank_shell.h */,
+				400EA5461783618000A5426F /* shell_model.h */,
 				82B2D3F213DCB92B00EB5B7F /* tank_model.h */,
 			);
 			name = models;
@@ -232,6 +235,8 @@
 			children = (
 				408DD53117863A35006D41F1 /* TankObject.m */,
 				408DD53017863A27006D41F1 /* TankObject.h */,
+				403C9DB0178CBB1500B6DB48 /* ArenaObject.h */,
+				403C9DB1178CBB1500B6DB48 /* ArenaObject.m */,
 				40416CC01784DBC000276AF5 /* ShellObject.h */,
 				40416CC11784DBC000276AF5 /* ShellObject.m */,
 			);
@@ -440,6 +445,7 @@
 				828A864A177F678C0054577B /* cpVect.c in Sources */,
 				40416CC21784DBC000276AF5 /* ShellObject.m in Sources */,
 				408DD53217863A35006D41F1 /* TankObject.m in Sources */,
+				403C9DB2178CBB1500B6DB48 /* ArenaObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

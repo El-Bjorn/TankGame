@@ -78,7 +78,7 @@
 -(void) renderController;
 -(void) renderFireButton;
 
--(void) renderTank;
+//-(void) renderTank;
 //-(void) renderShell;
 
 -(void) updateAnimationWithTimestep:(float)timestep;

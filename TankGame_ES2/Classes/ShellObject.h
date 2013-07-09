@@ -13,19 +13,21 @@
 
 //#import <Foundation/Foundation.h>
 //#import "RenderingEngine2.h"
-#import <Foundation/Foundation.h>
+/*#import <Foundation/Foundation.h>
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 #import <math.h>
 #import <UIKit/UIKit.h>
-#include "chipmunk.h"
+#include "chipmunk.h" */
 //#import "tank_shell.h"
+
+#import "ArenaObject.h"
 
 #define SHELL_VELOCITY 35
 
-@interface ShellObject : NSObject
+@interface ShellObject : ArenaObject
 
-@property cpSpace *space;
+/*@property cpSpace *space;
 @property cpBody *body;
 @property cpShape *shape;
 @property cpFloat *sz_scale; // size scaling
@@ -34,7 +36,7 @@
 @property GLvoid *colors;
 @property GLuint shaderProgHandle;
 @property GLsizei shellVertCount;
-@property GLsizei shellStride;
+@property GLsizei shellStride; */
 
 
 -(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos

@@ -7,7 +7,12 @@
 //
 
 #import "ShellObject.h"
-#import "tank_shell.h"
+
+// openGL model stuff
+#import "shell_model.h"
+static GLvoid *shellCoords;
+static GLvoid *shellColors;
+static GLsizei shellVertCount;
 
 @implementation ShellObject
 
@@ -31,10 +36,9 @@
         
         // GL rendering
         self.shaderProgHandle = shade;
-        self.coords = (void*)&tankShell[0].Position[0];
-        self.colors = (void*)&tankShell[0].Color[0];
-        self.shellStride = sizeof(Vertex);
-        self.shellVertCount = sizeof(tankShell)/sizeof(Vertex);
+        shellCoords = (void*)&tankShell[0].Position[0];
+        shellColors = (void*)&tankShell[0].Color[0];
+        shellVertCount = sizeof(tankShell)/sizeof(Vertex);
     }
     return self;
     
@@ -56,9 +60,9 @@
     glEnableVertexAttribArray(positionSlot);
     glEnableVertexAttribArray(colorSlot);
     
-    glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, self.shellStride, self.coords);
-    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, self.shellStride, self.colors);
-    glDrawArrays(GL_LINE_LOOP, 0, self.shellVertCount);
+    glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, vertStride, shellCoords);
+    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, vertStride, shellColors);
+    glDrawArrays(GL_LINE_LOOP, 0, shellVertCount);
     glDisableVertexAttribArray(positionSlot);
     glDisableVertexAttribArray(colorSlot);
 }

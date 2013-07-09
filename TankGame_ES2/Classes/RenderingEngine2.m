@@ -35,7 +35,19 @@ const char SimpleFragmentShader[] =
 #include "tank_model.h"
 //#include "tank_shell.h"
 
-void shellToTank_collisionHandler() {
+static void postStepRemoveShell(cpShape *sp, cpShape *shell, void *unused){
+    
+    
+}
+
+static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unused) {
+    cpShape *t; // tank
+    cpShape *s; // shell
+    cpArbiterGetShapes(arb, &t, &s);
+    return 0;
+}
+
+void shellHitTank(){
     static int num_hits=0;
     fprintf(stderr,"tank hit! ouch!  hit number: %d\n",num_hits++);
 }
@@ -142,7 +154,7 @@ void shellToTank_collisionHandler() {
         elapsedTime=0;
         
         // collision handler
-        cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellToTank_collisionHandler, NULL, NULL, NULL, NULL);
+        cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellHitTank, NULL, NULL, NULL, NULL);
         
 	}
 	return self;
