@@ -27,22 +27,10 @@
 
 @interface ShellObject : ArenaObject
 
-/*@property cpSpace *space;
-@property cpBody *body;
-@property cpShape *shape;
-@property cpFloat *sz_scale; // size scaling
-@property cpFloat *tr_scale; // translation scaling
-@property GLvoid *coords;
-@property GLvoid *colors;
-@property GLuint shaderProgHandle;
-@property GLsizei shellVertCount;
-@property GLsizei shellStride; */
-
 
 -(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos
                                         andVelocity:(cpVect)vel
                                         andShader:(GLuint)shade;
 -(void) render;
-//-(void) setShaderProgHandle:(GLuint)shaderProgHandle;
 
 @end
