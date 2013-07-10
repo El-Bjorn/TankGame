@@ -32,7 +32,8 @@ const char SimpleFragmentShader[] =
 
 
 #include "controller_models.h"
-#include "tank_model.h"
+#include "button_model.h"
+//#include "tank_model.h"
 //#include "tank_shell.h"
 
 static void postStepRemoveShell(cpShape *sp, cpShape *shell, void *unused){
@@ -83,13 +84,6 @@ void shellHitTank(){
 		cumulativeDeltaY = 0.0;
 		translationSpeed = 0.5;
         
-        // init shell position
-        shellPos = CGPointZero;
-		
-		// init rotation state
-		revolutionsPerSecond = 0.1;
-		m_desiredAngle = 0;
-		m_currentAngle = m_desiredAngle;
         
         // startup chipmunk
         space = cpSpaceNew();
@@ -114,11 +108,6 @@ void shellHitTank(){
         cpSpaceAddShape(space, topBounds);
         cpSpaceAddShape(space, rightBounds);
         
-        //shell1 = [[ShellObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(1,1) andShader:m_simpleProgram];
-        //shell2 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(-5,-1) andShader:m_simpleProgram];
-        //shell3 = [[ShellObject alloc] initInSpace:space withPosition:cpv(0,0) andVelocity:cpv(10,3)
-            //andShader:m_simpleProgram];
-        
         srand(time(NULL));
         //int numShells = 10; //rand()%100;
         //int i;
@@ -134,21 +123,7 @@ void shellHitTank(){
             shell1 = [[ShellObject alloc] initInSpace:space withPosition:randPos andVelocity:randVel andShader:m_simpleProgram];
             [shellList addObject:shell1];
         } */
-        tank1 = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
-        
-        
-        //cpShapeSetFriction(ground, 1);
-        //cpShapeSetElasticity(ground, 0.7);
-        //cpSpaceAddShape(space, ground);
-        /*radius = 0.1;
-        mass = 1;
-        moment = cpMomentForCircle(mass, 0, radius, cpvzero);
-        ballBody = cpSpaceAddBody(space, cpBodyNew(mass, moment));
-        cpBodySetPos(ballBody, cpv(0,0));
-        cpBodySetVel(ballBody, cpv(-15,-15));
-        ballShape = cpSpaceAddShape(space, cpCircleShapeNew(ballBody, radius, cpvzero));
-        cpShapeSetFriction(ballShape, 0.7);
-        cpShapeSetElasticity(ballShape, 1); */
+        playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
         
         timeStep = 1.0/60.0; // very small timeset
         elapsedTime=0;
@@ -206,14 +181,16 @@ void shellHitTank(){
 	//[self renderTank];
 	[self renderController];
 	[self renderSliders];
-    [tank1 renderWithForce:contForce andTorque:contTorque];
+    [self renderFireButton];
+    //[playerTank renderWithForce:contForce andTorque:contTorque];
+    [playerTank render];
     for (ShellObject *s in shellList) {
         [s render];
     }
     // start shooting?
-    if (rand()%100 == 50) {
-        [self tankFiresShell:tank1];
-    }
+    /*if (rand()%100 == 150) {
+        [self tankFiresShell:playerTank];
+    } */
 }
 
 -(void) renderSliders {
@@ -261,11 +238,33 @@ void shellHitTank(){
 
 -(void) renderFireButton {
     float buttonTrans[16]={
-        0.2, 0, 0, 0,
-        0,  0.2, 0, 0,
-        0,   0, 0.2, 0,
-        -1.7,-2.5,0,1
+        0.1, 0, 0, 0,
+        0,  0.1, 0, 0,
+        0,   0, 0.1, 0,
+        -1.4,-2.6, 0,1
     };
+    GLsizei stride = sizeof(Vertex);
+	GLuint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
+	GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
+	GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
+	glEnableVertexAttribArray(positionSlot);
+	glEnableVertexAttribArray(colorSlot);
+	
+	GLvoid *pCoords = (GLvoid*)&fireButton[0].Position[0];
+	GLvoid *pColors = (GLvoid*)&fireButton[0].Color[0];
+	
+	glVertexAttribPointer(positionSlot, 2, GL_FLOAT, GL_FALSE, stride, pCoords);
+	glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
+	GLsizei buttonVertCount = sizeof(fireButton)/sizeof(Vertex);
+	
+	// draw button
+	glUniformMatrix4fv(modelviewUniform, 1, 0, &buttonTrans[0]);
+	glDrawArrays(GL_LINE_LOOP, 0, buttonVertCount);
+	
+	
+	glDisableVertexAttribArray(positionSlot);
+	glDisableVertexAttribArray(colorSlot);
+    
 }
 	
 
@@ -311,6 +310,10 @@ void shellHitTank(){
 	glDisableVertexAttribArray(colorSlot);	
 }
 
+-(void) playerTankFiresShell {
+    [self tankFiresShell:playerTank];
+}
+
 -(void) tankFiresShell:(TankObject*)tank {
     cpVect tankPos = cpBodyGetPos(tank.body);
     cpFloat gunDirection = cpBodyGetAngle(tank.body) + M_PI_2;
@@ -327,57 +330,34 @@ void shellHitTank(){
 
 
 -(void) updateAnimationWithTimestep:(float)timestep {
-	float deltaX;
-	float deltaY;
-    
     // update chipmunk time
     elapsedTime += timeStep;
     cpSpaceStep(space, timeStep);
 	
 	// translation section
 	translationSpeed = leftSliderPos+rightSliderPos;
-	if (fabs(translationSpeed)>0.5) {
-		deltaX = -sinf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
-		cumulativeDeltaX += deltaX;
-		deltaY = cosf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
-		cumulativeDeltaY += deltaY;
-	}
+    
     // tank control forces
     if (fabs(translationSpeed)>0.5) {
         contForce = translationSpeed;
-		//deltaX = -sinf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
-		cumulativeDeltaX += deltaX;
-		//deltaY = cosf((m_currentAngle)*(M_PI/180))*translationSpeed*timestep;
-		cumulativeDeltaY += deltaY;
+        playerTank.controlForce = contForce;
+        
     }
     contTorque = [self rotationDirection];
-    
-	float direction = [self rotationDirection];
-	if (direction==0) {
-		return;
-	}
-	
-	float degrees = timestep * 360 * revolutionsPerSecond;
-	m_currentAngle += degrees * direction;
-	
-	if (m_currentAngle >= 360){
-		m_currentAngle = 0;
-	}
-	if (m_currentAngle < 0) {
-		m_currentAngle = 360;
-	}
-		
+    playerTank.controlTorque = contTorque;
+    		
 }
 
 
--(void) onTouchWithLocation:(CGPoint)location {	
+/*-(void) onTouchWithLocation:(CGPoint)location {
+    fprintf(stderr, "Touch at: %.2f, %.2f\n",location.x,location.y);
 	if (CGRectContainsPoint(leftSlider, location)) {
 		leftSliderPos = [self normSliderPosition:location];
 	}
 	if (CGRectContainsPoint(rightSlider, location)) {
 		rightSliderPos = [self normSliderPosition:location];
 	}
-}
+} */
 
 -(float) rotationDirection {
 	// determine rotation direction from controller positions
@@ -419,14 +399,10 @@ void shellHitTank(){
 }
 
 -(void) dealloc {
-    //[super dealloc];
     for (ShellObject*s in shellList) {
         cpShapeFree(s.shape);
         cpBodyFree(s.body);
     }
-    cpShapeFree(ballShape);
-    cpBodyFree(ballBody);
-    //cpShapeFree(ground);
     cpSpaceFree(space);
 }
 

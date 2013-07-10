@@ -22,6 +22,7 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	CGPoint t = [[touches anyObject] locationInView:self];
+    fprintf(stderr, "touch at %.2f, %.2f  myID= %d\n",t.x,t.y,myID);
 	float normedY = (t.y-80)/81;
 	normedY *= -1;
 	switch (myID) {
@@ -33,6 +34,10 @@
 			fprintf(stderr, "normed right controller pos = %f\n",normedY);
 			[rendEng setRightSlider:normedY];
 			break;
+        case fireButton:
+            fprintf(stderr,"fire button at: %.2f,%.2f\n",t.x,t.y);
+            [rendEng playerTankFiresShell];
+            break;
 	}
 	//fprintf(stderr, "controller view got touched\n");
 }

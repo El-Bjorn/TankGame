@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GLView.h"
 
-typedef enum {leftContoller,rightController} controlID;
+typedef enum {leftContoller,rightController,fireButton} controlID;
 
 
 @interface ControllerView : UIView {

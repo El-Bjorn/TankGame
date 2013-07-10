@@ -67,6 +67,10 @@
 														   rendEngine:m_renderingEngine
 																andID:rightController];
 		[self addSubview:c_right];
+        ControllerView *fButton=[[ControllerView alloc] initWithFrame:CGRectMake(75,915, 79, 79)
+                                                              rendEngine:m_renderingEngine
+                                                                   andID:fireButton];
+        [self addSubview:fButton];
 	}
 	
     return self;

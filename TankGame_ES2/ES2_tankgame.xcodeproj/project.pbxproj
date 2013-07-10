@@ -63,7 +63,7 @@
 		400EA5461783618000A5426F /* shell_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shell_model.h; sourceTree = "<group>"; };
 		403C9DB0178CBB1500B6DB48 /* ArenaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArenaObject.h; sourceTree = "<group>"; };
 		403C9DB1178CBB1500B6DB48 /* ArenaObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArenaObject.m; sourceTree = "<group>"; };
-		403C9DB3178CCC4F00B6DB48 /* button_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = button_model.h; sourceTree = "<group>"; };
+		403C9DB4178E113D00B6DB48 /* button_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = button_model.h; sourceTree = "<group>"; };
 		40416CC01784DBC000276AF5 /* ShellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellObject.h; sourceTree = "<group>"; };
 		40416CC11784DBC000276AF5 /* ShellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellObject.m; sourceTree = "<group>"; };
 		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
@@ -223,6 +223,7 @@
 		408DD52B17862658006D41F1 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				403C9DB4178E113D00B6DB48 /* button_model.h */,
 				408DD52C17862697006D41F1 /* modelTypes.h */,
 				82B2D3EE13DCB88700EB5B7F /* controller_models.h */,
 				400EA5461783618000A5426F /* shell_model.h */,
@@ -238,7 +239,6 @@
 				408DD53017863A27006D41F1 /* TankObject.h */,
 				403C9DB0178CBB1500B6DB48 /* ArenaObject.h */,
 				403C9DB1178CBB1500B6DB48 /* ArenaObject.m */,
-				403C9DB3178CCC4F00B6DB48 /* button_model.h */,
 				40416CC01784DBC000276AF5 /* ShellObject.h */,
 				40416CC11784DBC000276AF5 /* ShellObject.m */,
 			);

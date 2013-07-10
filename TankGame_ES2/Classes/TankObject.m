@@ -60,6 +60,10 @@ static GLsizei tankVertCount;
     
 }
 
+-(void) render {
+    [self renderWithForce:self.controlForce andTorque:self.controlTorque];
+}
+
 -(void) renderWithForce:(cpFloat)force andTorque:(cpFloat)torque
 {
     cpVect pos = cpBodyGetPos(self.body);

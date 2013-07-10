@@ -22,12 +22,12 @@
 	GLuint m_renderbuffer;
 	GLuint m_simpleProgram;
 	
-	float m_currentAngle;
-	float m_desiredAngle;
+	//float m_currentAngle;
+	//float m_desiredAngle;
 	
 	int rotationDirection; // based on slider position
 	
-	float revolutionsPerSecond;
+	//float revolutionsPerSecond;
 	
 	// controllers
 	CGRect leftSlider;
@@ -37,7 +37,7 @@
 	float rightSliderPos; // normalized (-1,1)
     
     // the shell
-    CGPoint shellPos;
+    //CGPoint shellPos;
 	
 	// translation
 	float cumulativeDeltaX;
@@ -55,18 +55,19 @@
     cpFloat radius;
     cpFloat mass;
     cpFloat moment;
-    cpBody *ballBody;
-    cpShape *ballShape;
+    //cpBody *ballBody;
+    //cpShape *ballShape;
     //cpShape *ground;
     cpShape *topBounds,*bottomBounds,*leftBounds,*rightBounds;
     cpFloat timeStep;
     cpFloat elapsedTime;
     
-    ShellObject *shell1;
-    ShellObject *shell2;
-    ShellObject *shell3;
+    //ShellObject *shell1;
+    //ShellObject *shell2;
+    //ShellObject *shell3;
+    
     NSMutableArray *shellList;
-    TankObject *tank1;
+    TankObject *playerTank;
 }
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;
@@ -78,8 +79,7 @@
 -(void) renderController;
 -(void) renderFireButton;
 
-//-(void) renderTank;
-//-(void) renderShell;
+-(void) playerTankFiresShell;
 
 -(void) updateAnimationWithTimestep:(float)timestep;
 
