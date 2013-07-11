@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		403C9DB2178CBB1500B6DB48 /* ArenaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C9DB1178CBB1500B6DB48 /* ArenaObject.m */; };
+		403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C9DB7178E28BB00B6DB48 /* EnemyTankObject.m */; };
 		40416CC21784DBC000276AF5 /* ShellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40416CC11784DBC000276AF5 /* ShellObject.m */; };
 		408DD53217863A35006D41F1 /* TankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 408DD53117863A35006D41F1 /* TankObject.m */; };
 		821577CA13A2A99800974847 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577C913A2A99800974847 /* OpenGLES.framework */; };
@@ -64,6 +65,9 @@
 		403C9DB0178CBB1500B6DB48 /* ArenaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArenaObject.h; sourceTree = "<group>"; };
 		403C9DB1178CBB1500B6DB48 /* ArenaObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArenaObject.m; sourceTree = "<group>"; };
 		403C9DB4178E113D00B6DB48 /* button_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = button_model.h; sourceTree = "<group>"; };
+		403C9DB5178E289E00B6DB48 /* enemy_tank_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enemy_tank_model.h; sourceTree = "<group>"; };
+		403C9DB6178E28B200B6DB48 /* EnemyTankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyTankObject.h; sourceTree = "<group>"; };
+		403C9DB7178E28BB00B6DB48 /* EnemyTankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyTankObject.m; sourceTree = "<group>"; };
 		40416CC01784DBC000276AF5 /* ShellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellObject.h; sourceTree = "<group>"; };
 		40416CC11784DBC000276AF5 /* ShellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellObject.m; sourceTree = "<group>"; };
 		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 		408DD52B17862658006D41F1 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				403C9DB5178E289E00B6DB48 /* enemy_tank_model.h */,
 				403C9DB4178E113D00B6DB48 /* button_model.h */,
 				408DD52C17862697006D41F1 /* modelTypes.h */,
 				82B2D3EE13DCB88700EB5B7F /* controller_models.h */,
@@ -235,6 +240,8 @@
 		408DD52F178639EC006D41F1 /* ArenaObjects */ = {
 			isa = PBXGroup;
 			children = (
+				403C9DB6178E28B200B6DB48 /* EnemyTankObject.h */,
+				403C9DB7178E28BB00B6DB48 /* EnemyTankObject.m */,
 				408DD53117863A35006D41F1 /* TankObject.m */,
 				408DD53017863A27006D41F1 /* TankObject.h */,
 				403C9DB0178CBB1500B6DB48 /* ArenaObject.h */,
@@ -448,6 +455,7 @@
 				40416CC21784DBC000276AF5 /* ShellObject.m in Sources */,
 				408DD53217863A35006D41F1 /* TankObject.m in Sources */,
 				403C9DB2178CBB1500B6DB48 /* ArenaObject.m in Sources */,
+				403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

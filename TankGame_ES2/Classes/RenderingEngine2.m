@@ -6,9 +6,6 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-//#import "chipmunk.h"
-//#import "ShellObject.h"
-//#import "TankObject.h"
 #import "RenderingEngine2.h"
 #import "modelTypes.h"
 
@@ -33,8 +30,11 @@ const char SimpleFragmentShader[] =
 
 #include "controller_models.h"
 #include "button_model.h"
-//#include "tank_model.h"
-//#include "tank_shell.h"
+
+// we get one of these notifications when an enemy tank
+//    wants to shoot something.
+extern NSString *NOTIF_ENEMY_TANK_FIRES;
+
 
 static void postStepRemoveShell(cpShape *sp, cpShape *shell, void *unused){
     
@@ -54,6 +54,10 @@ void shellHitTank(){
 }
 
 @implementation RenderingEngine2
+
+-(void) enemy_tank_fires {
+    [self tankFiresShell:evilTank1];
+}
 
 -(id) initWithSize:(CGSize)size {
 	self = [super init];
@@ -124,6 +128,8 @@ void shellHitTank(){
             [shellList addObject:shell1];
         } */
         playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
+        evilTank1 = [[EnemyTankObject alloc] initInSpace:space withPosition:cpv(10,10) andVelocity:cpv(1,1) andShader:m_simpleProgram];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enemy_tank_fires) name:NOTIF_ENEMY_TANK_FIRES object:nil];
         
         timeStep = 1.0/60.0; // very small timeset
         elapsedTime=0;
@@ -184,6 +190,7 @@ void shellHitTank(){
     [self renderFireButton];
     //[playerTank renderWithForce:contForce andTorque:contTorque];
     [playerTank render];
+    [evilTank1 render];
     for (ShellObject *s in shellList) {
         [s render];
     }
@@ -323,7 +330,6 @@ void shellHitTank(){
     ShellObject *shell = [[ShellObject alloc] initInSpace:tank.space withPosition:tankPos andVelocity:shellVel andShader:m_simpleProgram];
     [shellList addObject:shell];
     
-    //
     
 }
 
@@ -348,16 +354,6 @@ void shellHitTank(){
     		
 }
 
-
-/*-(void) onTouchWithLocation:(CGPoint)location {
-    fprintf(stderr, "Touch at: %.2f, %.2f\n",location.x,location.y);
-	if (CGRectContainsPoint(leftSlider, location)) {
-		leftSliderPos = [self normSliderPosition:location];
-	}
-	if (CGRectContainsPoint(rightSlider, location)) {
-		rightSliderPos = [self normSliderPosition:location];
-	}
-} */
 
 -(float) rotationDirection {
 	// determine rotation direction from controller positions

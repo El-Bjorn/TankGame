@@ -15,6 +15,7 @@
 
 #import "ShellObject.h"
 #import "TankObject.h"
+#import "EnemyTankObject.h"
 
 
 @interface RenderingEngine2 : NSObject {
@@ -68,6 +69,7 @@
     
     NSMutableArray *shellList;
     TankObject *playerTank;
+    EnemyTankObject *evilTank1;
 }
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;

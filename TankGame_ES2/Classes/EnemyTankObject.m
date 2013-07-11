@@ -1,15 +1,15 @@
 //
-//  TankObject.m
+//  EnemyTankObject.m
 //  ES2_tankgame
 //
 //  Created by BjornC on 7/3/13.
 //  Copyright (c) 2013 Built Light. All rights reserved.
 //
 
-#import "TankObject.h"
+#import "EnemyTankObject.h"
 
 // openGL model stuff
-#import "tank_model.h"
+#import "enemy_tank_model.h"
 static GLvoid *turretCoords;
 static GLvoid *turretColors;
 static GLsizei turretVertCount;
@@ -19,7 +19,7 @@ static GLsizei tankVertCount;
 
 
 
-@implementation TankObject
+@implementation EnemyTankObject
 
 -(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos andVelocity:(cpVect)vel andShader:(GLuint)shade
 {
@@ -66,7 +66,6 @@ static GLsizei tankVertCount;
 
 -(void) renderWithForce:(cpFloat)force andTorque:(cpFloat)torque
 {
-    //fprintf(stderr,"force= %.2f  torque= %.2f\n",force,torque);
     cpVect pos = cpBodyGetPos(self.body);
     float rad = cpBodyGetAngle(self.body);
     
@@ -109,7 +108,7 @@ static GLsizei tankVertCount;
 }
 
 -(void) tankHit{
-    NSLog(@"We're hit!");
+    NSLog(@"Enemy tank hit!");
 }
 
 
