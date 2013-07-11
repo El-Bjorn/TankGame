@@ -50,6 +50,10 @@
 		828A8648177F678C0054577B /* cpSpatialIndex.c in Sources */ = {isa = PBXBuildFile; fileRef = 828A85D5177F678C0054577B /* cpSpatialIndex.c */; };
 		828A8649177F678C0054577B /* cpSweep1D.c in Sources */ = {isa = PBXBuildFile; fileRef = 828A85D6177F678C0054577B /* cpSweep1D.c */; };
 		828A864A177F678C0054577B /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 828A85D7177F678C0054577B /* cpVect.c */; };
+		82F5418B178F27E300B0AF52 /* tank-engine.caf in Resources */ = {isa = PBXBuildFile; fileRef = 82F5418A178F27E300B0AF52 /* tank-engine.caf */; };
+		82F5418D178F27EF00B0AF52 /* tank-fire.caf in Resources */ = {isa = PBXBuildFile; fileRef = 82F5418C178F27EF00B0AF52 /* tank-fire.caf */; };
+		82F5418F178F298B00B0AF52 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F5418E178F298B00B0AF52 /* CoreAudio.framework */; };
+		82F54191178F2A9500B0AF52 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F54190178F2A9500B0AF52 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +142,10 @@
 		828A85DC177F678C0054577B /* prime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime.h; sourceTree = "<group>"; };
 		82B2D3EE13DCB88700EB5B7F /* controller_models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controller_models.h; sourceTree = "<group>"; };
 		82B2D3F213DCB92B00EB5B7F /* tank_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tank_model.h; sourceTree = "<group>"; };
+		82F5418A178F27E300B0AF52 /* tank-engine.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tank-engine.caf"; sourceTree = "<group>"; };
+		82F5418C178F27EF00B0AF52 /* tank-fire.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tank-fire.caf"; sourceTree = "<group>"; };
+		82F5418E178F298B00B0AF52 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		82F54190178F2A9500B0AF52 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* ES2_tankgame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ES2_tankgame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F54191178F2A9500B0AF52 /* AudioToolbox.framework in Frameworks */,
+				82F5418F178F298B00B0AF52 /* CoreAudio.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -207,6 +217,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				82F54189178F27C300B0AF52 /* sounds */,
 				8D1107310486CEB800E47090 /* ES2_tankgame-Info.plist */,
 			);
 			name = Resources;
@@ -215,6 +226,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82F54190178F2A9500B0AF52 /* AudioToolbox.framework */,
+				82F5418E178F298B00B0AF52 /* CoreAudio.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -355,6 +368,15 @@
 			path = constraints;
 			sourceTree = "<group>";
 		};
+		82F54189178F27C300B0AF52 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				82F5418C178F27EF00B0AF52 /* tank-fire.caf */,
+				82F5418A178F27E300B0AF52 /* tank-engine.caf */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +430,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F5418B178F27E300B0AF52 /* tank-engine.caf in Resources */,
+				82F5418D178F27EF00B0AF52 /* tank-fire.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

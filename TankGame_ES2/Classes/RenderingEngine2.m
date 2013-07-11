@@ -8,7 +8,7 @@
 
 #import "RenderingEngine2.h"
 #import "modelTypes.h"
-
+#import <AudioToolbox/AudioToolbox.h>
 /* ----------------- shaders -----------------*/
 const char SimpleVertexShader[] =
 "attribute vec4 Position;                             \n"
@@ -54,6 +54,15 @@ void shellHitTank(){
 }
 
 @implementation RenderingEngine2
+
+-(void) tankFire_sound {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"tank-fire" ofType:@"caf"];
+    NSURL *afURL = [NSURL fileURLWithPath:path];
+    UInt32 soundID;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&soundID);
+    AudioServicesPlaySystemSound(soundID);
+    NSLog(@"start engine sounds");
+}
 
 -(void) enemy_tank_fires {
     [self tankFiresShell:evilTank1];
@@ -136,6 +145,9 @@ void shellHitTank(){
         
         // collision handler
         cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellHitTank, NULL, NULL, NULL, NULL);
+        
+        // engine sounds
+        //[self start_engine_sound];
         
 	}
 	return self;
@@ -318,6 +330,7 @@ void shellHitTank(){
 }
 
 -(void) playerTankFiresShell {
+    [self tankFire_sound];
     [self tankFiresShell:playerTank];
 }
 
