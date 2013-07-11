@@ -15,19 +15,12 @@
 
 @interface EnemyTankObject : TankObject
 
-// these are tank control parameters, set by the AI
-/*@property cpFloat controlForce;
-@property cpFloat controlTorque;
+-(void) tankFires; // we shoot stuff
 
--(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos
-                                        andVelocity:(cpVect)vel
-                                        andShader:(GLuint)shade;
+-(void) ai_tank_controls; // make control adjustments
 
-// make this private
--(void) renderWithForce:(cpFloat)force andTorque:(cpFloat)torque;
+-(void) tankHit;
 
 -(void) render;
-
--(void) tankHit; */
 
 @end
