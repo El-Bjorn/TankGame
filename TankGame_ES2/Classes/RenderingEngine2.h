@@ -16,9 +16,11 @@
 #import "ShellObject.h"
 #import "TankObject.h"
 #import "EnemyTankObject.h"
+#import "TankSoundController.h"
 
 
 @interface RenderingEngine2 : NSObject {
+
 	GLuint m_framebuffer;
 	GLuint m_renderbuffer;
 	GLuint m_simpleProgram;
@@ -36,10 +38,7 @@
 	
 	CGRect rightSlider;
 	float rightSliderPos; // normalized (-1,1)
-    
-    // the shell
-    //CGPoint shellPos;
-	
+    	
 	// translation
 	float cumulativeDeltaX;
 	float cumulativeDeltaY;
@@ -56,21 +55,16 @@
     cpFloat radius;
     cpFloat mass;
     cpFloat moment;
-    //cpBody *ballBody;
-    //cpShape *ballShape;
-    //cpShape *ground;
     cpShape *topBounds,*bottomBounds,*leftBounds,*rightBounds;
     cpFloat timeStep;
     cpFloat elapsedTime;
-    
-    //ShellObject *shell1;
-    //ShellObject *shell2;
-    //ShellObject *shell3;
-    
+        
     NSMutableArray *shellList;
     TankObject *playerTank;
     EnemyTankObject *evilTank1;
 }
+@property TankSoundController *tankSounds;
+
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;
 -(GLuint) buildProgram;

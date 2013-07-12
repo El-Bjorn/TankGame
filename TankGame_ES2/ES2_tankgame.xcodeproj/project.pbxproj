@@ -17,6 +17,8 @@
 		40416CC21784DBC000276AF5 /* ShellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40416CC11784DBC000276AF5 /* ShellObject.m */; };
 		408DD53217863A35006D41F1 /* TankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 408DD53117863A35006D41F1 /* TankObject.m */; };
 		40D2C54C178F867B00D8ED62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D2C54B178F867B00D8ED62 /* AVFoundation.framework */; };
+		40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C54E17909F0D00D8ED62 /* TankSoundController.m */; };
+		40D2C5511790B07F00D8ED62 /* tank-engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40D2C5501790B07F00D8ED62 /* tank-engine.wav */; };
 		821577CA13A2A99800974847 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577C913A2A99800974847 /* OpenGLES.framework */; };
 		821577CE13A2A9B200974847 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577CD13A2A9B200974847 /* QuartzCore.framework */; };
 		821577D313A2AA0800974847 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 821577D213A2AA0800974847 /* GLView.m */; };
@@ -79,6 +81,9 @@
 		408DD53017863A27006D41F1 /* TankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankObject.h; sourceTree = "<group>"; };
 		408DD53117863A35006D41F1 /* TankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankObject.m; sourceTree = "<group>"; };
 		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		40D2C54D17909F0D00D8ED62 /* TankSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankSoundController.h; sourceTree = "<group>"; };
+		40D2C54E17909F0D00D8ED62 /* TankSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankSoundController.m; sourceTree = "<group>"; };
+		40D2C5501790B07F00D8ED62 /* tank-engine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tank-engine.wav"; sourceTree = "<group>"; };
 		821577C913A2A99800974847 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		821577CD13A2A9B200974847 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		821577D113A2AA0800974847 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
@@ -183,6 +188,8 @@
 				821577E313A2B28900974847 /* RenderingEngine2.m */,
 				8219E3FB13E329F200630C83 /* ControllerView.h */,
 				8219E3FC13E329F200630C83 /* ControllerView.m */,
+				40D2C54D17909F0D00D8ED62 /* TankSoundController.h */,
+				40D2C54E17909F0D00D8ED62 /* TankSoundController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -375,6 +382,7 @@
 		82F54189178F27C300B0AF52 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				40D2C5501790B07F00D8ED62 /* tank-engine.wav */,
 				82F5418C178F27EF00B0AF52 /* tank-fire.caf */,
 				82F5418A178F27E300B0AF52 /* tank-engine.caf */,
 			);
@@ -436,6 +444,7 @@
 			files = (
 				82F5418B178F27E300B0AF52 /* tank-engine.caf in Resources */,
 				82F5418D178F27EF00B0AF52 /* tank-fire.caf in Resources */,
+				40D2C5511790B07F00D8ED62 /* tank-engine.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +493,7 @@
 				408DD53217863A35006D41F1 /* TankObject.m in Sources */,
 				403C9DB2178CBB1500B6DB48 /* ArenaObject.m in Sources */,
 				403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */,
+				40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

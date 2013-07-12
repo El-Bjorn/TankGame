@@ -8,8 +8,8 @@
 
 #import "RenderingEngine2.h"
 #import "modelTypes.h"
-#import <AudioToolbox/AudioToolbox.h>
-#import <AVFoundation/AVFoundation.h>
+//#import <AudioToolbox/AudioToolbox.h>
+//#import <AVFoundation/AVFoundation.h>
 /* ----------------- shaders -----------------*/
 const char SimpleVertexShader[] =
 "attribute vec4 Position;                             \n"
@@ -56,22 +56,23 @@ void shellHitTank(){
 
 @implementation RenderingEngine2
 
-static SystemSoundID tankFireSoundID;
+//static SystemSoundID tankFireSoundID;
 
--(void) initTankFireSound {
+/*-(void) initTankFireSound {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"tank-fire" ofType:@"caf"];
     NSURL *afURL = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankFireSoundID);
     
     NSLog(@"start engine sounds");
-}
+} */
 
--(void) tankFireSound {
+/*-(void) tankFireSound {
     AudioServicesPlaySystemSound(tankFireSoundID);
-}
+} */
 
 -(void) enemy_tank_fires {
-    [self tankFireSound];
+    //[self tankFireSound];
+    [self.tankSounds enemyTankFires];
     [self tankFiresShell:evilTank1];
 }
 
@@ -141,7 +142,9 @@ static SystemSoundID tankFireSoundID;
         cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellHitTank, NULL, NULL, NULL, NULL);
         
         // sound setup
-        [self initTankFireSound];
+        //[self initTankFireSound];
+        self.tankSounds = [[TankSoundController alloc] init];
+        [self.tankSounds startEngine];
          
 	}
 	return self;
@@ -324,7 +327,8 @@ static SystemSoundID tankFireSoundID;
 }
 
 -(void) playerTankFiresShell {
-    [self tankFireSound];
+    [self.tankSounds playerTankFires];
+    //[self tankFireSound];
     [self tankFiresShell:playerTank];
 }
 
@@ -358,6 +362,14 @@ static SystemSoundID tankFireSoundID;
     }
     contTorque = [self rotationDirection];
     playerTank.controlTorque = contTorque;
+    
+    // adjust engine
+    float EngVol = (fabs(leftSliderPos)+fabs(rightSliderPos));
+    /*if (EngVol < 0.5) {
+        EngVol = 0.5;
+    } */
+    [self.tankSounds setEngineVolume:EngVol/2.0];
+    [self.tankSounds setEngineSpeed:EngVol];
     		
 }
 
@@ -380,10 +392,12 @@ static SystemSoundID tankFireSoundID;
 }
 												   
 -(void) setLeftSlider:(float)p {
+    //fprintf(stderr, "left slider= %.2f\n",p);
 	leftSliderPos = p;
 }
 
 -(void) setRightSlider:(float)p {
+    //fprintf(stderr, "right slider= %.2f\n",p);
 	rightSliderPos = p;
 }
 
@@ -407,7 +421,7 @@ static SystemSoundID tankFireSoundID;
         cpBodyFree(s.body);
     }
     cpSpaceFree(space);
-    AudioServicesDisposeSystemSoundID(tankFireSoundID);
+    //AudioServicesDisposeSystemSoundID(tankFireSoundID);
 }
 
 @end

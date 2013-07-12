@@ -22,7 +22,7 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	CGPoint t = [[touches anyObject] locationInView:self];
-    fprintf(stderr, "touch at %.2f, %.2f  myID= %d\n",t.x,t.y,myID);
+    //fprintf(stderr, "touch at %.2f, %.2f  myID= %d\n",t.x,t.y,myID);
 	float normedY = (t.y-80)/81;
 	normedY *= -1;
 	switch (myID) {
