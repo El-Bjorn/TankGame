@@ -16,6 +16,7 @@
 		403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C9DB7178E28BB00B6DB48 /* EnemyTankObject.m */; };
 		40416CC21784DBC000276AF5 /* ShellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40416CC11784DBC000276AF5 /* ShellObject.m */; };
 		408DD53217863A35006D41F1 /* TankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 408DD53117863A35006D41F1 /* TankObject.m */; };
+		40D2C54C178F867B00D8ED62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D2C54B178F867B00D8ED62 /* AVFoundation.framework */; };
 		821577CA13A2A99800974847 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577C913A2A99800974847 /* OpenGLES.framework */; };
 		821577CE13A2A9B200974847 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821577CD13A2A9B200974847 /* QuartzCore.framework */; };
 		821577D313A2AA0800974847 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 821577D213A2AA0800974847 /* GLView.m */; };
@@ -77,6 +78,7 @@
 		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
 		408DD53017863A27006D41F1 /* TankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankObject.h; sourceTree = "<group>"; };
 		408DD53117863A35006D41F1 /* TankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankObject.m; sourceTree = "<group>"; };
+		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		821577C913A2A99800974847 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		821577CD13A2A9B200974847 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		821577D113A2AA0800974847 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D2C54C178F867B00D8ED62 /* AVFoundation.framework in Frameworks */,
 				82F54191178F2A9500B0AF52 /* AudioToolbox.framework in Frameworks */,
 				82F5418F178F298B00B0AF52 /* CoreAudio.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -195,6 +198,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				40D2C54B178F867B00D8ED62 /* AVFoundation.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				828A8546177F4FF50054577B /* Chipmunk2D */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,

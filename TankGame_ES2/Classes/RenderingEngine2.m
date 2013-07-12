@@ -9,6 +9,7 @@
 #import "RenderingEngine2.h"
 #import "modelTypes.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 /* ----------------- shaders -----------------*/
 const char SimpleVertexShader[] =
 "attribute vec4 Position;                             \n"
@@ -55,16 +56,22 @@ void shellHitTank(){
 
 @implementation RenderingEngine2
 
--(void) tankFire_sound {
+static SystemSoundID tankFireSoundID;
+
+-(void) initTankFireSound {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"tank-fire" ofType:@"caf"];
     NSURL *afURL = [NSURL fileURLWithPath:path];
-    UInt32 soundID;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&soundID);
-    AudioServicesPlaySystemSound(soundID);
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankFireSoundID);
+    
     NSLog(@"start engine sounds");
 }
 
+-(void) tankFireSound {
+    AudioServicesPlaySystemSound(tankFireSoundID);
+}
+
 -(void) enemy_tank_fires {
+    [self tankFireSound];
     [self tankFiresShell:evilTank1];
 }
 
@@ -122,20 +129,7 @@ void shellHitTank(){
         cpSpaceAddShape(space, rightBounds);
         
         srand(time(NULL));
-        //int numShells = 10; //rand()%100;
-        //int i;
         shellList = [[NSMutableArray alloc] initWithCapacity:100];
-        /*for (i=0; i<numShells; i++) {
-            cpVect randPos;
-            cpVect randVel;
-            randPos.x = rand()%20-10;
-            randPos.y = rand()%20-10;
-            randVel.x = rand()%100-50;
-            randVel.y = rand()%100-50;
-            
-            shell1 = [[ShellObject alloc] initInSpace:space withPosition:randPos andVelocity:randVel andShader:m_simpleProgram];
-            [shellList addObject:shell1];
-        } */
         playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
         evilTank1 = [[EnemyTankObject alloc] initInSpace:space withPosition:cpv(10,10) andVelocity:cpv(1,1) andShader:m_simpleProgram];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enemy_tank_fires) name:NOTIF_ENEMY_TANK_FIRES object:nil];
@@ -146,9 +140,9 @@ void shellHitTank(){
         // collision handler
         cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellHitTank, NULL, NULL, NULL, NULL);
         
-        // engine sounds
-        //[self start_engine_sound];
-        
+        // sound setup
+        [self initTankFireSound];
+         
 	}
 	return self;
 }
@@ -330,7 +324,7 @@ void shellHitTank(){
 }
 
 -(void) playerTankFiresShell {
-    [self tankFire_sound];
+    [self tankFireSound];
     [self tankFiresShell:playerTank];
 }
 
@@ -413,6 +407,7 @@ void shellHitTank(){
         cpBodyFree(s.body);
     }
     cpSpaceFree(space);
+    AudioServicesDisposeSystemSoundID(tankFireSoundID);
 }
 
 @end
