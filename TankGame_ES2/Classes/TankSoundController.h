@@ -7,7 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface TankSoundController : NSObject
+@interface TankSoundController : NSObject <AVAudioSessionDelegate,
+                                            AVAudioPlayerDelegate>
+
+@property AVAudioPlayer *tankEngine;
+
+-(void) tankSoundSetup;
+
+-(void) playerTankFires;
+-(void) enemyTankFires;
+
+-(void) startEngine;
+-(void) setEngineVolume:(float)vol;
+-(void) setEngineSpeed:(float)r;
 
 @end
