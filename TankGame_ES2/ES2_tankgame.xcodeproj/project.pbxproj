@@ -80,6 +80,7 @@
 		408DD52C17862697006D41F1 /* modelTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelTypes.h; sourceTree = "<group>"; };
 		408DD53017863A27006D41F1 /* TankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankObject.h; sourceTree = "<group>"; };
 		408DD53117863A35006D41F1 /* TankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankObject.m; sourceTree = "<group>"; };
+		40A0820F17A86B1900C1A2E5 /* tank_shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tank_shaders.h; sourceTree = "<group>"; };
 		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		40D2C54D17909F0D00D8ED62 /* TankSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankSoundController.h; sourceTree = "<group>"; };
 		40D2C54E17909F0D00D8ED62 /* TankSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankSoundController.m; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				40A0820F17A86B1900C1A2E5 /* tank_shaders.h */,
 				408DD52F178639EC006D41F1 /* ArenaObjects */,
 				408DD52B17862658006D41F1 /* models */,
 				1D3623240D0F684500981E51 /* TankGame_Delegate.h */,

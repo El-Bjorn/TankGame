@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'OC_helloArrow_ES1' target in the 'OC_helloArrow_ES1' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif

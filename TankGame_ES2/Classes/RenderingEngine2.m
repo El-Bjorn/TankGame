@@ -8,27 +8,7 @@
 
 #import "RenderingEngine2.h"
 #import "modelTypes.h"
-//#import <AudioToolbox/AudioToolbox.h>
-//#import <AVFoundation/AVFoundation.h>
-/* ----------------- shaders -----------------*/
-const char SimpleVertexShader[] =
-"attribute vec4 Position;                             \n"
-"attribute vec4 SourceColor;                          \n"
-"varying vec4 DestinationColor;                       \n"
-"uniform mat4 Projection;                             \n"
-"uniform mat4 Modelview;                              \n"
-"void main(void){                                     \n"
-"    DestinationColor = SourceColor;                  \n"
-"    gl_Position = Projection * Modelview * Position; \n"
-"}                                                    \n";
-
-const char SimpleFragmentShader[] =
-"varying lowp vec4 DestinationColor;                  \n"
-"void main(void) {                                    \n"
-"    gl_FragColor = DestinationColor;                 \n"
-"}                                                    \n";
-
-
+#include "tank_shaders.h"
 #include "controller_models.h"
 #include "button_model.h"
 
@@ -37,16 +17,31 @@ const char SimpleFragmentShader[] =
 extern NSString *NOTIF_ENEMY_TANK_FIRES;
 
 
-static void postStepRemoveShell(cpShape *sp, cpShape *shell, void *unused){
+static void after_shell_hits_tank(cpSpace *space, cpShape *shape, void *unused)
+{
+    cpSpaceRemoveBody(space, shape->body);
+    cpBodyFree(shape->body);
     
-    
+    cpSpaceRemoveShape(space, shape);
+    cpShapeFree(shape);
 }
 
 static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unused) {
+    static int playerTank_hits = 0;
+    static int enemyTank_hits = 0;
+    RenderingEngine2 *rendEng = [RenderingEngine2 ourEngine];
+    
     cpShape *t; // tank
     cpShape *s; // shell
     cpArbiterGetShapes(arb, &t, &s);
-    return 0;
+    if (t == rendEng.playerTank.shape) {
+       fprintf(stderr, "player hit ouch!, we've taken %d hits.\n",playerTank_hits++);
+    } else if (t == rendEng.evilTank1.shape){
+       fprintf(stderr,"Enemy tank hit! HA!   hit num:%d\n",enemyTank_hits++);
+    }
+    [rendEng removeShell:s];
+    cpSpaceAddPostStepCallback(sp, (cpPostStepFunc)after_shell_hits_tank, s, NULL);
+    return 1;
 }
 
 void shellHitTank(){
@@ -54,7 +49,23 @@ void shellHitTank(){
     fprintf(stderr,"tank hit! ouch!  hit number: %d\n",num_hits++);
 }
 
+// this is the pointer to the shared singleton class
+//  needed to do this so c-callbacks can easily access the engine
+static RenderingEngine2 *theEngine;
+
 @implementation RenderingEngine2
+
+-(void) removeShell:(cpShape *)shell {
+    //fprintf(stderr,"%d shells in list, removing one\n",[self.shellList count]);
+    ShellObject *obj;
+    for (obj in self.shellList) {
+        //NSLog(@"shell %@",obj);
+        if (obj.shape == shell) {
+            break;
+        }
+    }
+    [self.shellList removeObject:obj];
+}
 
 //static SystemSoundID tankFireSoundID;
 
@@ -70,10 +81,18 @@ void shellHitTank(){
     AudioServicesPlaySystemSound(tankFireSoundID);
 } */
 
++(RenderingEngine2*) ourEngine {
+    if (theEngine == nil){
+        fprintf(stderr,"BIG FAT ERROR! Trying to get shared instance before init is called!\n");
+        assert(0);
+    }
+    return theEngine;
+}
+
 -(void) enemy_tank_fires {
     //[self tankFireSound];
     [self.tankSounds enemyTankFires];
-    [self tankFiresShell:evilTank1];
+    [self tankFiresShell:self.evilTank1];
 }
 
 -(id) initWithSize:(CGSize)size {
@@ -130,16 +149,16 @@ void shellHitTank(){
         cpSpaceAddShape(space, rightBounds);
         
         srand(time(NULL));
-        shellList = [[NSMutableArray alloc] initWithCapacity:100];
-        playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
-        evilTank1 = [[EnemyTankObject alloc] initInSpace:space withPosition:cpv(10,10) andVelocity:cpv(1,1) andShader:m_simpleProgram];
+        self.shellList = [[NSMutableArray alloc] initWithCapacity:100];
+        self.playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
+        self.evilTank1 = [[EnemyTankObject alloc] initInSpace:space withPosition:cpv(10,10) andVelocity:cpv(1,1) andShader:m_simpleProgram];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enemy_tank_fires) name:NOTIF_ENEMY_TANK_FIRES object:nil];
         
         timeStep = 1.0/60.0; // very small timeset
         elapsedTime=0;
         
         // collision handler
-        cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellHitTank, NULL, NULL, NULL, NULL);
+        cpSpaceAddCollisionHandler(space, TANK_COL_TYPE, SHELL_COL_TYPE, (cpCollisionBeginFunc)shellToTank_collisionHandler, NULL, NULL, NULL, NULL);
         
         // sound setup
         //[self initTankFireSound];
@@ -147,6 +166,7 @@ void shellHitTank(){
         [self.tankSounds startEngine];
          
 	}
+    theEngine = self;
 	return self;
 }
 
@@ -198,10 +218,13 @@ void shellHitTank(){
 	[self renderSliders];
     [self renderFireButton];
     //[playerTank renderWithForce:contForce andTorque:contTorque];
-    [playerTank render];
-    [evilTank1 render];
-    for (ShellObject *s in shellList) {
-        [s render];
+    [self.playerTank render];
+    [self.evilTank1 render];
+    for (ShellObject *s in self.shellList) {
+        //if (s.display) {
+            [s render];
+        //}
+        //[s render];
     }
     // start shooting?
     /*if (rand()%100 == 150) {
@@ -329,17 +352,19 @@ void shellHitTank(){
 -(void) playerTankFiresShell {
     [self.tankSounds playerTankFires];
     //[self tankFireSound];
-    [self tankFiresShell:playerTank];
+    [self tankFiresShell:self.playerTank];
 }
 
 -(void) tankFiresShell:(TankObject*)tank {
     cpVect tankPos = cpBodyGetPos(tank.body);
     cpFloat gunDirection = cpBodyGetAngle(tank.body) + M_PI_2;
-    cpVect shellVel = cpv(cosf(gunDirection)*SHELL_VELOCITY, sinf(gunDirection)*SHELL_VELOCITY);
+    cpFloat deltaX = cosf(gunDirection);
+    cpFloat deltaY = sinf(gunDirection);
+    cpVect shellVel = cpv(deltaX*SHELL_VELOCITY, deltaY*SHELL_VELOCITY);
+    cpVect shellPos = cpv(tankPos.x + deltaX*TANK_SIZE, tankPos.y + deltaY*TANK_SIZE);
     
-    
-    ShellObject *shell = [[ShellObject alloc] initInSpace:tank.space withPosition:tankPos andVelocity:shellVel andShader:m_simpleProgram];
-    [shellList addObject:shell];
+    ShellObject *shell = [[ShellObject alloc] initInSpace:tank.space withPosition:shellPos andVelocity:shellVel andShader:m_simpleProgram];
+    [self.shellList addObject:shell];
     
     
 }
@@ -357,11 +382,11 @@ void shellHitTank(){
     // tank control forces
     if (fabs(translationSpeed)>0.5) {
         contForce = translationSpeed;
-        playerTank.controlForce = contForce;
+        self.playerTank.controlForce = contForce;
         
     }
     contTorque = [self rotationDirection];
-    playerTank.controlTorque = contTorque;
+    self.playerTank.controlTorque = contTorque;
     
     // adjust engine
     float EngVol = (fabs(leftSliderPos)+fabs(rightSliderPos));
@@ -416,7 +441,7 @@ void shellHitTank(){
 }
 
 -(void) dealloc {
-    for (ShellObject*s in shellList) {
+    for (ShellObject*s in self.shellList) {
         cpShapeFree(s.shape);
         cpBodyFree(s.body);
     }

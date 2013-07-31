@@ -58,13 +58,15 @@
     cpShape *topBounds,*bottomBounds,*leftBounds,*rightBounds;
     cpFloat timeStep;
     cpFloat elapsedTime;
-        
-    NSMutableArray *shellList;
-    TankObject *playerTank;
-    EnemyTankObject *evilTank1;
 }
+@property NSMutableArray *shellList;
+
+@property TankObject *playerTank;
+@property EnemyTankObject *evilTank1;
+//}
 @property TankSoundController *tankSounds;
 
++(RenderingEngine2*) ourEngine;
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
 -(id) initWithSize:(CGSize)size;
 -(GLuint) buildProgram;
@@ -76,6 +78,7 @@
 -(void) renderFireButton;
 
 -(void) playerTankFiresShell;
+-(void) removeShell:(cpShape*)shell;
 
 -(void) updateAnimationWithTimestep:(float)timestep;
 

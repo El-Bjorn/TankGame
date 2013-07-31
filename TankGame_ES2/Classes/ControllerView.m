@@ -59,6 +59,8 @@
 			//fprintf(stderr, "normed right controller pos = %f\n",normedY);
 			[rendEng setRightSlider:normedY];
 			break;
+        case fireButton: // this makes clang happy
+            break;
 	}
 	//fprintf(stderr, "controllerView got moved\n");
 }

@@ -12,6 +12,8 @@
 
 #import "ArenaObject.h"
 
+#define TANK_SIZE 1 // size of tank on the screen
+
 
 @interface TankObject : ArenaObject
 

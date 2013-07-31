@@ -39,6 +39,8 @@ static GLsizei shellVertCount;
         shellCoords = (void*)&tankShell[0].Position[0];
         shellColors = (void*)&tankShell[0].Color[0];
         shellVertCount = sizeof(tankShell)/sizeof(Vertex);
+        
+        //self.display = YES;
     }
     return self;
     
