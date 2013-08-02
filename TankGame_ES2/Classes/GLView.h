@@ -17,7 +17,7 @@
 	RenderingEngine2 *m_renderingEngine;
 	float m_timestamp;
     
-    CALayer *xLayer;
+    //CALayer *xLayer;
 }
 
 -(void) drawView:(CADisplayLink*)displayLink;

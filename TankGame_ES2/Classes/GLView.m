@@ -37,8 +37,8 @@
 		
 		[EAGLContext setCurrentContext:m_context];
 		
-		m_renderingEngine = [[RenderingEngine2 alloc] initWithSize:frame.size];
-        [m_renderingEngine setOurView:self];
+		m_renderingEngine = [[RenderingEngine2 alloc] initWithSize:frame.size andViewLayer:self.layer];
+        //[m_renderingEngine setOurView:self];
 		
 		
 		[m_context renderbufferStorage:GL_RENDERBUFFER
@@ -75,14 +75,14 @@
         
         // playing around with CALayers to see how bad it f's performance
         //CALayer *tstLayer = self.layer;
-        xLayer = [CALayer layer];
+        //xLayer = [CALayer layer];
         //tstLayer.frame = CGRectMake(10, 10, 10, 10);
-        xLayer.bounds = CGRectMake(0, 0, 100, 100);
-        xLayer.position = CGPointMake(100, 100);
+        //xLayer.bounds = CGRectMake(0, 0, 100, 100);
+        //xLayer.position = CGPointMake(100, 100);
         //tstLayer.backgroundColor = [[UIColor greenColor] CGColor];
-        xLayer.contents = (id)[UIImage imageNamed:@"LLVM-Logo.png"].CGImage;
+        //xLayer.contents = (id)[UIImage imageNamed:@"LLVM-Logo.png"].CGImage;
         //xLayer.delegate = self;
-        [self.layer addSublayer:xLayer];
+        //[self.layer addSublayer:xLayer];
 	}
 	
     return self;

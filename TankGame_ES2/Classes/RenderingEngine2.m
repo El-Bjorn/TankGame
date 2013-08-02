@@ -11,6 +11,7 @@
 #include "tank_shaders.h"
 #include "controller_models.h"
 #include "button_model.h"
+#include "ScoreDisp.h"
 
 CGPoint physToScreen(CGPoint pt);
 CGPoint screenToPhys(CGPoint pt);
@@ -42,6 +43,7 @@ static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unuse
     cpArbiterGetShapes(arb, &t, &s);
     if (t == rendEng.playerTank.shape) {
        fprintf(stderr, "player hit ouch!, we've taken %d hits.\n",playerTank_hits++);
+        [rendEng.playerScore setString:[NSString stringWithFormat:@"%d",playerTank_hits]];
     } else if (t == rendEng.evilTank1.shape){
        fprintf(stderr,"Enemy tank hit! HA!   hit num:%d\n",enemyTank_hits++);
     }
@@ -59,7 +61,9 @@ static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unuse
 
 void shellHitTank(){
     static int num_hits=0;
+    RenderingEngine2 *rendEng = [RenderingEngine2 ourEngine];
     fprintf(stderr,"tank hit! ouch!  hit number: %d\n",num_hits++);
+    [rendEng.playerScore setString:[NSString stringWithFormat:@"%d",num_hits]];
 }
 
 // this is the pointer to the shared singleton class
@@ -68,9 +72,9 @@ static RenderingEngine2 *theEngine;
 
 @implementation RenderingEngine2
 
--(void) setOurView:(UIView *)v {
-    ourView = v;
-}
+/*-(void) setOurViewLayer:(CALayer*)v {
+    ourViewLayer = v;
+} */
 
 
 -(void) explosionAtPoint:(CGPoint)pt {
@@ -82,18 +86,19 @@ static RenderingEngine2 *theEngine;
     xLayer.position = scrnPt;
     xLayer.opacity = 0.5;
     xLayer.contents = (id)[UIImage imageNamed:@"explosionBW2.png"].CGImage;
-    [ourView.layer addSublayer:xLayer];
+    [ourViewLayer addSublayer:xLayer];
     [UIView animateWithDuration:5.0 animations:^{
-        CABasicAnimation *explode = [CABasicAnimation animationWithKeyPath:@"affineTransform"];
+        CABasicAnimation *explode = [CABasicAnimation animationWithKeyPath:@"transform"];
         CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
         fade.duration = 0.5;
+        explode.duration = 0.25;
         fade.fromValue = [NSNumber numberWithFloat:0.5];
         fade.toValue = [NSNumber numberWithFloat:0.0];
-        explode.fromValue = [NSValue valueWithCGAffineTransform:CGAffineTransformIdentity];
-        explode.toValue = [NSValue valueWithCGAffineTransform:CGAffineTransformMakeScale(0, 0)];
-        explode.duration = 5.0;
+        explode.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.5, 0.5, 0.5)];
+        explode.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)];
         //[xLayer addAnimation:explode forKey:@"AnimateFrame"];
         [xLayer addAnimation:fade forKey:@"opacity"];
+        [xLayer addAnimation:explode forKey:@"transform"];
         xLayer.opacity = 0.0;
     }];
 }
@@ -138,9 +143,10 @@ static RenderingEngine2 *theEngine;
     [self tankFiresShell:self.evilTank1];
 }
 
--(id) initWithSize:(CGSize)size {
+-(id) initWithSize:(CGSize)size andViewLayer:(CALayer *)vLayer {
 	self = [super init];
 	if (self) {
+        ourViewLayer = vLayer;
 		// init renderbuffer
 		glGenRenderbuffers(1, &m_renderbuffer);
 		glBindRenderbuffer(GL_RENDERBUFFER, m_renderbuffer);
@@ -207,6 +213,16 @@ static RenderingEngine2 *theEngine;
         //[self initTankFireSound];
         self.tankSounds = [[TankSoundController alloc] init];
         [self.tankSounds startEngine];
+        
+        // score display setup
+        //self.playerScore = [[ScoreDisp alloc] initAtPos:CGPointMake(100, 100) withParentLayer:ourView.layer];
+        self.playerScore = [CATextLayer layer];
+        self.playerScore.bounds = CGRectMake(0, 0, 150, 150);
+        self.playerScore.position = CGPointMake(100, 100);
+        //self.playerScore.backgroundColor = [UIColor greenColor].CGColor;
+        //self.playerScore.contents=(id)[UIImage imageNamed:@"explosionBW2.png"].CGImage;        //self.playerScore.fontSize = 20;
+        [self.playerScore setString:@"0"];
+        [ourViewLayer addSublayer:self.playerScore];
          
 	}
     theEngine = self;

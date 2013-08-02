@@ -17,12 +17,14 @@
 #import "TankObject.h"
 #import "EnemyTankObject.h"
 #import "TankSoundController.h"
+#import "ScoreDisp.h"
 
 
 @interface RenderingEngine2 : NSObject {
     
     // doing evil things with CALayers
-    UIView *ourView;
+    CALayer *ourViewLayer;
+    //ScoreDisp *playerScore;
 
 	GLuint m_framebuffer;
 	GLuint m_renderbuffer;
@@ -63,6 +65,7 @@
     cpFloat elapsedTime;
 }
 @property NSMutableArray *shellList;
+@property CATextLayer *playerScore;
 
 @property TankObject *playerTank;
 @property EnemyTankObject *evilTank1;
@@ -71,13 +74,13 @@
 
 +(RenderingEngine2*) ourEngine;
 -(void) applyOrtho_MaxX:(float)maxX MaxY:(float)maxY;
--(id) initWithSize:(CGSize)size;
+-(id) initWithSize:(CGSize)size andViewLayer:(CALayer*)vLayer;
 -(GLuint) buildProgram;
 -(GLuint) buildShaderWithSource:(const char*)src andType:(GLenum)type;
 
 
 // this is for doing bad things with CALayer in openGL
--(void) setOurView:(UIView*)v;
+//-(void) setOurView:(UIView*)v;
 -(void) explosionAtPoint:(CGPoint)pt;
 
 -(void) render;
