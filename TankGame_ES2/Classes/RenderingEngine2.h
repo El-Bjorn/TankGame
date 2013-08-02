@@ -20,6 +20,9 @@
 
 
 @interface RenderingEngine2 : NSObject {
+    
+    // doing evil things with CALayers
+    UIView *ourView;
 
 	GLuint m_framebuffer;
 	GLuint m_renderbuffer;
@@ -71,6 +74,11 @@
 -(id) initWithSize:(CGSize)size;
 -(GLuint) buildProgram;
 -(GLuint) buildShaderWithSource:(const char*)src andType:(GLenum)type;
+
+
+// this is for doing bad things with CALayer in openGL
+-(void) setOurView:(UIView*)v;
+-(void) explosionAtPoint:(CGPoint)pt;
 
 -(void) render;
 -(void) renderSliders;

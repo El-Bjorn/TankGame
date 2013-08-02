@@ -16,6 +16,11 @@
 		403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C9DB7178E28BB00B6DB48 /* EnemyTankObject.m */; };
 		40416CC21784DBC000276AF5 /* ShellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40416CC11784DBC000276AF5 /* ShellObject.m */; };
 		408DD53217863A35006D41F1 /* TankObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 408DD53117863A35006D41F1 /* TankObject.m */; };
+		40A0825117AB0FC300C1A2E5 /* LLVM-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825017AB0FC300C1A2E5 /* LLVM-Logo.png */; };
+		40A0825317AB18B700C1A2E5 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825217AB18B700C1A2E5 /* explosion.png */; };
+		40A0825517AB321000C1A2E5 /* coordsTrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 40A0825417AB321000C1A2E5 /* coordsTrans.c */; };
+		40A0825717AB712300C1A2E5 /* explosionBW1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825617AB712300C1A2E5 /* explosionBW1.png */; };
+		40A0825917AB71D700C1A2E5 /* explosionBW2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825817AB71D700C1A2E5 /* explosionBW2.png */; };
 		40D2C54C178F867B00D8ED62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D2C54B178F867B00D8ED62 /* AVFoundation.framework */; };
 		40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C54E17909F0D00D8ED62 /* TankSoundController.m */; };
 		40D2C5511790B07F00D8ED62 /* tank-engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40D2C5501790B07F00D8ED62 /* tank-engine.wav */; };
@@ -81,6 +86,11 @@
 		408DD53017863A27006D41F1 /* TankObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankObject.h; sourceTree = "<group>"; };
 		408DD53117863A35006D41F1 /* TankObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankObject.m; sourceTree = "<group>"; };
 		40A0820F17A86B1900C1A2E5 /* tank_shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tank_shaders.h; sourceTree = "<group>"; };
+		40A0825017AB0FC300C1A2E5 /* LLVM-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LLVM-Logo.png"; sourceTree = "<group>"; };
+		40A0825217AB18B700C1A2E5 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
+		40A0825417AB321000C1A2E5 /* coordsTrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coordsTrans.c; sourceTree = "<group>"; };
+		40A0825617AB712300C1A2E5 /* explosionBW1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosionBW1.png; sourceTree = "<group>"; };
+		40A0825817AB71D700C1A2E5 /* explosionBW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosionBW2.png; sourceTree = "<group>"; };
 		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		40D2C54D17909F0D00D8ED62 /* TankSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankSoundController.h; sourceTree = "<group>"; };
 		40D2C54E17909F0D00D8ED62 /* TankSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankSoundController.m; sourceTree = "<group>"; };
@@ -179,6 +189,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				40A0825417AB321000C1A2E5 /* coordsTrans.c */,
 				40A0820F17A86B1900C1A2E5 /* tank_shaders.h */,
 				408DD52F178639EC006D41F1 /* ArenaObjects */,
 				408DD52B17862658006D41F1 /* models */,
@@ -230,6 +241,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40A0825817AB71D700C1A2E5 /* explosionBW2.png */,
+				40A0825617AB712300C1A2E5 /* explosionBW1.png */,
+				40A0825217AB18B700C1A2E5 /* explosion.png */,
+				40A0825017AB0FC300C1A2E5 /* LLVM-Logo.png */,
 				82F54189178F27C300B0AF52 /* sounds */,
 				8D1107310486CEB800E47090 /* ES2_tankgame-Info.plist */,
 			);
@@ -447,6 +462,10 @@
 				82F5418B178F27E300B0AF52 /* tank-engine.caf in Resources */,
 				82F5418D178F27EF00B0AF52 /* tank-fire.caf in Resources */,
 				40D2C5511790B07F00D8ED62 /* tank-engine.wav in Resources */,
+				40A0825117AB0FC300C1A2E5 /* LLVM-Logo.png in Resources */,
+				40A0825317AB18B700C1A2E5 /* explosion.png in Resources */,
+				40A0825717AB712300C1A2E5 /* explosionBW1.png in Resources */,
+				40A0825917AB71D700C1A2E5 /* explosionBW2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +515,7 @@
 				403C9DB2178CBB1500B6DB48 /* ArenaObject.m in Sources */,
 				403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */,
 				40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */,
+				40A0825517AB321000C1A2E5 /* coordsTrans.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

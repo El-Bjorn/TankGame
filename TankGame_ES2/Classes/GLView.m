@@ -38,6 +38,7 @@
 		[EAGLContext setCurrentContext:m_context];
 		
 		m_renderingEngine = [[RenderingEngine2 alloc] initWithSize:frame.size];
+        [m_renderingEngine setOurView:self];
 		
 		
 		[m_context renderbufferStorage:GL_RENDERBUFFER
@@ -71,10 +72,25 @@
                                                               rendEngine:m_renderingEngine
                                                                    andID:fireButton];
         [self addSubview:fButton];
+        
+        // playing around with CALayers to see how bad it f's performance
+        //CALayer *tstLayer = self.layer;
+        xLayer = [CALayer layer];
+        //tstLayer.frame = CGRectMake(10, 10, 10, 10);
+        xLayer.bounds = CGRectMake(0, 0, 100, 100);
+        xLayer.position = CGPointMake(100, 100);
+        //tstLayer.backgroundColor = [[UIColor greenColor] CGColor];
+        xLayer.contents = (id)[UIImage imageNamed:@"LLVM-Logo.png"].CGImage;
+        //xLayer.delegate = self;
+        [self.layer addSublayer:xLayer];
 	}
 	
     return self;
 }
+
+//-(void) drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
+    
+//}
 
 
 -(void) drawView:(CADisplayLink *)displayLink {
@@ -82,6 +98,27 @@
 		float elapsedSeconds = displayLink.timestamp - m_timestamp;
 		m_timestamp = displayLink.timestamp;
 		[m_renderingEngine updateAnimationWithTimestep:elapsedSeconds];
+        //fprintf(stderr, "elapsed= %f\n",m_timestamp);
+        /*if ((rand() % 100)==10) {
+            fprintf(stderr,"bla!\n");// Change the position explicitly.
+            [UIView animateWithDuration:5.0 animations:^{
+                CABasicAnimation *explode = [CABasicAnimation animationWithKeyPath:@"contensScale"];
+                explode.fromValue = (id)[NSNumber numberWithFloat: 1.0];
+                explode.toValue = (id)[NSNumber numberWithFloat:2.0];
+                //[NSValue valueWithCGAffineTransform:CGAffineTransformMakeScale(10, 10)];
+                explode.duration = 5.0;
+                [xLayer addAnimation:explode forKey:@"AnimateFrame"]; }];
+            /*CABasicAnimation* theAnim = [CABasicAnimation animationWithKeyPath:@"position"];
+            theAnim.fromValue = [NSValue valueWithCGPoint:xLayer.position];
+            CGPoint tmp = xLayer.position;
+            tmp.x += 100;
+            tmp.y += 100;
+            theAnim.toValue = [NSValue valueWithCGPoint:tmp];
+            theAnim.duration = 3.0;
+                [xLayer addAnimation:theAnim forKey:@"AnimateFrame"]; }];
+            //xLayer.position = tmp;
+            //[xLayer setNeedsDisplay];
+        } */
 	}
 	[m_renderingEngine render];
 	[m_context presentRenderbuffer:GL_RENDERBUFFER];

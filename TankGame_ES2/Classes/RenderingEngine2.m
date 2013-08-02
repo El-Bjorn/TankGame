@@ -12,6 +12,9 @@
 #include "controller_models.h"
 #include "button_model.h"
 
+CGPoint physToScreen(CGPoint pt);
+CGPoint screenToPhys(CGPoint pt);
+
 // we get one of these notifications when an enemy tank
 //    wants to shoot something.
 extern NSString *NOTIF_ENEMY_TANK_FIRES;
@@ -26,6 +29,9 @@ static void after_shell_hits_tank(cpSpace *space, cpShape *shape, void *unused)
     cpShapeFree(shape);
 }
 
+#define XPOS_MUL 10
+#define YPOS_MUL 10
+
 static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unused) {
     static int playerTank_hits = 0;
     static int enemyTank_hits = 0;
@@ -39,6 +45,13 @@ static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unuse
     } else if (t == rendEng.evilTank1.shape){
        fprintf(stderr,"Enemy tank hit! HA!   hit num:%d\n",enemyTank_hits++);
     }
+    CGPoint xPt = (CGPoint)cpBodyGetPos( cpShapeGetBody(s));
+    /*xPt.x += 10;
+    xPt.y += 10;
+    xPt.x *= XPOS_MUL;
+    xPt.y *= YPOS_MUL;
+    fprintf(stderr,"explosion pt= %.2f,%.2f\n",xPt.x,xPt.y);*/
+    [rendEng explosionAtPoint:xPt];
     [rendEng removeShell:s];
     cpSpaceAddPostStepCallback(sp, (cpPostStepFunc)after_shell_hits_tank, s, NULL);
     return 1;
@@ -54,6 +67,36 @@ void shellHitTank(){
 static RenderingEngine2 *theEngine;
 
 @implementation RenderingEngine2
+
+-(void) setOurView:(UIView *)v {
+    ourView = v;
+}
+
+
+-(void) explosionAtPoint:(CGPoint)pt {
+    CGPoint scrnPt = physToScreen(pt);
+    
+    fprintf(stderr,"explosion phys:(%f,%f), screen:(%f,%f)\n",pt.x,pt.y,scrnPt.x,scrnPt.y);
+    CALayer *xLayer = [CALayer layer];
+    xLayer.bounds = CGRectMake(0, 0, 100, 100);
+    xLayer.position = scrnPt;
+    xLayer.opacity = 0.5;
+    xLayer.contents = (id)[UIImage imageNamed:@"explosionBW2.png"].CGImage;
+    [ourView.layer addSublayer:xLayer];
+    [UIView animateWithDuration:5.0 animations:^{
+        CABasicAnimation *explode = [CABasicAnimation animationWithKeyPath:@"affineTransform"];
+        CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        fade.duration = 0.5;
+        fade.fromValue = [NSNumber numberWithFloat:0.5];
+        fade.toValue = [NSNumber numberWithFloat:0.0];
+        explode.fromValue = [NSValue valueWithCGAffineTransform:CGAffineTransformIdentity];
+        explode.toValue = [NSValue valueWithCGAffineTransform:CGAffineTransformMakeScale(0, 0)];
+        explode.duration = 5.0;
+        //[xLayer addAnimation:explode forKey:@"AnimateFrame"];
+        [xLayer addAnimation:fade forKey:@"opacity"];
+        xLayer.opacity = 0.0;
+    }];
+}
 
 -(void) removeShell:(cpShape *)shell {
     //fprintf(stderr,"%d shells in list, removing one\n",[self.shellList count]);

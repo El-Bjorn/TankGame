@@ -16,6 +16,8 @@
 	EAGLContext *m_context;
 	RenderingEngine2 *m_renderingEngine;
 	float m_timestamp;
+    
+    CALayer *xLayer;
 }
 
 -(void) drawView:(CADisplayLink*)displayLink;
