@@ -10,4 +10,13 @@
 
 @interface ScoreDisp : CATextLayer
 
+@property CGPoint position;
+@property int score;
+@property NSString *dispString;
+@property CALayer *parentLayer;
+
+-(id) initAtPos:(CGPoint)pos withParentLayer:(CALayer*)pLayer;
+
+-(void) incrementScore;
+
 @end

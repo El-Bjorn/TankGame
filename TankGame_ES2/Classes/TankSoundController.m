@@ -9,6 +9,7 @@
 #import "TankSoundController.h"
 
 static SystemSoundID tankFireSoundID;
+static SystemSoundID tankHitID;
 
 @implementation TankSoundController
 
@@ -25,6 +26,10 @@ static SystemSoundID tankFireSoundID;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"tank-fire" ofType:@"caf"];
     NSURL *afURL = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankFireSoundID);
+    
+    path = [[NSBundle mainBundle] pathForResource:@"tankHit1" ofType:@"wav"];
+    afURL = [NSURL fileURLWithPath:path];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankHitID);
     
     // uAVAudio
     self.tankEngine.enableRate = YES;
@@ -46,6 +51,10 @@ static SystemSoundID tankFireSoundID;
 
 -(void) enemyTankFires {
     AudioServicesPlaySystemSound(tankFireSoundID);
+}
+
+-(void) tankHit {
+    AudioServicesPlaySystemSound(tankHitID);
 }
 
 -(void) startEngine {

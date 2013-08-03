@@ -80,6 +80,8 @@ static RenderingEngine2 *theEngine;
 -(void) explosionAtPoint:(CGPoint)pt {
     CGPoint scrnPt = physToScreen(pt);
     
+    [self.tankSounds tankHit];
+    
     fprintf(stderr,"explosion phys:(%f,%f), screen:(%f,%f)\n",pt.x,pt.y,scrnPt.x,scrnPt.y);
     CALayer *xLayer = [CALayer layer];
     xLayer.bounds = CGRectMake(0, 0, 100, 100);
@@ -279,16 +281,20 @@ static RenderingEngine2 *theEngine;
     //[playerTank renderWithForce:contForce andTorque:contTorque];
     [self.playerTank render];
     [self.evilTank1 render];
+    // shells
+    NSMutableArray *deadShells = [[NSMutableArray alloc] initWithArray:nil];
     for (ShellObject *s in self.shellList) {
-        //if (s.display) {
+        if ([s tooSlow]) {
+            [deadShells addObject:s];
+        }
+        else {
             [s render];
-        //}
-        //[s render];
+        }
     }
-    // start shooting?
-    /*if (rand()%100 == 150) {
-        [self tankFiresShell:playerTank];
-    } */
+    for (ShellObject *ds in deadShells) {
+        [self.shellList removeObject:ds];
+        [ds removeShell];
+    }
 }
 
 -(void) renderSliders {

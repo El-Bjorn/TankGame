@@ -16,6 +16,22 @@ static GLsizei shellVertCount;
 
 @implementation ShellObject
 
+-(BOOL) tooSlow {
+    CGPoint velVect = cpBodyGetVel(self.body);
+    float shellVel = (velVect.x * velVect.x)+(velVect.y * velVect.y); // A^2+B^2
+    if (shellVel < (MIN_SHELL_VELOCITY*MIN_SHELL_VELOCITY)) {
+        return YES;
+    }
+    return NO;
+}
+
+-(void) removeShell {
+    cpSpaceRemoveBody(self.space, self.body);
+    cpBodyFree(self.body);
+    cpSpaceRemoveShape(self.space, self.shape);
+    cpShapeFree(self.shape);
+}
+
 -(id) initInSpace:(cpSpace*)obj_space withPosition:(cpVect)pos andVelocity:(cpVect)vel andShader:(GLuint)shade
 {
     self = [super init];

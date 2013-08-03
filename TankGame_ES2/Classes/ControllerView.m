@@ -27,15 +27,15 @@
 	normedY *= -1;
 	switch (myID) {
 		case leftContoller:
-			fprintf(stderr, "normed left controller pos= %f\n",normedY);
+			//fprintf(stderr, "normed left controller pos= %f\n",normedY);
 			[rendEng setLeftSlider:normedY];
 			break;
 		case rightController:
-			fprintf(stderr, "normed right controller pos = %f\n",normedY);
+			//fprintf(stderr, "normed right controller pos = %f\n",normedY);
 			[rendEng setRightSlider:normedY];
 			break;
         case fireButton:
-            fprintf(stderr,"fire button at: %.2f,%.2f\n",t.x,t.y);
+            //fprintf(stderr,"fire button at: %.2f,%.2f\n",t.x,t.y);
             [rendEng playerTankFiresShell];
             break;
 	}

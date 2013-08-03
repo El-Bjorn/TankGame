@@ -9,7 +9,7 @@
 #import "ArenaObject.h"
 
 #define SHELL_VELOCITY 35
-#define DEAD_SHELL_VELOCITY 25
+#define MIN_SHELL_VELOCITY 34.5
 
 @interface ShellObject : ArenaObject
 
@@ -18,6 +18,10 @@
                                         andVelocity:(cpVect)vel
                                         andShader:(GLuint)shade;
 -(void) render;
+
+-(BOOL) tooSlow;
+
+-(void) removeShell;
 
 //@property BOOL display;
 

@@ -20,6 +20,8 @@
 -(void) playerTankFires;
 -(void) enemyTankFires;
 
+-(void) tankHit;
+
 -(void) startEngine;
 -(void) setEngineVolume:(float)vol;
 -(void) setEngineSpeed:(float)r;
