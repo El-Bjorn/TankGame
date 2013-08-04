@@ -86,15 +86,15 @@ static RenderingEngine2 *theEngine;
     CALayer *xLayer = [CALayer layer];
     xLayer.bounds = CGRectMake(0, 0, 100, 100);
     xLayer.position = scrnPt;
-    xLayer.opacity = 0.5;
-    xLayer.contents = (id)[UIImage imageNamed:@"explosionBW2.png"].CGImage;
+    xLayer.opacity = 1.0;
+    xLayer.contents = (id)[UIImage imageNamed:@"vector_explosion2bw2.png"].CGImage;
     [ourViewLayer addSublayer:xLayer];
     [UIView animateWithDuration:5.0 animations:^{
         CABasicAnimation *explode = [CABasicAnimation animationWithKeyPath:@"transform"];
         CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
         fade.duration = 0.5;
         explode.duration = 0.25;
-        fade.fromValue = [NSNumber numberWithFloat:0.5];
+        fade.fromValue = [NSNumber numberWithFloat:1.0];
         fade.toValue = [NSNumber numberWithFloat:0.0];
         explode.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.5, 0.5, 0.5)];
         explode.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)];
