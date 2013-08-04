@@ -6,21 +6,26 @@
 //  Copyright (c) 2013 Built Light. All rights reserved.
 //
 
-#import "ScoreDisp.h"
+#import "ScoreHUD.h"
 
-@implementation ScoreDisp
+@implementation ScoreHUD
 
--(id) initAtPos:(CGPoint)pos withParentLayer:(CALayer *)pLayer {
+/*+(ScoreHUD*) layerAtPos:(CGPoint)pos onParentLayer:(CALayer*)pLayer {
+    
+} */
+
+-(id) initAtPos:(CGPoint)pos onParentLayer:(CALayer *)pLayer {
     self = [super init];
     if (self) {
+        self.ourLayer = [CATextLayer layer];
         self.score = 0;
         self.parentLayer = pLayer;
-        self.bounds = CGRectMake(0, 0, 1000, 1000);
+        self.bounds = CGRectMake(0, 0, 150, 150);
         self.position = pos;
-        self.foregroundColor = [UIColor whiteColor].CGColor;
-        self.backgroundColor = [UIColor greenColor].CGColor;
-        self.fontSize = 20.0f;
-        self.alignmentMode = kCAAlignmentCenter;
+        //self.foregroundColor = [UIColor whiteColor].CGColor;
+        //self.backgroundColor = [UIColor greenColor].CGColor;
+        //self.fontSize = 20.0f;
+        //self.alignmentMode = kCAAlignmentCenter;
         [self setString:[NSString stringWithFormat:@"%d",self.score]];
         [pLayer addSublayer:self];
         //[self setNeedsDisplay];

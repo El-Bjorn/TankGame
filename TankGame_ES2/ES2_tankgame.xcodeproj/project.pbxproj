@@ -21,7 +21,7 @@
 		40A0825517AB321000C1A2E5 /* coordsTrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 40A0825417AB321000C1A2E5 /* coordsTrans.c */; };
 		40A0825717AB712300C1A2E5 /* explosionBW1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825617AB712300C1A2E5 /* explosionBW1.png */; };
 		40A0825917AB71D700C1A2E5 /* explosionBW2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825817AB71D700C1A2E5 /* explosionBW2.png */; };
-		40A0825C17AC648900C1A2E5 /* ScoreDisp.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0825B17AC648800C1A2E5 /* ScoreDisp.m */; };
+		40A0825C17AC648900C1A2E5 /* ScoreHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0825B17AC648800C1A2E5 /* ScoreHUD.m */; };
 		40A0825E17AD971100C1A2E5 /* tankHit1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825D17AD971100C1A2E5 /* tankHit1.wav */; };
 		40A0826017AE09C000C1A2E5 /* vector_explosion1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825F17AE09C000C1A2E5 /* vector_explosion1.png */; };
 		40A0826217AE0B8600C1A2E5 /* vector_explosion2bw2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0826117AE0B8600C1A2E5 /* vector_explosion2bw2.png */; };
@@ -95,11 +95,12 @@
 		40A0825417AB321000C1A2E5 /* coordsTrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coordsTrans.c; sourceTree = "<group>"; };
 		40A0825617AB712300C1A2E5 /* explosionBW1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosionBW1.png; sourceTree = "<group>"; };
 		40A0825817AB71D700C1A2E5 /* explosionBW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosionBW2.png; sourceTree = "<group>"; };
-		40A0825A17AC648800C1A2E5 /* ScoreDisp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreDisp.h; sourceTree = "<group>"; };
-		40A0825B17AC648800C1A2E5 /* ScoreDisp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreDisp.m; sourceTree = "<group>"; };
+		40A0825A17AC648800C1A2E5 /* ScoreHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreHUD.h; sourceTree = "<group>"; };
+		40A0825B17AC648800C1A2E5 /* ScoreHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreHUD.m; sourceTree = "<group>"; };
 		40A0825D17AD971100C1A2E5 /* tankHit1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tankHit1.wav; sourceTree = "<group>"; };
 		40A0825F17AE09C000C1A2E5 /* vector_explosion1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vector_explosion1.png; sourceTree = "<group>"; };
 		40A0826117AE0B8600C1A2E5 /* vector_explosion2bw2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vector_explosion2bw2.png; sourceTree = "<group>"; };
+		40A0826317AEDA1F00C1A2E5 /* coordsTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordsTrans.h; sourceTree = "<group>"; };
 		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		40D2C54D17909F0D00D8ED62 /* TankSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankSoundController.h; sourceTree = "<group>"; };
 		40D2C54E17909F0D00D8ED62 /* TankSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankSoundController.m; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				40A0825417AB321000C1A2E5 /* coordsTrans.c */,
+				40A0826317AEDA1F00C1A2E5 /* coordsTrans.h */,
 				40A0820F17A86B1900C1A2E5 /* tank_shaders.h */,
 				408DD52F178639EC006D41F1 /* ArenaObjects */,
 				408DD52B17862658006D41F1 /* models */,
@@ -212,8 +214,8 @@
 				8219E3FC13E329F200630C83 /* ControllerView.m */,
 				40D2C54D17909F0D00D8ED62 /* TankSoundController.h */,
 				40D2C54E17909F0D00D8ED62 /* TankSoundController.m */,
-				40A0825A17AC648800C1A2E5 /* ScoreDisp.h */,
-				40A0825B17AC648800C1A2E5 /* ScoreDisp.m */,
+				40A0825A17AC648800C1A2E5 /* ScoreHUD.h */,
+				40A0825B17AC648800C1A2E5 /* ScoreHUD.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -533,7 +535,7 @@
 				403C9DB8178E28BB00B6DB48 /* EnemyTankObject.m in Sources */,
 				40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */,
 				40A0825517AB321000C1A2E5 /* coordsTrans.c in Sources */,
-				40A0825C17AC648900C1A2E5 /* ScoreDisp.m in Sources */,
+				40A0825C17AC648900C1A2E5 /* ScoreHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

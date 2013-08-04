@@ -17,7 +17,7 @@
 #import "TankObject.h"
 #import "EnemyTankObject.h"
 #import "TankSoundController.h"
-#import "ScoreDisp.h"
+#import "ScoreHUD.h"
 
 
 @interface RenderingEngine2 : NSObject {
@@ -65,7 +65,8 @@
     cpFloat elapsedTime;
 }
 @property NSMutableArray *shellList;
-@property CATextLayer *playerScore;
+@property ScoreHUD *enemyScore;
+@property ScoreHUD *playerScore;
 
 @property TankObject *playerTank;
 @property EnemyTankObject *evilTank1;

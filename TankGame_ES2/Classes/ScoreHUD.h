@@ -8,14 +8,15 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface ScoreDisp : CATextLayer
+@interface ScoreHUD : CATextLayer
 
 @property CGPoint position;
 @property int score;
 @property NSString *dispString;
 @property CALayer *parentLayer;
+@property CATextLayer *ourLayer;
 
--(id) initAtPos:(CGPoint)pos withParentLayer:(CALayer*)pLayer;
+-(id) initAtPos:(CGPoint)pos onParentLayer:(CALayer*)pLayer;
 
 -(void) incrementScore;
 

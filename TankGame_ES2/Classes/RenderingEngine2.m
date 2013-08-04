@@ -11,10 +11,11 @@
 #include "tank_shaders.h"
 #include "controller_models.h"
 #include "button_model.h"
-#include "ScoreDisp.h"
+#include "ScoreHUD.h"
 
-CGPoint physToScreen(CGPoint pt);
-CGPoint screenToPhys(CGPoint pt);
+#import "coordsTrans.h"
+//CGPoint physToScreen(CGPoint pt);
+//CGPoint screenToPhys(CGPoint pt);
 
 // we get one of these notifications when an enemy tank
 //    wants to shoot something.
@@ -34,47 +35,32 @@ static void after_shell_hits_tank(cpSpace *space, cpShape *shape, void *unused)
 #define YPOS_MUL 10
 
 static int shellToTank_collisionHandler(cpArbiter *arb, cpSpace *sp, void *unused) {
-    static int playerTank_hits = 0;
-    static int enemyTank_hits = 0;
+    //static int playerTank_hits = 0;
+    //static int enemyTank_hits = 0;
     RenderingEngine2 *rendEng = [RenderingEngine2 ourEngine];
     
     cpShape *t; // tank
     cpShape *s; // shell
     cpArbiterGetShapes(arb, &t, &s);
     if (t == rendEng.playerTank.shape) {
-       fprintf(stderr, "player hit ouch!, we've taken %d hits.\n",playerTank_hits++);
-        [rendEng.playerScore setString:[NSString stringWithFormat:@"%d",playerTank_hits]];
+        [rendEng.enemyScore incrementScore];
     } else if (t == rendEng.evilTank1.shape){
-       fprintf(stderr,"Enemy tank hit! HA!   hit num:%d\n",enemyTank_hits++);
+       //fprintf(stderr,"Enemy tank hit! HA!   hit num:%d\n",enemyTank_hits++);
+        [rendEng.playerScore incrementScore];
     }
     CGPoint xPt = (CGPoint)cpBodyGetPos( cpShapeGetBody(s));
-    /*xPt.x += 10;
-    xPt.y += 10;
-    xPt.x *= XPOS_MUL;
-    xPt.y *= YPOS_MUL;
-    fprintf(stderr,"explosion pt= %.2f,%.2f\n",xPt.x,xPt.y);*/
     [rendEng explosionAtPoint:xPt];
     [rendEng removeShell:s];
     cpSpaceAddPostStepCallback(sp, (cpPostStepFunc)after_shell_hits_tank, s, NULL);
     return 1;
 }
 
-void shellHitTank(){
-    static int num_hits=0;
-    RenderingEngine2 *rendEng = [RenderingEngine2 ourEngine];
-    fprintf(stderr,"tank hit! ouch!  hit number: %d\n",num_hits++);
-    [rendEng.playerScore setString:[NSString stringWithFormat:@"%d",num_hits]];
-}
 
 // this is the pointer to the shared singleton class
 //  needed to do this so c-callbacks can easily access the engine
 static RenderingEngine2 *theEngine;
 
 @implementation RenderingEngine2
-
-/*-(void) setOurViewLayer:(CALayer*)v {
-    ourViewLayer = v;
-} */
 
 
 -(void) explosionAtPoint:(CGPoint)pt {
@@ -117,19 +103,6 @@ static RenderingEngine2 *theEngine;
     [self.shellList removeObject:obj];
 }
 
-//static SystemSoundID tankFireSoundID;
-
-/*-(void) initTankFireSound {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"tank-fire" ofType:@"caf"];
-    NSURL *afURL = [NSURL fileURLWithPath:path];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankFireSoundID);
-    
-    NSLog(@"start engine sounds");
-} */
-
-/*-(void) tankFireSound {
-    AudioServicesPlaySystemSound(tankFireSoundID);
-} */
 
 +(RenderingEngine2*) ourEngine {
     if (theEngine == nil){
@@ -217,14 +190,8 @@ static RenderingEngine2 *theEngine;
         [self.tankSounds startEngine];
         
         // score display setup
-        //self.playerScore = [[ScoreDisp alloc] initAtPos:CGPointMake(100, 100) withParentLayer:ourView.layer];
-        self.playerScore = [CATextLayer layer];
-        self.playerScore.bounds = CGRectMake(0, 0, 150, 150);
-        self.playerScore.position = CGPointMake(100, 100);
-        //self.playerScore.backgroundColor = [UIColor greenColor].CGColor;
-        //self.playerScore.contents=(id)[UIImage imageNamed:@"explosionBW2.png"].CGImage;        //self.playerScore.fontSize = 20;
-        [self.playerScore setString:@"0"];
-        [ourViewLayer addSublayer:self.playerScore];
+        self.enemyScore = [[ScoreHUD alloc] initAtPos:CGPointMake(100, 100) onParentLayer:ourViewLayer];
+        self.playerScore = [[ScoreHUD alloc] initAtPos:CGPointMake(750, 100) onParentLayer:ourViewLayer];
          
 	}
     theEngine = self;
