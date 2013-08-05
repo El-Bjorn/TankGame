@@ -98,27 +98,6 @@
 		float elapsedSeconds = displayLink.timestamp - m_timestamp;
 		m_timestamp = displayLink.timestamp;
 		[m_renderingEngine updateAnimationWithTimestep:elapsedSeconds];
-        //fprintf(stderr, "elapsed= %f\n",m_timestamp);
-        /*if ((rand() % 100)==10) {
-            fprintf(stderr,"bla!\n");// Change the position explicitly.
-            [UIView animateWithDuration:5.0 animations:^{
-                CABasicAnimation *explode = [CABasicAnimation animationWithKeyPath:@"contensScale"];
-                explode.fromValue = (id)[NSNumber numberWithFloat: 1.0];
-                explode.toValue = (id)[NSNumber numberWithFloat:2.0];
-                //[NSValue valueWithCGAffineTransform:CGAffineTransformMakeScale(10, 10)];
-                explode.duration = 5.0;
-                [xLayer addAnimation:explode forKey:@"AnimateFrame"]; }];
-            /*CABasicAnimation* theAnim = [CABasicAnimation animationWithKeyPath:@"position"];
-            theAnim.fromValue = [NSValue valueWithCGPoint:xLayer.position];
-            CGPoint tmp = xLayer.position;
-            tmp.x += 100;
-            tmp.y += 100;
-            theAnim.toValue = [NSValue valueWithCGPoint:tmp];
-            theAnim.duration = 3.0;
-                [xLayer addAnimation:theAnim forKey:@"AnimateFrame"]; }];
-            //xLayer.position = tmp;
-            //[xLayer setNeedsDisplay];
-        } */
 	}
 	[m_renderingEngine render];
 	[m_context presentRenderbuffer:GL_RENDERBUFFER];

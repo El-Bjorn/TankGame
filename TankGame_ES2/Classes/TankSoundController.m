@@ -27,7 +27,7 @@ static SystemSoundID tankHitID;
     NSURL *afURL = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankFireSoundID);
     
-    path = [[NSBundle mainBundle] pathForResource:@"tankHit1" ofType:@"wav"];
+    path = [[NSBundle mainBundle] pathForResource:@"impactExp" ofType:@"wav"];
     afURL = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)afURL,&tankHitID);
     

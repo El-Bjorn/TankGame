@@ -9,6 +9,9 @@
 #ifndef ES2_tankgame_coordsTrans_h
 #define ES2_tankgame_coordsTrans_h
 
+CGPoint physToScreen(CGPoint);
+CGPoint screenToPhys(CGPoint);
+
 
 
 #endif

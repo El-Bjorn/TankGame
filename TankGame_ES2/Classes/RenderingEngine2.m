@@ -68,7 +68,7 @@ static RenderingEngine2 *theEngine;
     
     [self.tankSounds tankHit];
     
-    fprintf(stderr,"explosion phys:(%f,%f), screen:(%f,%f)\n",pt.x,pt.y,scrnPt.x,scrnPt.y);
+    //fprintf(stderr,"explosion phys:(%f,%f), screen:(%f,%f)\n",pt.x,pt.y,scrnPt.x,scrnPt.y);
     CALayer *xLayer = [CALayer layer];
     xLayer.bounds = CGRectMake(0, 0, 100, 100);
     xLayer.position = scrnPt;
