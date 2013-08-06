@@ -9,7 +9,7 @@
 #import "ArenaObject.h"
 
 #define SHELL_VELOCITY 35
-#define MIN_SHELL_VELOCITY 34.5
+#define MIN_SHELL_VELOCITY 34
 
 @interface ShellObject : ArenaObject
 

@@ -14,6 +14,7 @@
 #include "ScoreHUD.h"
 
 #import "coordsTrans.h"
+#import "GameArenaManager.h"
 //CGPoint physToScreen(CGPoint pt);
 //CGPoint screenToPhys(CGPoint pt);
 
@@ -153,28 +154,11 @@ static RenderingEngine2 *theEngine;
         space = cpSpaceNew();
         gravity = cpv(0,0); // low gravity
         cpSpaceSetGravity(space, gravity);
-        //ground = cpSegmentShapeNew(space->staticBody, cpv(-20,-18), cpv(20,-17.5), 0);
-        // setup boundaries
-        bottomBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-21), cpv(13,-21), 1);
-        leftBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,-20), cpv(-14,20), 1);
-        topBounds = cpSegmentShapeNew(space->staticBody, cpv(-14,20), cpv(13.5,20), 1);
-        rightBounds = cpSegmentShapeNew(space->staticBody, cpv(13.5,20), cpv(13.5,-20), 1);
-        cpShapeSetFriction(bottomBounds, 0);
-        cpShapeSetFriction(leftBounds, 0);
-        cpShapeSetFriction(topBounds, 0);
-        cpShapeSetFriction(rightBounds, 0);
-        cpShapeSetElasticity(bottomBounds, 1);
-        cpShapeSetElasticity(leftBounds, 1);
-        cpShapeSetElasticity(topBounds, 1);
-        cpShapeSetElasticity(rightBounds, 1);
-        cpSpaceAddShape(space, bottomBounds);
-        cpSpaceAddShape(space, leftBounds);
-        cpSpaceAddShape(space, topBounds);
-        cpSpaceAddShape(space, rightBounds);
+        GameArenaManager *gm = [[GameArenaManager alloc] initArena:nil withParentLayer:ourViewLayer andArenaSpace:space];
         
         srand(time(NULL));
         self.shellList = [[NSMutableArray alloc] initWithCapacity:100];
-        self.playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(1, 1) andVelocity:cpv(0,0) andShader:m_simpleProgram];
+        self.playerTank = [[TankObject alloc] initInSpace:space withPosition:cpv(-10, -10) andVelocity:cpv(0,0) andShader:m_simpleProgram];
         self.evilTank1 = [[EnemyTankObject alloc] initInSpace:space withPosition:cpv(10,10) andVelocity:cpv(1,1) andShader:m_simpleProgram];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enemy_tank_fires) name:NOTIF_ENEMY_TANK_FIRES object:nil];
         

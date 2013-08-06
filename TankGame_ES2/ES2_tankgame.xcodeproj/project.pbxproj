@@ -26,6 +26,7 @@
 		40A0826017AE09C000C1A2E5 /* vector_explosion1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0825F17AE09C000C1A2E5 /* vector_explosion1.png */; };
 		40A0826217AE0B8600C1A2E5 /* vector_explosion2bw2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0826117AE0B8600C1A2E5 /* vector_explosion2bw2.png */; };
 		40A0826517AF531E00C1A2E5 /* impactExp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40A0826417AF531E00C1A2E5 /* impactExp.wav */; };
+		40A0826F17B18A4300C1A2E5 /* GameArenaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0826E17B18A4300C1A2E5 /* GameArenaManager.m */; };
 		40D2C54C178F867B00D8ED62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D2C54B178F867B00D8ED62 /* AVFoundation.framework */; };
 		40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C54E17909F0D00D8ED62 /* TankSoundController.m */; };
 		40D2C5511790B07F00D8ED62 /* tank-engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40D2C5501790B07F00D8ED62 /* tank-engine.wav */; };
@@ -103,6 +104,8 @@
 		40A0826117AE0B8600C1A2E5 /* vector_explosion2bw2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vector_explosion2bw2.png; sourceTree = "<group>"; };
 		40A0826317AEDA1F00C1A2E5 /* coordsTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordsTrans.h; sourceTree = "<group>"; };
 		40A0826417AF531E00C1A2E5 /* impactExp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = impactExp.wav; sourceTree = "<group>"; };
+		40A0826D17B18A4300C1A2E5 /* GameArenaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameArenaManager.h; sourceTree = "<group>"; };
+		40A0826E17B18A4300C1A2E5 /* GameArenaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameArenaManager.m; sourceTree = "<group>"; };
 		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		40D2C54D17909F0D00D8ED62 /* TankSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankSoundController.h; sourceTree = "<group>"; };
 		40D2C54E17909F0D00D8ED62 /* TankSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankSoundController.m; sourceTree = "<group>"; };
@@ -201,6 +204,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				40A0826C17B18A0300C1A2E5 /* GameArena */,
 				40A0825417AB321000C1A2E5 /* coordsTrans.c */,
 				40A0826317AEDA1F00C1A2E5 /* coordsTrans.h */,
 				40A0820F17A86B1900C1A2E5 /* tank_shaders.h */,
@@ -233,7 +237,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				40D2C54B178F867B00D8ED62 /* AVFoundation.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				828A8546177F4FF50054577B /* Chipmunk2D */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -271,6 +274,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40D2C54B178F867B00D8ED62 /* AVFoundation.framework */,
 				82F54190178F2A9500B0AF52 /* AudioToolbox.framework */,
 				82F5418E178F298B00B0AF52 /* CoreAudio.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -308,6 +312,15 @@
 				40416CC11784DBC000276AF5 /* ShellObject.m */,
 			);
 			name = ArenaObjects;
+			sourceTree = "<group>";
+		};
+		40A0826C17B18A0300C1A2E5 /* GameArena */ = {
+			isa = PBXGroup;
+			children = (
+				40A0826D17B18A4300C1A2E5 /* GameArenaManager.h */,
+				40A0826E17B18A4300C1A2E5 /* GameArenaManager.m */,
+			);
+			name = GameArena;
 			sourceTree = "<group>";
 		};
 		828A8546177F4FF50054577B /* Chipmunk2D */ = {
@@ -540,6 +553,7 @@
 				40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */,
 				40A0825517AB321000C1A2E5 /* coordsTrans.c in Sources */,
 				40A0825C17AC648900C1A2E5 /* ScoreHUD.m in Sources */,
+				40A0826F17B18A4300C1A2E5 /* GameArenaManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
