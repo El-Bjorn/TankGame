@@ -94,19 +94,11 @@ wallSection unstringify_wallSection(NSString *ocwallString){
 
 
 
--(NSDictionary*) loadArena:(NSString *)a {
-    NSString *aPlist = [a stringByAppendingString:@".plist"];
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    path = [path stringByAppendingPathComponent:aPlist];
+-(NSDictionary*) loadArena:(NSString *)aName {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:aName ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
     
-    NSMutableDictionary *arena = [NSMutableDictionary dictionaryWithContentsOfFile:path];
-    NSArray *strWalls = arena[@"arenaWallSections"];
-    //NSMutableArray *ptWalls = [NSMutableArray arrayWithObject:nil];
-    for (NSString *w in strWalls) {
-        [self addWall:unstringify_wallSection(w)];
-    }
-
-    return nil;
+    return dict;
 }
 
 
@@ -121,17 +113,22 @@ wallSection unstringify_wallSection(NSString *ocwallString){
         arenaLayer.bounds = pLayer.bounds;
         arenaLayer.position = pLayer.position;
         arenaSpace = space;
-        wallPath = CGPathCreateMutable();
-        [self tstArenaSetup];
-        [arenaLayer setPath:wallPath];
+        NSDictionary *arenaDict = [self loadArena:arena];
+        NSLog(@"arenaDict= %@",arenaDict);
+        [self addWallsFromArenaDict:arenaDict];
         [pLayer addSublayer:arenaLayer];
-        
-        arenaSpace = space;
     }
-    //[self tstArenaSetup];
-    //pLayer.opacity = 1.0;
-    //[pLayer addSublayer:arenaLayer];
     return self;
+}
+
+-(void) addWallsFromArenaDict:(NSDictionary*)aDict {
+    NSArray *wallList = aDict[@"arenaWallSections"];
+    wallPath = CGPathCreateMutable();
+    for (NSString *w_str in wallList) {
+        wallSection ws = unstringify_wallSection(w_str);
+        [self addWall:ws];
+    }
+    [arenaLayer setPath:wallPath];
 }
 
 
@@ -153,10 +150,8 @@ wallSection unstringify_wallSection(NSString *ocwallString){
     // add a line to the CAShapeLayer
     [arenaLayer setStrokeColor:[UIColor lightGrayColor].CGColor];
     [arenaLayer setLineWidth:12.0];
-    //CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(wallPath, NULL, scrPt1.x, scrPt1.y);
     CGPathAddLineToPoint(wallPath, NULL, scrPt2.x, scrPt2.y);
-    //[arenaLayer setPath:path];
 }
 
 @end

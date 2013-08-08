@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arenaName</key>
+	<string>BasicBoundaries</string>
+	<key>arenaNumber</key>
+	<integer>1</integer>
+	<key>arenaWallSections</key>
+	<array>
+		<string>0.00,20.00-768.00,20.00</string>
+		<string>0.00,1024.00-768.00,1024.00</string>
+		<string>0.00,20.00-0.00,1024.00</string>
+		<string>768.00,20.00-768.00,1024.00</string>
+	</array>
+	<key>enemies</key>
+	<array/>
+	<key>players</key>
+	<array/>
+</dict>
+</plist>

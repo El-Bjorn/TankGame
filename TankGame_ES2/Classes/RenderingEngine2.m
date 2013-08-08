@@ -154,7 +154,7 @@ static RenderingEngine2 *theEngine;
         space = cpSpaceNew();
         gravity = cpv(0,0); // low gravity
         cpSpaceSetGravity(space, gravity);
-        GameArenaManager *gm = [[GameArenaManager alloc] initArena:nil withParentLayer:ourViewLayer andArenaSpace:space];
+        GameArenaManager *gm = [[GameArenaManager alloc] initArena:@"Diagonal" withParentLayer:ourViewLayer andArenaSpace:space];
         
         srand(time(NULL));
         self.shellList = [[NSMutableArray alloc] initWithCapacity:100];

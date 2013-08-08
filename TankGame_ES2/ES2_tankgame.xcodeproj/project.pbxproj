@@ -27,6 +27,8 @@
 		40A0826217AE0B8600C1A2E5 /* vector_explosion2bw2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A0826117AE0B8600C1A2E5 /* vector_explosion2bw2.png */; };
 		40A0826517AF531E00C1A2E5 /* impactExp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40A0826417AF531E00C1A2E5 /* impactExp.wav */; };
 		40A0826F17B18A4300C1A2E5 /* GameArenaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0826E17B18A4300C1A2E5 /* GameArenaManager.m */; };
+		40A0827217B4579100C1A2E5 /* BasicBounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A0827117B4579100C1A2E5 /* BasicBounds.plist */; };
+		40A0827417B45FBC00C1A2E5 /* Diagonal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A0827317B45FBC00C1A2E5 /* Diagonal.plist */; };
 		40D2C54C178F867B00D8ED62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D2C54B178F867B00D8ED62 /* AVFoundation.framework */; };
 		40D2C54F17909F0D00D8ED62 /* TankSoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C54E17909F0D00D8ED62 /* TankSoundController.m */; };
 		40D2C5511790B07F00D8ED62 /* tank-engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40D2C5501790B07F00D8ED62 /* tank-engine.wav */; };
@@ -106,6 +108,8 @@
 		40A0826417AF531E00C1A2E5 /* impactExp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = impactExp.wav; sourceTree = "<group>"; };
 		40A0826D17B18A4300C1A2E5 /* GameArenaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameArenaManager.h; sourceTree = "<group>"; };
 		40A0826E17B18A4300C1A2E5 /* GameArenaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameArenaManager.m; sourceTree = "<group>"; };
+		40A0827117B4579100C1A2E5 /* BasicBounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BasicBounds.plist; sourceTree = "<group>"; };
+		40A0827317B45FBC00C1A2E5 /* Diagonal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Diagonal.plist; sourceTree = "<group>"; };
 		40D2C54B178F867B00D8ED62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		40D2C54D17909F0D00D8ED62 /* TankSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankSoundController.h; sourceTree = "<group>"; };
 		40D2C54E17909F0D00D8ED62 /* TankSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankSoundController.m; sourceTree = "<group>"; };
@@ -317,10 +321,20 @@
 		40A0826C17B18A0300C1A2E5 /* GameArena */ = {
 			isa = PBXGroup;
 			children = (
+				40A0827017B456F400C1A2E5 /* arenas */,
 				40A0826D17B18A4300C1A2E5 /* GameArenaManager.h */,
 				40A0826E17B18A4300C1A2E5 /* GameArenaManager.m */,
 			);
 			name = GameArena;
+			sourceTree = "<group>";
+		};
+		40A0827017B456F400C1A2E5 /* arenas */ = {
+			isa = PBXGroup;
+			children = (
+				40A0827117B4579100C1A2E5 /* BasicBounds.plist */,
+				40A0827317B45FBC00C1A2E5 /* Diagonal.plist */,
+			);
+			name = arenas;
 			sourceTree = "<group>";
 		};
 		828A8546177F4FF50054577B /* Chipmunk2D */ = {
@@ -502,6 +516,8 @@
 				40A0826017AE09C000C1A2E5 /* vector_explosion1.png in Resources */,
 				40A0826217AE0B8600C1A2E5 /* vector_explosion2bw2.png in Resources */,
 				40A0826517AF531E00C1A2E5 /* impactExp.wav in Resources */,
+				40A0827217B4579100C1A2E5 /* BasicBounds.plist in Resources */,
+				40A0827417B45FBC00C1A2E5 /* Diagonal.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
