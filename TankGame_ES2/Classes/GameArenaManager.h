@@ -37,6 +37,9 @@ typedef struct {
 
 -(void) addWall:(wallSection)w;
 
+// will read "arena.plist"
+-(NSDictionary*) loadArena:(NSString*)arena;
+
 
 
 

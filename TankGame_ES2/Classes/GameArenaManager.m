@@ -8,6 +8,36 @@
 
 #import "GameArenaManager.h"
 
+
+#pragma mark - wallSection utility functions
+// we need these guys since you can write-out an NSDictionary
+//     to a plist unless the values are XML representable strings
+// the format will be:   X1,Y1---X2,Y2    (one dash)
+
+#define WALL_STR_LEN 512
+
+NSString *stringify_wallSection(wallSection w){
+    char wall_string[WALL_STR_LEN];
+    sprintf(wall_string,"%.2f,%.2f-%.2f,%.2f",w.startPt.x,w.startPt.y,w.endPt.x,w.endPt.y);
+    fprintf(stderr,"wall string: %s\n",wall_string);
+    return [NSString stringWithUTF8String:wall_string];
+    
+}
+
+wallSection unstringify_wallSection(NSString *ocwallString){
+    wallSection w;
+    char *wall_string = (char*)[ocwallString UTF8String];
+     
+    w.startPt.x = atof(strtok(wall_string, ",-"));
+    w.startPt.y = atof(strtok(NULL, ",-"));
+    w.endPt.x = atof(strtok(NULL, ",-"));
+    w.endPt.y = atof(strtok(NULL, ",-"));
+    
+    return w;
+}
+
+    
+
 @implementation GameArenaManager
 
 // this gives us a simple arena
@@ -32,13 +62,54 @@
     right.startPt = top_right;
     right.endPt = bottom_right;
     
+    // write out basic arena
+    NSMutableArray *walls = [NSMutableArray arrayWithArray:nil];
+    [walls addObject:stringify_wallSection(top)];
+    [walls addObject:stringify_wallSection(bottom)];
+    [walls addObject:stringify_wallSection(left)];
+    [walls addObject:stringify_wallSection(right)];
     
-    [self addWall:top];
+    
+    NSDictionary *arenaDict = @{ @"arenaName": @"BasicBoundaries",
+                                 @"arenaNumber": @1,
+                                 @"arenaWallSections": walls,
+                                 @"players": [NSArray array],
+                                 @"enemies": [NSArray array]};
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    path = [path stringByAppendingPathComponent:@"BasicBounds.plist"];
+    if (![arenaDict writeToFile:path atomically:NO]){
+        NSLog(@"DAMMIT");
+    }
+    NSLog(@"%@",arenaDict);
+    [self loadArena:@"BasicBounds"];
+    
+    /*[self addWall:top];
     [self addWall:bottom];
     [self addWall:left];
     [self addWall:right];
-    [self addWall:diag];
+    [self addWall:diag]; */
+    NSLog(@"%@",path);
+    //exit(0);
 }
+
+
+
+-(NSDictionary*) loadArena:(NSString *)a {
+    NSString *aPlist = [a stringByAppendingString:@".plist"];
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    path = [path stringByAppendingPathComponent:aPlist];
+    
+    NSMutableDictionary *arena = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+    NSArray *strWalls = arena[@"arenaWallSections"];
+    //NSMutableArray *ptWalls = [NSMutableArray arrayWithObject:nil];
+    for (NSString *w in strWalls) {
+        [self addWall:unstringify_wallSection(w)];
+    }
+
+    return nil;
+}
+
+
 
 -(id) initArena:(NSString *)arena withParentLayer:(CALayer *)pLayer
                                     andArenaSpace:(cpSpace *)space
@@ -62,6 +133,7 @@
     //[pLayer addSublayer:arenaLayer];
     return self;
 }
+
 
 // wall points are in screen-space
 -(void) addWall:(wallSection)w {
