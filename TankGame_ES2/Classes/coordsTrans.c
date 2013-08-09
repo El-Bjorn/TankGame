@@ -2,9 +2,11 @@
 */
 #import <QuartzCore/QuartzCore.h>
 
-#define MIN_PHYS_X -14.0
+//#define MIN_PHYS_X -14.0
+#define MIN_PHYS_X -13.5 // better
 #define MAX_PHYS_X 13.5
-#define MIN_PHYS_Y -21.0
+//#define MIN_PHYS_Y -21.0
+#define MIN_PHYS_Y -20.0 // better
 #define MAX_PHYS_Y 20.0
 #define PHYS_X_SZ (MAX_PHYS_X-MIN_PHYS_X)
 #define PHYS_Y_SZ (MAX_PHYS_Y-MIN_PHYS_Y)

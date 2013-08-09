@@ -25,8 +25,8 @@ static GLsizei tankVertCount;
 {
     self = [super init];
     if (self) {
-        cpFloat width = 2;
-        cpFloat height = 2;
+        cpFloat width = 1.5;
+        cpFloat height = 1.5;
         cpFloat mass = 1;
         cpFloat moment = cpMomentForBox(mass, width, height);
         self.space = obj_space;

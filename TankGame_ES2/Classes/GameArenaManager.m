@@ -139,7 +139,7 @@ wallSection unstringify_wallSection(NSString *ocwallString){
     CGPoint physPt1 = screenToPhys(scrPt1);
     CGPoint physPt2 = screenToPhys(scrPt2);
     // adding the wall to physics world
-    cpShape *newWall = cpSegmentShapeNew(arenaSpace->staticBody, physPt1, physPt2, 1);
+    cpShape *newWall = cpSegmentShapeNew(arenaSpace->staticBody, physPt1, physPt2, 0.5);
     cpShapeSetFriction(newWall, 0);
     cpShapeSetElasticity(newWall, 1);
     cpSpaceAddShape(arenaSpace, newWall);
@@ -149,7 +149,7 @@ wallSection unstringify_wallSection(NSString *ocwallString){
     
     // add a line to the CAShapeLayer
     [arenaLayer setStrokeColor:[UIColor lightGrayColor].CGColor];
-    [arenaLayer setLineWidth:12.0];
+    [arenaLayer setLineWidth:10.0];
     CGPathMoveToPoint(wallPath, NULL, scrPt1.x, scrPt1.y);
     CGPathAddLineToPoint(wallPath, NULL, scrPt2.x, scrPt2.y);
 }
