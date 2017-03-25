@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1A0E1A81-2534-42EB-86BF-D73B3303B507</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ES2_tankgame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>11DA5683058589F8CAFE1A140F8A57CE3AB20F71</key>
+		<string>github.com:El-Bjorn/TankGame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TankGame_ES2/ES2_tankgame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>11DA5683058589F8CAFE1A140F8A57CE3AB20F71</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:El-Bjorn/TankGame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>11DA5683058589F8CAFE1A140F8A57CE3AB20F71</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11DA5683058589F8CAFE1A140F8A57CE3AB20F71</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TankGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -39,7 +39,7 @@
             [rendEng playerTankFiresShell];
             break;
 	}
-	//fprintf(stderr, "controller view got touched\n");
+	fprintf(stderr, "controller view got touched\n");
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -62,7 +62,7 @@
         case fireButton: // this makes clang happy
             break;
 	}
-	//fprintf(stderr, "controllerView got moved\n");
+	fprintf(stderr, "controllerView got moved\n");
 }
 
 /*
